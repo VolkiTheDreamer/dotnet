@@ -1,0 +1,3 @@
+﻿<hostitem:hostItem hostitem:baseType="Microsoft.Office.Tools.Excel.WorksheetBase" hostitem:namespace="" hostitem:className="Sheet1" hostitem:identifier="Sheet1" hostitem:primaryCookie="Sheet1" hostitem:factoryType="Microsoft.Office.Tools.Excel.Factory" hostitem:startupIndex="1" xmlns:hostitem="http://schemas.microsoft.com/2004/VisualStudio/Tools/Applications/HostItem.xsd">
+  <hostitem:hostControl hostitem:name="Table1" hostitem:identifier="Table1" hostitem:type="Microsoft.Office.Tools.Excel.ListObject" hostitem:primaryCookie="Sheet1:Table1" hostitem:extenderCookie="" hostitem:modifier="Internal" />
+</hostitem:hostItem>

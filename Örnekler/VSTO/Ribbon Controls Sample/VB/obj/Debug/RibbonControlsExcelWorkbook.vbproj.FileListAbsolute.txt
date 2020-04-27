@@ -1,0 +1,5 @@
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\VSTO\Ribbon Controls Sample\VB\obj\Debug\RibbonControlsExcelWorkbook.ActionsPaneControl1.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\VSTO\Ribbon Controls Sample\VB\obj\Debug\RibbonControlsExcelWorkbook.Resources.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\VSTO\Ribbon Controls Sample\VB\obj\Debug\RibbonControlsExcelWorkbook.RibbonControlsSample.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\VSTO\Ribbon Controls Sample\VB\obj\Debug\RibbonControlsExcelWorkbook.Sheet1.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\VSTO\Ribbon Controls Sample\VB\obj\Debug\RibbonControlsExcelWorkbook.vbproj.GenerateResource.Cache

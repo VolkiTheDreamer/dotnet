@@ -1,0 +1,7 @@
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\c# döküman\Visual CSharp Step By Step\Chapter 7\Classes\Classes\bin\Debug\Classes.exe
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\c# döküman\Visual CSharp Step By Step\Chapter 7\Classes\Classes\bin\Debug\Classes.pdb
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\c# döküman\Visual CSharp Step By Step\Chapter 7\Classes\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\c# döküman\Visual CSharp Step By Step\Chapter 7\Classes\Classes\obj\Debug\Classes.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\c# döküman\Visual CSharp Step By Step\Chapter 7\Classes\Classes\obj\Debug\Classes.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\c# döküman\Visual CSharp Step By Step\Chapter 7\Classes\Classes\obj\Debug\Classes.exe
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\c# döküman\Visual CSharp Step By Step\Chapter 7\Classes\Classes\obj\Debug\Classes.pdb

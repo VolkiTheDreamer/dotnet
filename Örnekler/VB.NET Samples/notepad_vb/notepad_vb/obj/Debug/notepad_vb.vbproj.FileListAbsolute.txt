@@ -1,0 +1,14 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\bin\Debug\notepad_vb.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\bin\Debug\notepad_vb.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\bin\Debug\notepad_vb.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\bin\Debug\notepad_vb.xml
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\obj\Debug\notepad_vb.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\obj\Debug\notepad_vb.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\obj\Debug\notepad_vb.vbproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\obj\Debug\notepad_vb.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\obj\Debug\notepad_vb.xml
+C:\Users\Volkan\AppData\Local\Temporary Projects\notepad_vb\obj\Debug\notepad_vb.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Form Aplikasyonları\notepad_vb\notepad_vb\bin\Debug\notepad_vb.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Form Aplikasyonları\notepad_vb\notepad_vb\obj\Debug\notepad_vb.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Form Aplikasyonları\notepad_vb\notepad_vb\obj\Debug\notepad_vb.xml
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Form Aplikasyonları\notepad_vb\notepad_vb\obj\Debug\notepad_vb.pdb

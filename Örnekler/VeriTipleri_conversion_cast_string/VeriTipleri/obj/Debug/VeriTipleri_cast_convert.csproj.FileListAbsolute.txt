@@ -1,0 +1,6 @@
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VeriTipleri_conversion_cast_string\VeriTipleri\bin\Debug\VeriTipleri.exe.config
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VeriTipleri_conversion_cast_string\VeriTipleri\bin\Debug\VeriTipleri.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VeriTipleri_conversion_cast_string\VeriTipleri\bin\Debug\VeriTipleri.pdb
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VeriTipleri_conversion_cast_string\VeriTipleri\obj\Debug\VeriTipleri_cast_convert.csprojAssemblyReference.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VeriTipleri_conversion_cast_string\VeriTipleri\obj\Debug\VeriTipleri.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VeriTipleri_conversion_cast_string\VeriTipleri\obj\Debug\VeriTipleri.pdb

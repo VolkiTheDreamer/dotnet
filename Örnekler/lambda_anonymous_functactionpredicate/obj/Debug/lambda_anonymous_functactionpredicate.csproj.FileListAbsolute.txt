@@ -1,0 +1,22 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\bin\Debug\lambda_anonymous_functactionpredicate.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\bin\Debug\lambda_anonymous_functactionpredicate.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\bin\Debug\lambda_anonymous_functactionpredicate.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.csproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\bin\Debug\lambda_anonymous_functactionpredicate.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\bin\Debug\lambda_anonymous_functactionpredicate.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\bin\Debug\lambda_anonymous_functactionpredicate.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.LambdaLINQForm.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\obj\Debug\lambda_anonymous_functactionpredicate.Form2.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\bin\Debug\MyUtility.dll
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\lambda_anonymous_functactionpredicate\bin\Debug\MyUtility.pdb

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Excelent
+</name>
+</assembly>
+<members>
+<member name="M:Excelent.ThisAddIn.#ctor(Microsoft.Office.Tools.Excel.ApplicationFactory,System.IServiceProvider)">
+</member><member name="M:Excelent.ThisAddIn.Initialize">
+</member><member name="M:Excelent.ThisAddIn.FinishInitialization">
+</member><member name="M:Excelent.ThisAddIn.InitializeDataBindings">
+</member><member name="M:Excelent.ThisAddIn.InitializeCachedData">
+</member><member name="M:Excelent.ThisAddIn.InitializeData">
+</member><member name="M:Excelent.ThisAddIn.BindToData">
+</member><member name="M:Excelent.ThisAddIn.StartCaching(System.String)">
+</member><member name="M:Excelent.ThisAddIn.StopCaching(System.String)">
+</member><member name="M:Excelent.ThisAddIn.IsCached(System.String)">
+</member><member name="M:Excelent.ThisAddIn.BeginInitialization">
+</member><member name="M:Excelent.ThisAddIn.EndInitialization">
+</member><member name="M:Excelent.ThisAddIn.InitializeControls">
+</member><member name="M:Excelent.ThisAddIn.InitializeComponents">
+</member><member name="M:Excelent.ThisAddIn.NeedsFill(System.String)">
+</member><member name="M:Excelent.ThisAddIn.OnShutdown">
+</member><member name="T:Excelent.ThisAddIn">
+</member><member name="M:Excelent.Globals.#ctor">
+</member><member name="T:Excelent.Globals">
+</member><member name="M:Excelent.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+</member><member name="T:Excelent.ThisRibbonCollection">
+</member><member name="P:Excelent.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Excelent.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Excelent.My.Resources.Resources._4islem">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Excelent.My.Resources.Resources._4islem2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Excelent.My.Resources.Resources.abc1_40">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Excelent.My.Resources.Resources.makas">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Excelent.My.Resources.Resources.makas_32">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Excelent.My.Resources.Resources.makas2_40">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Excelent.My.Resources.Resources.makas40">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Excelent.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

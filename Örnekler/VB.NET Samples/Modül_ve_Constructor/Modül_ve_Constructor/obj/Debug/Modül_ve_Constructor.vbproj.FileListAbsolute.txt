@@ -1,0 +1,10 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\Modül_ve_Constructor\bin\Debug\Modül_ve_Constructor.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\bin\Debug\Modül_ve_Constructor.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\bin\Debug\Modül_ve_Constructor.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\bin\Debug\Modül_ve_Constructor.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\bin\Debug\Modül_ve_Constructor.xml
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\obj\Debug\Modül_ve_Constructor.Resources.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\obj\Debug\Modül_ve_Constructor.vbproj.GenerateResource.Cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\obj\Debug\Modül_ve_Constructor.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\obj\Debug\Modül_ve_Constructor.xml
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\Consol Aplikasyonları\Modül_ve_Constructor\Modül_ve_Constructor\obj\Debug\Modül_ve_Constructor.pdb

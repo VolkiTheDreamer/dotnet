@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+    <ribbon>
+        <tabs>
+            <tab id="Tab1" label="Excelent">
+                <group id="Group1" label="Bölme ve Birleştirme">
+                    <button id="btnStandartBol" imageMso="SplitTable" onAction="btnStandartBol_Click" screentip="Standart Bölme" supertip="Bir çalışma sayfasındaki datayı A kolonuna göre bölüp, önceden ayarlanmış klasör içine ayrı dosyalar halinde kopyalar" label="Standart Bölme" />
+                    <button id="btnCokSutunluBol" imageMso="ColumnsGroup" onAction="btnCokSutunluBol_Click" supertip="Çok süütunlu bölme işlemi yapar" label="Çok Sütunlu Bölme" />
+                    <button id="Button4" imageMso="PageVersionSplitButton" onAction="Button4_Click" label="Çok Sayfalı Bölme" />
+                    <separator id="Separator1" />
+                    <button id="Button8" imageMso="ReviewCombineRevisions" onAction="Button8_Click" label="Dosyaları Birlestir" />
+                    <button id="btnSayfaBirlestir" imageMso="CompareAndCombine" onAction="btnSayfaBirlestir_Click" label="Sayfaları Birleştir" />
+                </group>
+                <group id="grpMail" label="Toplu Mail">
+                    <button id="Button11" imageMso="MailMergeStartMailMergeMenu" onAction="Button11_Click" label="Toplu Mail Gönderimi" size="large" />
+                </group>
+                <group id="Group2" label="Hazır Lookuplar">
+                    <menu id="mnAdetYaz" imageMso="CoauthorCount" label="Adet Yazdır" size="large">
+                        <button id="btnFiiliYaz" onAction="btnFiiliYaz_Click" label="Fiili Yaz" />
+                        <button id="btnNormVarYok" onAction="btnNormVarYok_Click" label="Norm Var/Yok" />
+                    </menu>
+                    <separator id="Separator6" />
+                    <dropDown id="DropDown2" onAction="DropDown2_SelectionChanged" label=" " showImage="false">
+                        <item id="__id326" label="Sicilden" />
+                        <item id="__id327" label="Ad Soyad" />
+                        <item id="__id328" label="Çalıştığı Birim Kodu" />
+                        <item id="__id329" label="Çalıştığı Birim Adı" />
+                        <item id="__id330" label="Görevi" />
+                        <item id="__id331" label="Bankaya Giriş Tarihi" />
+                        <item id="__id332" label="Birime Giriş Tarihi" />
+                    </dropDown>
+                    <dropDown id="DropDown1" onAction="DropDown1_SelectionChanged" label=" " showImage="false">
+                        <item id="__id333" label="Şubeden" />
+                        <item id="__id334" label="Şube Adı" />
+                        <item id="__id335" label="Bölge Kodu" />
+                        <item id="__id336" label="Bölge Adı" />
+                        <item id="__id337" label="Açılış Tarihi" />
+                        <item id="__id338" label="Açık/Kapalı" />
+                        <item id="__id339" label="Kapanış Tarihi" />
+                        <item id="__id340" label="Türü" />
+                        <item id="__id341" label="Sınıfı" />
+                        <item id="__id342" label="Tipi" />
+                        <item id="__id343" label="İl Kodu" />
+                        <item id="__id344" label="Müdür Sicili" />
+                        <item id="__id345" label="Müdür Adı" />
+                    </dropDown>
+                    <dropDown id="DropDown3" onAction="DropDown3_SelectionChanged" label=" " showImage="false">
+                        <item id="__id346" label="Bölgeden" />
+                        <item id="__id347" label="Bölge Adı" />
+                        <item id="__id348" label="Bölge Müdürü" />
+                        <item id="__id349" label="Bireysel Satış Ekibi" />
+                        <item id="__id350" label="Birebir Satış Ekibi" />
+                        <item id="__id351" label="Bireysel+Birebir Satış Ekibi" />
+                        <item id="__id352" label="Bölge Müdürü+Bireysel+Birebir" />
+                        <item id="__id353" label="KOBİ Satış Ekibi" />
+                        <item id="__id354" label="Ticari Satış Ekibi" />
+                    </dropDown>
+                    <dialogBoxLauncher>
+                        <button id="Group2__btn" />
+                    </dialogBoxLauncher>
+                </group>
+                <group id="Group6" label="Workbook ve Worksheet">
+                    <menu id="mnWB" imageMso="SaveWorkbookTask" label="WorkBook" size="large">
+                        <button id="btnWBsaveall" label="Tümünü  Kaydet" />
+                        <button id="btnCloseall" label="Tümünü kapat" />
+                        <button id="btnWBtumuPrint" label="Tümünü Bas" />
+                        <button id="btnWBrefreshall" label="Tümünü Refresh Et" />
+                        <button id="btnWBsifreDegis" label="Tümünüde Connection şifre değiş" />
+                        <button id="btnWBPDFyap" label="Tümünü PDF yap" />
+                    </menu>
+                    <menu id="mnWS" imageMso="ExcelSpreadsheetInsert" label="WorkSheet" size="large">
+                        <button id="btnWsPrintnames" label="Sayfa isimlerin yazdır" />
+                        <button id="btnWsSortalpha" label="Sayfaları alfabetik sırala" />
+                        <button id="btnWsProtectall" label="Tümüne protect koy" />
+                        <button id="btnWsUnprotectall" label="Tümünü unprotect" />
+                        <button id="btnWsilkharicHide" label="İlk sayfa hariç gizle" />
+                        <button id="btnShowallhiddens" label="Tüm gizli sayfaları göster" />
+                    </menu>
+                </group>
+                <group id="Group4" label="Pivot ve Liste İşlemleri">
+                    <box id="Box1" boxStyle="vertical">
+                        <button id="btnPivotOtodoldur" imageMso="PivotTableRepeatItemLabels" onAction="btnPivotOtodoldur_Click" label="Pivotta Oto Doldur" />
+                        <button id="Button2" imageMso="TableSummarizeWithPivot" onAction="Button2_Click" label="Ters Pivot" />
+                        <button id="Button3" imageMso="PivotTableMove" onAction="Button3_Click" label="Listeyi Parçala" />
+                    </box>
+                    <separator id="Separator3" />
+                    <box id="Box2" boxStyle="vertical">
+                        <button id="Button5" imageMso="SharePointListsWorkOffline" onAction="Button5_Click" label="Listeyi yan yana yaz" />
+                        <button id="Button6" imageMso="ListToolView" onAction="Button6_Click" label="Listeyi altalta yaz" />
+                        <button id="Button7" imageMso="SortByDate" onAction="Button7_Click" label="Çoklu Rank" />
+                    </box>
+                    <dialogBoxLauncher>
+                        <button id="Group4__btn" />
+                    </dialogBoxLauncher>
+                </group>
+                <group id="Group5" label="Hızlı İşlem">
+                    <gallery id="Gallery1" label="Hızlı İşlem" size="large">
+                        <item id="__id356" label="x1.000.000" />
+                        <item id="__id357" label="x1.000" />
+                        <item id="__id358" label="x?" />
+                        <item id="__id359" label="/1.000.000" />
+                        <item id="__id360" label="/1.000" />
+                        <item id="__id361" label="/?" />
+                        <item id="__id362" label="+?" />
+                        <item id="__id363" label="-?" />
+                    </gallery>
+                </group>
+                <group id="grpFrequentFile" label="Sık Kullanım">
+                    <menu id="mnFrequentFile" imageMso="OpenSpecificFile" label="Sık Kullanılan Dosyalar" size="large">
+                        <button id="btnFreqDosya1" onAction="btnFreqDosya1_Click" />
+                        <button id="btnFreqDosya2" onAction="btnFreqDosya1_Click" />
+                        <button id="btnFreqDosya3" onAction="btnFreqDosya1_Click" />
+                        <button id="btnFreqDosya4" onAction="btnFreqDosya1_Click" />
+                        <button id="btnFreqDosya5" onAction="btnFreqDosya1_Click" />
+                    </menu>
+                    <dialogBoxLauncher>
+                        <button id="grpFrequentFile__btn" />
+                    </dialogBoxLauncher>
+                </group>
+                <group id="Group3" label="Yardım">
+                    <menu id="Menu1" imageMso="HelpLaunch" label="Yardım" size="large">
+                        <button id="Button12" onAction="Button12_Click_1" label="Hakkında" />
+                        <button id="Button13" onAction="Button13_Click" label="KullanımKılavuzu" />
+                    </menu>
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>

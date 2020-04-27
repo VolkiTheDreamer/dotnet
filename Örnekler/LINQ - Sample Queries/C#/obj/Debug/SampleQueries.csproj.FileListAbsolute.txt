@@ -1,0 +1,17 @@
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\bin\Debug\SampleQueries.exe
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\bin\Debug\SampleQueries.pdb
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\obj\Debug\QuerySamples.Properties.Resources.resources
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\obj\Debug\SampleSupport.SampleForm.resources
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\obj\Debug\SampleQueries.exe
+C:\Users\v-damdec\Downloads\Archived Samples Gallery\CSharpSamples\CSharpSamples\LinqSamples\SampleQueries\obj\Debug\SampleQueries.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ - Sample Queries\C#\bin\Debug\SampleQueries.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ - Sample Queries\C#\bin\Debug\SampleQueries.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ - Sample Queries\C#\obj\Debug\SampleQueries.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ - Sample Queries\C#\obj\Debug\QuerySamples.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ - Sample Queries\C#\obj\Debug\SampleSupport.SampleForm.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ - Sample Queries\C#\obj\Debug\SampleQueries.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ - Sample Queries\C#\obj\Debug\SampleQueries.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ - Sample Queries\C#\obj\Debug\SampleQueries.pdb

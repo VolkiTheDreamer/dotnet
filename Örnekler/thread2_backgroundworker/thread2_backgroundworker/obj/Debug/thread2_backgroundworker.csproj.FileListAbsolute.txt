@@ -1,0 +1,10 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\thread2_backgroundworker\bin\Debug\thread2_backgroundworker.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\bin\Debug\thread2_backgroundworker.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\bin\Debug\thread2_backgroundworker.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\bin\Debug\thread2_backgroundworker.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\obj\Debug\thread2_backgroundworker.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\obj\Debug\thread2_backgroundworker.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\obj\Debug\thread2_backgroundworker.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\obj\Debug\thread2_backgroundworker.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\obj\Debug\thread2_backgroundworker.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread2_backgroundworker\thread2_backgroundworker\obj\Debug\thread2_backgroundworker.pdb

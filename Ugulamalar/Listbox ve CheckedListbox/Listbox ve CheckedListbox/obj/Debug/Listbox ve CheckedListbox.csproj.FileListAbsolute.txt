@@ -1,0 +1,10 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\Listbox ve CheckedListbox\bin\Debug\Listbox ve CheckedListbox.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\bin\Debug\Listbox ve CheckedListbox.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\bin\Debug\Listbox ve CheckedListbox.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\bin\Debug\Listbox ve CheckedListbox.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\obj\Debug\Listbox ve CheckedListbox.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\obj\Debug\Listbox_ve_CheckedListbox.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\obj\Debug\Listbox_ve_CheckedListbox.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\obj\Debug\Listbox ve CheckedListbox.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\obj\Debug\Listbox ve CheckedListbox.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\Listbox ve CheckedListbox\Listbox ve CheckedListbox\obj\Debug\Listbox ve CheckedListbox.pdb

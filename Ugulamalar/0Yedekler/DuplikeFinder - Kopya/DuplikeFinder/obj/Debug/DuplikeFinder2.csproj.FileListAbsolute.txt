@@ -1,0 +1,19 @@
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\obj\Debug\DuplikeFinder2.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\obj\Debug\DuplikeFinder2.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\obj\Debug\DuplikeFinder.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\obj\Debug\DuplikeFinder2.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\obj\Debug\DuplikeFinder.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\obj\Debug\DuplikeFinder.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\bin\Debug\DuplikeFinder.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\bin\Debug\DuplikeFinder.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder - recursive öncesi-en son sağlam kopya üzerinden devam\DuplikeFinder\bin\Debug\DuplikeFinder.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\bin\Debug\DuplikeFinder.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\obj\Debug\DuplikeFinder.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\obj\Debug\DuplikeFinder.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\bin\Debug\DuplikeFinder.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\bin\Debug\DuplikeFinder.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\obj\Debug\DuplikeFinder2.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\obj\Debug\DuplikeFinder2.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\obj\Debug\DuplikeFinder.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\obj\Debug\DuplikeFinder2.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\DuplikeFinder\DuplikeFinder\obj\Debug\DuplikeFinder2.frmAbout.resources

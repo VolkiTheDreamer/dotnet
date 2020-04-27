@@ -1,0 +1,4 @@
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\Events Sample\C#\Events1\bin\Debug\Events1.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\Events Sample\C#\Events1\bin\Debug\Events1.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\Events Sample\C#\Events1\obj\Debug\Events1.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\Events Sample\C#\Events1\obj\Debug\Events1.pdb

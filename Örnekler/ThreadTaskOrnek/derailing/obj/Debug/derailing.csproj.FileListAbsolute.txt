@@ -1,0 +1,10 @@
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\bin\Debug\derailing.exe.config
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\bin\Debug\derailing.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\bin\Debug\derailing.pdb
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\obj\Debug\derailing.csprojAssemblyReference.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\obj\Debug\ThreadOrnek.KutuSihirbazı.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\obj\Debug\derailing.Properties.Resources.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\obj\Debug\derailing.csproj.GenerateResource.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\obj\Debug\derailing.csproj.CoreCompileInputs.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\obj\Debug\derailing.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\derailing\obj\Debug\derailing.pdb

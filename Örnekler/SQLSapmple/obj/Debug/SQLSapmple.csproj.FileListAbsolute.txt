@@ -1,0 +1,6 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\SQLSapmple\bin\Debug\SQLSapmple.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\SQLSapmple\bin\Debug\SQLSapmple.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\SQLSapmple\bin\Debug\SQLSapmple.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\SQLSapmple\obj\Debug\SQLSapmple.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\SQLSapmple\obj\Debug\SQLSapmple.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\SQLSapmple\obj\Debug\SQLSapmple.pdb

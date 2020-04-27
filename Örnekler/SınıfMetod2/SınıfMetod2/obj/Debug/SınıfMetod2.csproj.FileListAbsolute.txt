@@ -1,0 +1,10 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod2\bin\Debug\SınıfMetod2.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod2\bin\Debug\SınıfMetod2.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod2\bin\Debug\SınıfMetod2.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod2\obj\Debug\SınıfMetod2.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod2\obj\Debug\SınıfMetod2.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod2\SınıfMetod2\bin\Debug\SınıfMetod2.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod2\SınıfMetod2\obj\Debug\SınıfMetod2.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod2\SınıfMetod2\obj\Debug\SınıfMetod2.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod2\SınıfMetod2\bin\Debug\SınıfMetod2.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod2\SınıfMetod2\bin\Debug\SınıfMetod2.pdb

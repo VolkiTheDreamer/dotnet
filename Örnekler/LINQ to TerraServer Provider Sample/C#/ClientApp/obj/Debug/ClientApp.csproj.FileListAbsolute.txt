@@ -1,0 +1,8 @@
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ to TerraServer Provider Sample\C#\ClientApp\bin\Debug\ClientApp.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ to TerraServer Provider Sample\C#\ClientApp\bin\Debug\ClientApp.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ to TerraServer Provider Sample\C#\ClientApp\bin\Debug\ClientApp.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ to TerraServer Provider Sample\C#\ClientApp\bin\Debug\LinqToTerraServerProvider.dll
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ to TerraServer Provider Sample\C#\ClientApp\bin\Debug\LinqToTerraServerProvider.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ to TerraServer Provider Sample\C#\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ to TerraServer Provider Sample\C#\ClientApp\obj\Debug\ClientApp.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\LINQ to TerraServer Provider Sample\C#\ClientApp\obj\Debug\ClientApp.pdb

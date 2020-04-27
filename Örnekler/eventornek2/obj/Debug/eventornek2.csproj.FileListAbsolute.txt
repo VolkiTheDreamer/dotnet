@@ -1,0 +1,11 @@
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\bin\Debug\eventornek2.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\bin\Debug\eventornek2.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\bin\Debug\eventornek2.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\obj\Debug\eventornek2.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\obj\Debug\eventornek2.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\obj\Debug\eventornek2.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\obj\Debug\eventornek2.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\obj\Debug\eventornek2.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\obj\Debug\eventornek2.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\obj\Debug\eventornek2.Form2.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\eventornek2\obj\Debug\eventornek2.Form3.resources

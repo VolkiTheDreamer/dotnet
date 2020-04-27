@@ -1,0 +1,18 @@
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\Web Site TOC.exe.config
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\Web Site TOC.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\Web Site TOC.pdb
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\EPPlus.dll
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\HtmlAgilityPack.dll
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\EPPlus.xml
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\HtmlAgilityPack.pdb
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\HtmlAgilityPack.xml
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\obj\Debug\Web_Site_TOC.Form1.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\obj\Debug\Web_Site_TOC.Properties.Resources.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\obj\Debug\Web Site TOC.csproj.GenerateResource.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\obj\Debug\Web Site TOC.csproj.CoreCompileInputs.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\obj\Debug\Web Site TOC.csproj.CopyComplete
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\obj\Debug\Web Site TOC.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\obj\Debug\Web Site TOC.pdb
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\MyUtility.dll
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\bin\Debug\MyUtility.pdb
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Web Site TOC\obj\Debug\Web Site TOC.csprojAssemblyReference.cache

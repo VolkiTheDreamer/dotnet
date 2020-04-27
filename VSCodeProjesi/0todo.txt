@@ -1,0 +1,26 @@
+yapılacak işler
+
+termianli aç
+dotnet new console-->bu gerekli klasör ve dosyaları oluşturur, including program.cs
+terminalede dotnet run dersen terminalde çalışıtırır.
+ama bize d ebug lazım, F5 diyelim ve jsonları doldurtalım
+
+add conffiguration-->.net core launch console
+program satırını değiştir, "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>", iken, bunu şöyle yap
+"${workspaceFolder}/bin/Debug/netcoreapp2.2/VSCodeProjesi.dll",
+çalışştır, task yok, ekeliyim mi diyecek
+evet diyelim
+
+Önemli:https://code.visualstudio.com/docs/languages/csharp sayfasında belirtiğine göre sadece .net core destekleniyor. winforös ve asp.net mvs  falan desteklnemniyor mesela.
+
+nuget kurma: dotnet add package Newtonsoft.Json
+
+yeni bi referans ekleyeceğin zaman. csproj dosyasına aşağıdaki gibi ekle
+<ItemGroup>
+  <Reference Include="Xamarin.iOS" /> -->bu yerel kütüthane
+  <PackageReference Include="Realm" Version="2.1.0" />  -->bu nuget, attributeli
+  <PackageReference Include="xunit"> -->bu da nuget, inner elementli
+    <Version>2.3.1</Version>
+  </PackageReference>
+</ItemGroup>
+dotnet restore

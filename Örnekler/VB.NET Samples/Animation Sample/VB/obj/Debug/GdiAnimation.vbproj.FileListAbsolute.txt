@@ -1,0 +1,10 @@
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\bin\Debug\GdiAnimation.exe
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\bin\Debug\GdiAnimation.pdb
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\bin\Debug\GdiAnimation.xml
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\obj\Debug\GdiAnimation.MainForm.resources
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\obj\Debug\GdiAnimation.Resources.resources
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\obj\Debug\GdiAnimation.vbproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\obj\Debug\GdiAnimation.exe
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\obj\Debug\GdiAnimation.xml
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\VB.net döküman\Official Visual Studio 2008 VB.NET Samples\Animation Sample\VB\obj\Debug\GdiAnimation.pdb

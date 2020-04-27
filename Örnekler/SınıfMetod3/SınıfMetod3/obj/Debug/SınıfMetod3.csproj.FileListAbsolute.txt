@@ -1,0 +1,12 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod3\bin\Debug\SınıfMetod3.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod3\bin\Debug\SınıfMetod3.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod3\bin\Debug\SınıfMetod3.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod3\obj\Debug\SınıfMetod3.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod3\obj\Debug\SınıfMetod3.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\SınıfMetod3\obj\Debug\SınıfMetod3.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod3\SınıfMetod3\bin\Debug\SınıfMetod3.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod3\SınıfMetod3\obj\Debug\SınıfMetod3.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod3\SınıfMetod3\obj\Debug\SınıfMetod3.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod3\SınıfMetod3\bin\Debug\SınıfMetod3.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod3\SınıfMetod3\bin\Debug\SınıfMetod3.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\SınıfMetod3\SınıfMetod3\obj\Debug\SınıfMetod3.csprojResolveAssemblyReference.cache

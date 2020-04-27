@@ -1,0 +1,10 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\NotDefteri\bin\Debug\NotDefteri.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\bin\Debug\NotDefteri.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\bin\Debug\NotDefteri.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\bin\Debug\NotDefteri.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\obj\Debug\NotDefteri.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\obj\Debug\NotDefteri.Form1.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\obj\Debug\NotDefteri.Properties.Resources.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\obj\Debug\NotDefteri.csproj.GenerateResource.Cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\obj\Debug\NotDefteri.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\NotDefteri\NotDefteri\obj\Debug\NotDefteri.pdb

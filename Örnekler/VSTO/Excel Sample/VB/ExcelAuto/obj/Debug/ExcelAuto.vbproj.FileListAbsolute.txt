@@ -1,0 +1,1 @@
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\vbnet\VSTO\Excel Sample\VB\ExcelAuto\obj\Debug\ExcelAuto.vbproj.ResolveComReference.cache

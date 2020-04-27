@@ -1,0 +1,329 @@
+﻿'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe derlemesinde RunInstallerAttribute.Yes özniteliğine sahip ortak yükleyiciler bulunamadı.
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe derlemesinde RunInstallerAttribute.Yes özniteliğine sahip ortak yükleyiciler bulunamadı.
+Yükleyici olmadığından InstallState dosyası kaldırılmalı.
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+Service1 hizmeti yükleniyor...
+Application günlüğünde Service1 EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi geri alınıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+Service1 kaynağı için olay günlüğü önceki duruma döndürülüyor.
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+Service1 hizmeti yükleniyor...
+Application günlüğünde Service1 EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi geri alınıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+Service1 kaynağı için olay günlüğü önceki duruma döndürülüyor.
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+beforeshuts hizmeti yükleniyor...
+Application günlüğünde beforeshuts EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi geri alınıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+beforeshuts kaynağı için olay günlüğü önceki duruma döndürülüyor.
+System.Diagnostics.EventLogInstaller yükleyicisinin Geri Alma aşamasında özel durum oluştu.
+System.Security.SecurityException: Kaynak bulunamadı; ancak olay günlüklerinin bazılarında veya hiçbirinde arama yapılamadı. Erişilemeyen günlükler: Security.
+Yüklemenin Geri Alma aşamasında özel durum oluştu. Bu özel durum yoksayılacak ve geri alma devam edecek. Ancak geri alma tamamlandıktan sonra makine ilk durumuna tamamen dönemeyebilir.
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+beforeshut-s hizmeti yükleniyor...
+beforeshut-s hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshut-s EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+beforeshut-s EventLog kaynağı kaldırılıyor.
+System.Diagnostics.EventLogInstaller yükleyicisinin kaldırılmasında özel durum oluştu.
+System.Security.SecurityException: İstenen kayıt defteri erişimine izin verilmiyor.
+Yükleme kaldırılırken özel durum oluştu. Bu özel durum yoksayılacak ve yükleme kaldırma devam edecek. Ancak yükleme kaldırıldıktan sonra uygulama tamamen kaldırılamamış olabilir.
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+beforeshut-s EventLog kaynağı kaldırılıyor.
+beforeshut-s hizmeti sistemden kaldırılıyor...
+beforeshut-s hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+beforeshut-s hizmeti yükleniyor...
+beforeshut-s hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshut-s EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+'C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   assemblypath = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+   logfile = C:\Users\Volkan\OneDrive\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+beforeshut-s EventLog kaynağı kaldırılıyor.
+beforeshut-s hizmeti sistemden kaldırılıyor...
+beforeshut-s hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshut-s hizmeti yükleniyor...
+beforeshut-s hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshut-s EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshut-s EventLog kaynağı kaldırılıyor.
+beforeshut-s hizmeti sistemden kaldırılıyor...
+beforeshut-s hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshut-s hizmeti yükleniyor...
+beforeshut-s hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshut-s EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshut-s EventLog kaynağı kaldırılıyor.
+beforeshut-s hizmeti sistemden kaldırılıyor...
+beforeshut-s hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki hizmeti yükleniyor...
+beforeshutdown_volki hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshutdown_volki EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+beforeshutdown_volki hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki hizmeti yükleniyor...
+beforeshutdown_volki hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshutdown_volki EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+beforeshutdown_volki hizmeti sistemden başarıyla kaldırıldı.
+beforeshutdown_volki hizmetini durdurma girişimi.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki hizmeti yükleniyor...
+beforeshutdown_volki hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshutdown_volki EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+beforeshutdown_volki hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki hizmeti yükleniyor...
+beforeshutdown_volki hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshutdown_volki EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+beforeshutdown_volki hizmeti sistemden başarıyla kaldırıldı.
+beforeshutdown_volki hizmetini durdurma girişimi.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki hizmeti yükleniyor...
+beforeshutdown_volki hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshutdown_volki EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+beforeshutdown_volki hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki hizmeti yükleniyor...
+beforeshutdown_volki hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshutdown_volki EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+beforeshutdown_volki hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki hizmeti yükleniyor...
+beforeshutdown_volki hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshutdown_volki EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+beforeshutdown_volki hizmeti sistemden başarıyla kaldırıldı.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+Uyarı: beforeshutdown_volki kaynağı yerel makinede kayıtlı değil.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+System.ServiceProcess.ServiceInstaller yükleyicisinin kaldırılmasında özel durum oluştu.
+System.ComponentModel.Win32Exception: Belirtilen hizmet, yüklü bir hizmet olarak yok
+Yükleme kaldırılırken özel durum oluştu. Bu özel durum yoksayılacak ve yükleme kaldırma devam edecek. Ancak yükleme kaldırıldıktan sonra uygulama tamamen kaldırılamamış olabilir.
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yükleniyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki hizmeti yükleniyor...
+beforeshutdown_volki hizmeti başarıyla yüklendi.
+Application günlüğünde beforeshutdown_volki EventLog kaynağı oluşturuluyor...
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi tamamlanıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+'C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe' derlemesi yüklemesi kaldırılıyor.
+Etkilenen parametreler şunlardır:
+   logtoconsole = 
+   logfile = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.InstallLog
+   assemblypath = C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\beforeshutdown\beforeshutdown\bin\Debug\beforeshutdown.exe
+beforeshutdown_volki EventLog kaynağı kaldırılıyor.
+beforeshutdown_volki hizmeti sistemden kaldırılıyor...
+beforeshutdown_volki hizmeti sistemden başarıyla kaldırıldı.

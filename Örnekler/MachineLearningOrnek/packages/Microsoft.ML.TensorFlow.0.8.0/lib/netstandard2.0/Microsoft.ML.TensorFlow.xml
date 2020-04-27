@@ -1,0 +1,2169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.ML.TensorFlow</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.ML.TensorflowCatalog">
+            <summary>
+        The <see cref="T:Microsoft.ML.Transforms.TensorFlowTransform" /> is used in following two scenarios.
+        <list type="number">
+        <item>
+          <description>
+            Scoring with pretrained TensorFlow model: In this mode, the transform extracts hidden layers' values from a pre-trained Tensorflow model and uses outputs as features in ML.Net pipeline.
+          </description>
+        </item>
+        <item>
+          <description>
+            Retraining of TensorFlow model: In this mode, the transform retrains a TensorFlow model using the user data passed through ML.Net pipeline. Once the model is trained, it's outputs can be used as features for scoring.
+          </description>
+        </item>
+      </list>
+      </summary><remarks>
+        <para>
+          The TensorFlowTransform extracts specified outputs using a pre-trained <a href="https://www.tensorflow.org">Tensorflow</a> model.
+          Optionally, it can further retrain TensorFlow model on user data to adjust model parameters on the user data ( also know as "Transfer Learning").
+
+          For scoring, the transform takes as inputs the pre-trained Tensorflow model, the names of the input nodes, and names of the output nodes whose values we want to extract.
+          For retraining, the transform also requires training related parameters such as the names of optimization operation in the TensorFlow graph, the name of the learning rate operation in the graph and its value, name of the operations in the graph to compute loss and performance metric etc.
+        </para>
+        <para>
+          This transform requires the <a href="https://dotnet.myget.org/feed/dotnet-core/package/nuget/Microsoft.ML.TensorFlow">Microsoft.ML.TensorFlow</a> nuget to be installed.
+          The TensorFlowTransform has the following assumptions regarding input, output and processing of data.
+        </para>
+        <list type="number">
+          <item>
+            <description>
+              For the input model, currently the TensorFlowTransform supports both the <a href="https://www.tensorflow.org/mobile/prepare_models">Frozen model</a> format and also the <a href="https://www.tensorflow.org/guide/saved_model#build_and_load_a_savedmodel">SavedModel</a> format.
+              However, retraining of the model is only possible for the <a href="https://www.tensorflow.org/guide/saved_model#build_and_load_a_savedmodel">SavedModel</a> format.
+              <a href="https://www.tensorflow.org/guide/checkpoints">Checkpoint</a> format is currently neither supported for scoring nor for retraining due lack of TensorFlow C-API support for loading it.
+            </description>
+          </item>
+          <item>
+            <description>The transform supports scoring only one example at a time. However, retraining can be performed in batches.</description>
+          </item>
+          <item>
+            <description>The name of input column(s) should match the name of input(s) in TensorFlow model.</description>
+          </item>
+          <item>
+            <description>The name of each output column should match one of the operations in the TensorFlow graph.</description>
+          </item>
+          <item>
+            <description>Currently, float, double, int, long, uint, ulong are the acceptable data types for input/output.</description>
+          </item>
+          <item>
+            <description>Upon success, the transform will introduce a new column in <see cref="T:Microsoft.ML.Runtime.Data.IDataView" /> corresponding to each output column specified.</description>
+          </item>
+        </list>
+
+        The inputs and outputs of a TensorFlow model can be obtained using the <see cref="M:Microsoft.ML.Transforms.TensorFlowModelInfo.GetModelSchema" /> or <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms/README.md#inspecting-graphs">
+          <code>summarize_graph</code> tools.
+        </a>.
+
+      </remarks>
+        </member>
+        <member name="M:Microsoft.ML.TensorflowCatalog.ScoreTensorFlowModel(Microsoft.ML.Runtime.TransformsCatalog,System.String,System.String[],System.String[])">
+            <summary>
+            Scores a dataset using a pre-traiend TensorFlow model located in <paramref name="modelLocation"/>.
+            </summary>
+            <param name="catalog">The transform's catalog.</param>
+            <param name="modelLocation">Location of the TensorFlow model.</param>
+            <param name="inputs"> The names of the model inputs.</param>
+            <param name="outputs">The names of the requested model outputs.</param>
+        </member>
+        <member name="M:Microsoft.ML.TensorflowCatalog.ScoreTensorFlowModel(Microsoft.ML.Runtime.TransformsCatalog,Microsoft.ML.Transforms.TensorFlowModelInfo,System.String[],System.String[])">
+            <summary>
+            Scores a dataset using a pre-traiend TensorFlow model specified via <paramref name="tensorFlowModel"/>.
+            </summary>
+            <param name="catalog">The transform's catalog.</param>
+            <param name="tensorFlowModel">The pre-trained TensorFlow model.</param>
+            <param name="inputs"> The names of the model inputs.</param>
+            <param name="outputs">The names of the requested model outputs.</param>
+        </member>
+        <member name="M:Microsoft.ML.TensorflowCatalog.TensorFlow(Microsoft.ML.Runtime.TransformsCatalog,Microsoft.ML.Transforms.TensorFlowTransform.Arguments)">
+            <summary>
+            Score or Retrain a tensorflow model (based on setting of the <see cref="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.ReTrain"/>) setting.
+            The model is specified in the <see cref="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.ModelLocation"/>.
+            </summary>
+            <param name="catalog">The transform's catalog.</param>
+            <param name="args">The <see cref="T:Microsoft.ML.Transforms.TensorFlowTransform.Arguments"/> specifying the inputs and the settings of the <see cref="T:Microsoft.ML.Transforms.TensorFlowEstimator"/>.</param>
+        </member>
+        <member name="M:Microsoft.ML.TensorflowCatalog.TensorFlow(Microsoft.ML.Runtime.TransformsCatalog,Microsoft.ML.Transforms.TensorFlowTransform.Arguments,Microsoft.ML.Transforms.TensorFlowModelInfo)">
+            <summary>
+            Scores or retrains (based on setting of the <see cref="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.ReTrain"/>) a pre-traiend TensorFlow model specified via <paramref name="tensorFlowModel"/>.
+            </summary>
+            <param name="catalog">The transform's catalog.</param>
+            <param name="args">The <see cref="T:Microsoft.ML.Transforms.TensorFlowTransform.Arguments"/> specifying the inputs and the settings of the <see cref="T:Microsoft.ML.Transforms.TensorFlowEstimator"/>.</param>
+            <param name="tensorFlowModel">The pre-trained TensorFlow model.</param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlowModelInfo">
+            <summary>
+            This class holds the information related to TensorFlow model and session.
+            It provides a convenient way to query model schema as follows.
+            <list type="bullet">
+               <item>
+                 <description>Get complete schema by calling <see cref="M:Microsoft.ML.Transforms.TensorFlowModelInfo.GetModelSchema"/>.</description>
+               </item>
+               <item>
+                 <description>Get schema related to model input(s) by calling <see cref="M:Microsoft.ML.Transforms.TensorFlowModelInfo.GetInputSchema"/>.</description>
+               </item>
+            </list>
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlowModelInfo.#ctor(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.Transforms.TensorFlow.TFSession,System.String)">
+            <summary>
+            Instantiates <see cref="T:Microsoft.ML.Transforms.TensorFlowModelInfo"/>.
+            </summary>
+            <param name="env">An <see cref="T:Microsoft.ML.Runtime.IHostEnvironment"/> object.</param>
+            <param name="session">TensorFlow session object.</param>
+            <param name="modelLocation">Location of the model from where <paramref name="session"/> was loaded.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlowModelInfo.GetModelSchema">
+            <summary>
+            Get <see cref="T:Microsoft.ML.Runtime.Data.ISchema"/> for complete model. Every node in the TensorFlow model will be included in the <see cref="T:Microsoft.ML.Runtime.Data.ISchema"/> object.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlowModelInfo.GetInputSchema">
+            <summary>
+            Get <see cref="T:Microsoft.ML.Runtime.Data.ISchema"/> for only those nodes which are marked "Placeholder" in the TensorFlow model.
+            This method is convenient for exploring the model input(s) in case TensorFlow graph is very large.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlowTransform">
+            <summary>
+        The <see cref="T:Microsoft.ML.Transforms.TensorFlowTransform" /> is used in following two scenarios.
+        <list type="number">
+        <item>
+          <description>
+            Scoring with pretrained TensorFlow model: In this mode, the transform extracts hidden layers' values from a pre-trained Tensorflow model and uses outputs as features in ML.Net pipeline.
+          </description>
+        </item>
+        <item>
+          <description>
+            Retraining of TensorFlow model: In this mode, the transform retrains a TensorFlow model using the user data passed through ML.Net pipeline. Once the model is trained, it's outputs can be used as features for scoring.
+          </description>
+        </item>
+      </list>
+      </summary><remarks>
+        <para>
+          The TensorFlowTransform extracts specified outputs using a pre-trained <a href="https://www.tensorflow.org">Tensorflow</a> model.
+          Optionally, it can further retrain TensorFlow model on user data to adjust model parameters on the user data ( also know as "Transfer Learning").
+
+          For scoring, the transform takes as inputs the pre-trained Tensorflow model, the names of the input nodes, and names of the output nodes whose values we want to extract.
+          For retraining, the transform also requires training related parameters such as the names of optimization operation in the TensorFlow graph, the name of the learning rate operation in the graph and its value, name of the operations in the graph to compute loss and performance metric etc.
+        </para>
+        <para>
+          This transform requires the <a href="https://dotnet.myget.org/feed/dotnet-core/package/nuget/Microsoft.ML.TensorFlow">Microsoft.ML.TensorFlow</a> nuget to be installed.
+          The TensorFlowTransform has the following assumptions regarding input, output and processing of data.
+        </para>
+        <list type="number">
+          <item>
+            <description>
+              For the input model, currently the TensorFlowTransform supports both the <a href="https://www.tensorflow.org/mobile/prepare_models">Frozen model</a> format and also the <a href="https://www.tensorflow.org/guide/saved_model#build_and_load_a_savedmodel">SavedModel</a> format.
+              However, retraining of the model is only possible for the <a href="https://www.tensorflow.org/guide/saved_model#build_and_load_a_savedmodel">SavedModel</a> format.
+              <a href="https://www.tensorflow.org/guide/checkpoints">Checkpoint</a> format is currently neither supported for scoring nor for retraining due lack of TensorFlow C-API support for loading it.
+            </description>
+          </item>
+          <item>
+            <description>The transform supports scoring only one example at a time. However, retraining can be performed in batches.</description>
+          </item>
+          <item>
+            <description>The name of input column(s) should match the name of input(s) in TensorFlow model.</description>
+          </item>
+          <item>
+            <description>The name of each output column should match one of the operations in the TensorFlow graph.</description>
+          </item>
+          <item>
+            <description>Currently, float, double, int, long, uint, ulong are the acceptable data types for input/output.</description>
+          </item>
+          <item>
+            <description>Upon success, the transform will introduce a new column in <see cref="T:Microsoft.ML.Runtime.Data.IDataView" /> corresponding to each output column specified.</description>
+          </item>
+        </list>
+
+        The inputs and outputs of a TensorFlow model can be obtained using the <see cref="M:Microsoft.ML.Transforms.TensorFlowModelInfo.GetModelSchema" /> or <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms/README.md#inspecting-graphs">
+          <code>summarize_graph</code> tools.
+        </a>.
+
+      </remarks>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.ModelLocation">
+            <summary>
+            Location of the TensorFlow model.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.InputColumns">
+            <summary>
+            The names of the model inputs.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.OutputColumns">
+            <summary>
+            The names of the requested model outputs.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.LabelColumn">
+            <summary>
+            The name of the label column in <see cref="T:Microsoft.ML.Runtime.Data.IDataView"/> that will be mapped to label node in TensorFlow model.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.TensorFlowLabel">
+            <summary>
+            The name of the label in TensorFlow model.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.OptimizationOperation">
+            <summary>
+            Name of the operation in TensorFlow graph that is used for optimizing parameters in the graph.
+            Usually it is the name specified in the minimize method of optimizer in python
+            e.g. optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost, name = "SGDOptimizer").
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.LossOperation">
+            <summary>
+            The name of the operation in the TensorFlow graph to compute training loss (Optional).
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.MetricOperation">
+            <summary>
+            The name of the operation in the TensorFlow graph to compute performance metric during training (Optional).
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.BatchSize">
+            <summary>
+            Number of samples to use for mini-batch training.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.Epoch">
+            <summary>
+            Number of training iterations.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.LearningRateOperation">
+            <summary>
+            The name of the operation in the TensorFlow graph which sets optimizer learning rate (Optional).
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.LearningRate">
+            <summary>
+            Learning rate to use during optimization.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.SaveLocationOperation">
+            <summary>
+            Name of the input in TensorFlow graph that specifiy the location for saving/restoring models to/from disk.
+            This parameter is set by different kinds of 'Savers' in TensorFlow and users don't have control over this.
+            Therefore, its highly unlikely that this parameter is changed from its default value of 'save/Const'.
+            Please change it cautiously if you need to.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.SaveOperation">
+            <summary>
+            Name of the operation in TensorFlow graph that is used for saving/restoring models to/from disk.
+            This parameter is set by different kinds of 'Savers' in TensorFlow and users don't have control over this.
+            Therefore, its highly unlikely that this parameter is changed from its default value of 'save/control_dependency'.
+            Please change it cautiously if you need to.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlowTransform.Arguments.ReTrain">
+            <summary>
+            Needed for command line to specify if retraining is requested.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlowTransform.Create(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.Runtime.Data.IDataView,System.String,System.String[],System.String[])">
+            <summary>
+            Creates <see cref="T:Microsoft.ML.Runtime.Data.IDataTransform"/> using <see cref="T:Microsoft.ML.Transforms.TensorFlowTransform"/>.
+            This convenience method get the model file as input and loads the model internally.
+            If the model is already loaded please <see cref="M:Microsoft.ML.Transforms.TensorFlowTransform.Create(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.Runtime.Data.IDataView,Microsoft.ML.Transforms.TensorFlowModelInfo,System.String[],System.String[])"/> to avoid reloading of model.
+            </summary>
+            <param name="env">Host Environment.</param>
+            <param name="input">Input <see cref="T:Microsoft.ML.Runtime.Data.IDataView"/>. This is the output from previous transform or loader.</param>
+            <param name="model">Path to the TensorFlow model. </param>
+            <param name="names">Name of the output column(s). Keep it same as in the Tensorflow model.</param>
+            <param name="source">Name of the input column(s). Keep it same as in the Tensorflow model.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlowTransform.Create(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.Runtime.Data.IDataView,Microsoft.ML.Transforms.TensorFlowModelInfo,System.String[],System.String[])">
+            <summary>
+            Creates <see cref="T:Microsoft.ML.Runtime.Data.IDataTransform"/> using <see cref="T:Microsoft.ML.Transforms.TensorFlowTransform"/>.
+            This convenience method avoids reloading of TensorFlow model.
+            It is useful in a situation where user has already loaded TensorFlow model using <see cref="M:Microsoft.ML.Transforms.TensorFlow.TensorFlowUtils.LoadTensorFlowModel(Microsoft.ML.Runtime.IHostEnvironment,System.String)"/> for inspecting model schema.
+            </summary>
+            <param name="env">Host Environment.</param>
+            <param name="input">Input <see cref="T:Microsoft.ML.Runtime.Data.IDataView"/>. This is the output from previous transform or loader.</param>
+            <param name="tfModelInfo"> <see cref="T:Microsoft.ML.Transforms.TensorFlowModelInfo"/> object created with <see cref="M:Microsoft.ML.Transforms.TensorFlow.TensorFlowUtils.LoadTensorFlowModel(Microsoft.ML.Runtime.IHostEnvironment,System.String)"/>.</param>
+            <param name="names">Name of the output column(s). Keep it same as in the Tensorflow model.</param>
+            <param name="source">Name of the input column(s). Keep it same as in the Tensorflow model.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlowTransform.UpdateModelOnDisk(System.String,Microsoft.ML.Transforms.TensorFlowTransform.Arguments)">
+            <summary>
+            Updates the model on the disk.
+            After retraining Session and Graphs are both up-to-date
+            However model on disk is not which is used to serialzed to ML.Net stream
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlowStaticExtensions.ApplyTensorFlowGraph(Microsoft.ML.StaticPipe.Vector{System.Single},System.String)">
+            <summary>
+            Load the TensorFlow model from <paramref name="modelFile"/> and run it on the input column and extract one output column.
+            The inputs and outputs are matched to TensorFlow graph nodes by name.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlowStaticExtensions.ApplyTensorFlowGraph(Microsoft.ML.StaticPipe.Vector{System.Single},Microsoft.ML.Transforms.TensorFlowModelInfo)">
+            <summary>
+            Run a TensorFlow model provided through <paramref name="tensorFlowModel"/> on the input column and extract one output column.
+            The inputs and outputs are matched to TensorFlow graph nodes by name.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.MonoPInvokeCallbackAttribute">
+            <summary>
+            This attribute can be applied to callback functions that will be invoked
+            from unmanaged code to managed code.
+            </summary>
+            <remarks>
+            <code>
+            [TensorFlow.MonoPInvokeCallback (typeof (BufferReleaseFunc))]
+            internal static void MyFreeFunc (IntPtr data, IntPtr length){..}
+            </code>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.MonoPInvokeCallbackAttribute.#ctor(System.Type)">
+            <summary>
+            Use this constructor to annotate the type of the callback function that
+            will be invoked from unmanaged code.
+            </summary>
+            <param name="t">T.</param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFBuffer">
+            <summary>
+            Holds a block of data, suitable to pass, or retrieve from TensorFlow.
+            </summary>
+            <remarks>
+            <para>
+            Use the TFBuffer to blobs of data into TensorFlow, or to retrieve blocks
+            of data out of TensorFlow.
+            </para>
+            <para>
+            There are two constructors to wrap existing data, one to wrap blocks that are
+            pointed to by an IntPtr and one that takes a byte array that we want to wrap.
+            </para>
+            <para>
+            The empty constructor can be used to create a new TFBuffer that can be populated
+            by the TensorFlow library and returned to user code.
+            </para>
+            <para>
+            Typically, the data consists of a serialized protocol buffer, but other data
+            may also be held in a buffer.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFBuffer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFBuffer"/> class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFBuffer.BufferReleaseFunc">
+             <summary>
+             Signature of the method that is invoked to release the data.
+             </summary>
+             <remarks>
+             Methods of this signature are invoked with the data pointer and the
+             lenght pointer when then TFBuffer no longer needs to hold on to the
+             data.  If you are using this on platforms with static compilation
+             like iOS, you need to annotate your callback with the MonoPInvokeCallbackAttribute,
+             like this:
+            
+             <code>
+             [TensorFlow.MonoPInvokeCallback (typeof (BufferReleaseFunc))]
+             internal static void MyFreeFunc (IntPtr data, IntPtr length){..}
+             </code>
+             </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFBuffer.#ctor(System.IntPtr,System.Int64,Microsoft.ML.Transforms.TensorFlow.TFBuffer.BufferReleaseFunc)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFBuffer"/> by wrapping the unmanaged resource pointed by the buffer.
+            </summary>
+            <param name="buffer">Pointer to the data that will be wrapped.</param>
+            <param name="size">The size of the buffer to wrap.</param>
+            <param name="release">Optional, if not null, this method will be invoked to release the block.</param>
+            <remarks>
+            This constructor wraps the buffer as a the data to be held by the <see cref="T:TensorFlow.TFBuffer"/>,
+            if the release parameter is null, then you must ensure that the data is not released before the TFBuffer
+            is no longer in use.   If the value is not null, the provided method will be invoked to release
+            the data when the TFBuffer is disposed, or the contents of the buffer replaced.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFBuffer.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFBuffer"/> by making a copy of the provided byte array.
+            </summary>
+            <param name="buffer">Buffer of data that will be wrapped.</param>
+            <remarks>
+            This constructor makes a copy of the data into an unmanaged buffer,
+            so the byte array is not pinned.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFBuffer.#ctor(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFBuffer"/> by making a copy of the provided byte array.
+            </summary>
+            <param name="buffer">Buffer of data that will be wrapped.</param>
+            <param name="start">Starting offset into the buffer to wrap.</param>
+            <param name="count">Number of bytes from the buffer to keep.</param>
+            <remarks>
+            This constructor makes a copy of the data into an unmanaged buffer,
+            so the byte array is not pinned.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFBuffer.ToSpan">
+            <summary>
+            Returns a readonly span representing the data wrapped by this buffer.
+            </summary>
+            <returns>The array.</returns>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFTensor">
+             <summary>
+             TFTensor holds a multi-dimensional array of elements of a single data type.
+             </summary>
+             <remarks>
+             <para>
+             You can create tensors with the various constructors in this class, or using
+             the implicit conversions from various data types into a TFTensor, including
+             the creation of tensors from simple constants (returning a tensor that reprensets
+             a scalar, that is, it is a 0D tensor), arrays (returning a tensor of a single
+             dimension, 1D) or arbitrary multidimensional arrays.
+            </para>
+             <para>
+               Given a tensor, you can retrieve the number of dimensions in it via the
+               NumDims property, or you can retrieve the shape of a tensor, that is how many
+               elements on each dimension the tensor has, by fetching the Shape property.
+             </para>
+             <para>
+             The implicit conversions for basic types produce tensors of one dimesion with
+             a single element, while the implicit conversion from an array, expects a multi-dimensional
+             array that is converted into a tensor of the right dimensions.
+             </para>
+             <para>
+             The special "String" tensor data type that you will find in TensorFlow documentation
+             really represents a byte array.   You can create string tensors by using the <see cref="M:TensorFlow.TFTensor.CreateString"/>
+             method that takes a byte array buffer as input.
+             </para>
+             <example>
+             <code>
+               TFTensor scalar = 1;           // Creates a 0D tensor, for the integer value 1
+               int d = scalar.NumDims;        // d will be equal to zero, as it is a 0D tensor
+               long [] shape = scalar.Shape   // returns an empty array, as it is a 0D tensor
+            
+               TFTensor list = new [] {1,2,3} // Creates a 1D tensor, or vector, for the values 1, 2, 3
+               d = list.NumDims;              // d will be one
+               shape = list.Shape;            // shape will be an array with a single value 3, representing that the dimension 0 has 3 elements
+            
+                                              // Creates a 3D tensor,
+               TFTensor cube = new [,,] { {{1,2,3},{4,5,6}}}
+               d = cube.NumDims               // d will be 3
+               shape = list.Shape             // shape will be [1,2,3] which is the shape of the above 3D array
+             </code>
+             </example>
+             </remarks>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFTensor.Deallocator">
+            <summary>
+            Signature that methods must conform to to be used to release memory that was passed to a manually allocated TFTensor
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.SByte[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of sbytes
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of bytes
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.Int16[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of shorts
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.UInt16[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of ushorts
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of ints
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.Single[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of floats
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.Double[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of doubles
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.Int64[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of longs
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.FromBuffer(Microsoft.ML.Transforms.TensorFlow.TFShape,System.Numerics.Complex[],System.Int32,System.Int32)">
+            <summary>
+            Creates a new tensor from a portion of an array of Complex numbers
+            </summary>
+            <param name="shape">Represents the tensor shape.</param>
+            <param name="data">The linear array of data, the data is shuffled to fit in the tensor with the specified dimensions.</param>
+            <param name="start">The offset into the provided data array where the data resides.</param>
+            <param name="count">The number of bytes to copy from count into the tensor.</param>
+            <remarks>
+            Use the FromBuffer method to create a tensor that has the specified dimensions
+            and is initialized with data from the data array.   The data is copied starting
+            at the start offset, for count bytes and is laid out into the tensor following the
+            specified dimensions.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Int32)">
+            <summary>
+            Creates a constant tensor with a single dimension from an integer value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Boolean)">
+            <summary>
+            Creates a constant tensor with a single dimension from a boolean value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.SByte)">
+            <summary>
+            Creates a constant tensor with a single dimension from an sbyte value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Int16)">
+            <summary>
+            Creates a constant tensor with a single dimension from a short value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.UInt16)">
+            <summary>
+            Creates a constant tensor with a single dimension from an ushort value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Byte)">
+            <summary>
+            Creates a constant tensor with a single dimension from an byte value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Numerics.Complex)">
+            <summary>
+            Creates a constant tensor with a single dimension from a Complex value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Single)">
+            <summary>
+            Creates a constant tensor with a single dimension from a float value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Double)">
+            <summary>
+            Creates a constant tensor with a single dimension from a double value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Int64)">
+            <summary>
+            Creates a constant tensor with a single dimension from a long value.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Boolean[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of booleans.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.SByte[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of sbytes.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Byte[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of bytes.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Int16[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of shorts.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.UInt16[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of ushorts
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Int32[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of ints.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Single[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of floats.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Double[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of doubles.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Int64[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of longs.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(System.Numerics.Complex[])">
+            <summary>
+            Creates a 1 dimensional tensor from an array of complex numbers.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(Microsoft.ML.Transforms.TensorFlow.TFDataType,System.Int64[],System.IntPtr,System.UIntPtr,Microsoft.ML.Transforms.TensorFlow.TFTensor.Deallocator,System.IntPtr)">
+            <summary>
+            Low-level tensor constructor that creates a tensor from a buffer pointed to by an IntPtr.
+            </summary>
+            <param name="dataType">Specifies the data type held by the tensor, as well as how to interpret the provided data.</param>
+            <param name="dims">Describes the tensor shape, an array that indicates .</param>
+            <param name="data">Pointer to the raw data that will be used to initialize the tensor.</param>
+            <param name="dataSize">The size of the data being passed in.</param>
+            <param name="deallocator">Deallocator method, it is invoked when the tensor is destroyed to release the data pointed to by <paramref name="data"/>.   On platforms like iOS (or other static compilation platforms), yiou must annotate the method specified in the deallocator with a <see cref="T:TensorFlow.MonoPInvokeCallbackAttribute"/>.</param>
+            <param name="deallocatorData">An optional argument of data that is passed to the deallocator method when the tensor is destroyed, you can use this to pass context information.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.#ctor(Microsoft.ML.Transforms.TensorFlow.TFDataType,System.Int64[],System.Int32)">
+            <summary>
+            Low-level: Creates an empty tensor of the specified type and shape, with the specified number of elements
+            </summary>
+            <param name="dataType">Data type.</param>
+            <param name="dims">Tensor shape.</param>
+            <param name="size">Size in bytes of the tensor, this will be the actual memory allocated.</param>
+            <remarks>
+            It is the responsibility of the caller to ensure that the size is correct given the data type size
+            and the tensor dimension specified in dims.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFTensor.TensorType">
+            <summary>
+            Returns the data type for the tensor.
+            </summary>
+            <value>The type of the tensor.</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFTensor.NumDims">
+            <summary>
+            Returns the number of dimensions in the tensor.
+            </summary>
+            <remarks>
+            For single-dimension tensors the return is 1, 2 dimensions is 2 and so on.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.GetTensorDimension(System.Int32)">
+            <summary>
+            Returns the number of elements on a specific dimension in the tensor.
+            </summary>
+            <returns>The tensor dimension.</returns>
+            <param name="dimIndex">Dimension that you are querying.</param>
+            <remarks>
+            If you have a tensor of 3 elements by 5, represented by [3 5],
+            the GetTensorDimension(0) will return 3, the GetTensorDimension(1)
+            will return 5.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFTensor.Data">
+            <summary>
+            Returns a pointer to the raw data in the tensor.
+            </summary>
+            <remarks>
+            The contents of the Data must be interpreted according to the type of the
+            data as described by the DataType property.   The amount of data
+            is given by the the TensorByteSize property.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFTensor.Shape">
+            <summary>
+            Returns the tensor shape, this is an array whose size determines the number of dimensions on the tensor, and each element is the size of the dimension
+            </summary>
+            <remarks>
+                An array of size 0 is used for constants, an array of size 1 is used
+                for single-dimension arrays, where the dimension is the value of the
+                first element.   And so on.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.TypeFromTensorType(Microsoft.ML.Transforms.TensorFlow.TFDataType)">
+            <summary>
+            Converts a <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFDataType"/> to a system type.
+            </summary>
+            <param name="type">The <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFDataType"/> to be converted.</param>
+            <returns>The system type corresponding to the given <paramref name="type"/>.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.TensorTypeFromType(System.Type)">
+            <summary>
+            Converts a system type to a <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFDataType"/>.
+            </summary>
+            <param name="type">The system type to be converted.</param>
+            <returns>The <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFDataType"/> corresponding to the given type.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.GetValue(System.Boolean)">
+            <summary>
+            Returns the value of the Tensor as a C# type if possible, or null if the data type can not be represented in C#
+            </summary>
+            <param name="jagged">
+            The default is set to false, which returns .NET multi-dimensional arrays for multi-dimensional
+            tensors.    This is useful to feed the data back as a TFTensor created from an array.   Set to
+            true if you want to get arrays pointing to arrays, which are slightly more convenient to work
+            with from C#
+            </param>
+            <remarks>
+            Jagged arrays create various intermediate arrays, while multi-dimensional arrays are more
+            efficient memory-wise.
+            </remarks>
+            <returns>The value encodes the contents of the tensor, and could include simple values, arrays and multi-dimensional values.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFTensor"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFTensor"/>.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.CreateScalar``1(``0)">
+            <summary>
+            Creates a tensor representing type T.
+            The tensor will be backed with a managed-heap-allocated T.
+            </summary>
+            <typeparam name="T">.NET type of tensor to create</typeparam>
+            <param name="data">value of tensor</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFTensor.Create``1(``0[],System.Int32,Microsoft.ML.Transforms.TensorFlow.TFShape)">
+            <summary>
+            Creates a tensor representing type T[].
+            T[] will be pinned and wrapped in a tensor.
+            </summary>
+            <typeparam name="T[][]">.NET type of tensor to create</typeparam>
+            <param name="data">value of tensor</param>
+            <param name="count">The number of elements in the tensor</param>
+            <param name="shape">shape of tensor</param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFCore">
+            <summary>
+            Contains TensorFlow fundamental methods and utility functions.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFCore.Version">
+            <summary>
+            Returns the version of the TensorFlow runtime in use.
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFCore.GetDataTypeSize(Microsoft.ML.Transforms.TensorFlow.TFDataType)">
+            <summary>
+            Gets the size in bytes of the specified TensorFlow data type.
+            </summary>
+            <returns>The data type size.</returns>
+            <param name="dt">Dt.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFCore.GetAllOpList">
+            <summary>
+            Retrieves the ProtocolBuffer describing all of the available operations in
+            the TensorFlow library in current use.
+            </summary>
+            <returns>The buffer contains a ProtocolBuffer encoded payload, you need a ProtocolBuffer reader to process the contents.</returns>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFDisposable">
+            <summary>
+            Base class for many TensorFlow data types that provides a common idiom to dispose and
+            release resources associated with the native data types.   Generally, you do not need to use this.
+            </summary>
+            <remarks>
+            <para>
+            This implements the Dispose pattern in a reusable form for TensorFlow types.
+            </para>
+            <para>
+            Subclasses invoke the constructor with the handle that this will wrap, and must
+            override the NativeDispose method (internal) to release the associated resource.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFDisposable.Handle">
+            <summary>
+            Returns the opaque handle to the object that this TFDisposable owns.
+            </summary>
+            <value>The handle.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFDisposable.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFDisposable"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFDisposable.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFDisposable"/> class
+            from the handle that it will wrap.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFDisposable.Dispose">
+            <summary>
+            Releases all resource used by the <see cref="T:TensorFlow.TFDisposable"/> object.
+            </summary>
+            <remarks>Call Dispose when you are finished using the <see cref="T:TensorFlow.TFDisposable"/>. The
+            Dispose method leaves the <see cref="T:TensorFlow.TFDisposable"/> in an unusable state. After
+            calling Dispose, you must release all references to the <see cref="T:TensorFlow.TFDisposable"/> so
+            the garbage collector can reclaim the memory that the <see cref="T:TensorFlow.TFDisposable"/> was occupying.</remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFDisposable.Dispose(System.Boolean)">
+            <summary>
+            Dispose the specified object
+            </summary>
+            <param name="disposing">If set to <c>true</c> it means that this method was called from Dispose, otherwise from the finalizer.</param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFDisposableThreadSafe">
+            <summary>
+            ase class for many TensorFlow data types that provides a common idiom to dispose and
+            release resources associated with the native data types and whose unmanaged resource
+            disposing can be called from a background thread (the finalizer).   Users do not
+            need to deal with this class.
+            </summary>
+            <remarks>
+            Some object deletion APIs in TensorFlow can be invoked from a background thread,
+            so the release methods are suitable to be invoked from the Finalizer thread, in
+            those scenarios, subclass from this class rather than the TFDisposable class.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFDisposableThreadSafe.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFDisposable"/> class
+            from the handle that it will wrap.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFDisposableThreadSafe.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFDisposableThreadSafe"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFDisposableThreadSafe.Dispose(System.Boolean)">
+            <summary>
+            Dispose the object, unlike the default implementat in TFDisposable,
+            this will release the unmanaged resources from a background thread.
+            </summary>
+            <param name="disposing">If set to <c>true</c> disposing.</param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFException">
+            <summary>
+            TensorFlow Exception
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFException"/> class with a message.
+            </summary>
+            <param name="message">Message.</param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFStatus">
+            <summary>
+            Used to track the result of TensorFlow operations.
+            </summary>
+            <remarks>
+            <para>
+            TFStatus is used to track the status of a call to some TensorFlow
+            operations.   Instances of this object are passed to various
+            TensorFlow operations and you can use the <see cref="P:TensorFlow.TFStatus.Ok"/>
+            to quickly check if the operation succeeded, or get more detail from the
+            <see cref="P:TensorFlow.TFStatus.StatusCode"/> and a human-readable text
+            using the <see cref="P:TensorFlow.TFStatus.StatusMessage"/> property.
+            </para>
+            <para>
+            The convenience <see cref="M:TensorFlow.TFStatus.Raise"/> can be used
+            to raise a <see cref="P:TensorFlow.TFException"/> if the status of the
+            operation did not succeed.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFStatus.Default">
+            <summary>
+            Per-thread global status that you can use if you do not need to create a new instance of this object.
+            </summary>
+            <remarks>
+            This is provided as a convenience for APIs that take a TFStatus.   While the TFStatus is usually an
+            optional parameter, when it is made optional, API calls that fail raise an exception.   Use this
+            property to pass a TFStatus without having to allocate a new one.   The problem with this of course
+            is that you risk having multiple parts of your code override this thread-global variable.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFStatus.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFStatus"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFStatus.SetStatusCode(Microsoft.ML.Transforms.TensorFlow.TFCode,System.String)">
+            <summary>
+            Sets the status code on this TFStatus.
+            </summary>
+            <param name="code">Code.</param>
+            <param name="msg">Message.</param>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFStatus.StatusCode">
+            <summary>
+            Gets the status code for the status code.
+            </summary>
+            <value>The status code as an enumeration.</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFStatus.StatusMessage">
+            <summary>
+            Gets a human-readable status message.
+            </summary>
+            <value>The status message.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFStatus.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFStatus"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFStatus"/>.</returns>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFStatus.Ok">
+            <summary>
+            Gets a value indicating whether this <see cref="T:TensorFlow.TFStatus"/> state has been set to ok.
+            </summary>
+            <value><c>true</c> if ok; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFStatus.Error">
+            <summary>
+            Gets a value indicating whether this <see cref="T:TensorFlow.TFStatus"/> state has been set to an error.
+            </summary>
+            <value><c>true</c> if error; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFStatus.Raise">
+            <summary>
+            Convenience method that raises an exception if the current status is an error.
+            </summary>
+            <remarks>
+            You can use this method as a convenience to raise an exception after you
+            invoke an operation if the operation did not succeed.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFSessionOptions">
+            <summary>
+            The session options object holds configuration options that you want to use during your session, like the TensorFlow target or the configuration.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSessionOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFSessionOptions"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSessionOptions.SetTarget(System.String)">
+             <summary>
+             Sets the target in options.
+             </summary>
+             <param name="target">target can be empty, a single entry, or a comma separated list of entries.
+             Each entry is in one of the following formats: "local", ip:port, host:port.</param>
+            
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSessionOptions.SetConfig(System.IntPtr,System.Int32,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Sets the configuration information for the session.
+            </summary>
+            <param name="protoData">Serialized protocol buffer for the tensorflow.ConfigProto message.</param>
+            <param name="length">Length of the buffer.</param>
+            <param name="status">If config was not parsed successfully as a ConfigProto, the error is recorded here.</param>
+            <remarks>
+            The configuration option is a Protocol Buffer representing the tensorflow.ConfigProto
+            </remarks>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFGraph">
+            <summary>
+            Represents a computation graph.  Graphs may be shared between sessions and are thread safe.
+            </summary>
+            <remarks>
+            <para>
+            Graphs consist of operations (represented by TFOperation objects), these can be named, or
+            the runtime will automatically assign a name.
+            </para>
+            <para>
+            For debugging purposes, you might want to group operations together, for this, call the
+            WithScope method with your new scope, which will create a new namespace for your object names.
+            </para>
+            <para>
+            For example, if you call WithScope ("demo"), and add an operation named "add" inside the
+            scope, the full name of the operation will be "demo/add", if you create a new scope inside, say
+            "hot", and add a "sub" operation there the result will be "demo/hot/sub".
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFGraph.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TensorFlow.TFGraph"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFGraph.GetTensorShape(Microsoft.ML.Transforms.TensorFlow.TFOutput,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+             <summary>
+             Returns the shape of a tensor specified in <paramref name="output"/>.
+             </summary>
+            
+             <returns>The tensor shape.    If the number of dimensions in the shape is unknown or the shape is, a scalar, the values in the array will be zero. Otherwise, each element of will be set corresponding to the size of the dimension. An  unknown dimension is represented by -1.</returns>
+             <param name="output">The tensor that you want to look up.  </param>
+             <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFGraph.ToGraphDef(Microsoft.ML.Transforms.TensorFlow.TFBuffer,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Write out a serialized representation of the graph (as a GraphDef protocol buffer message) into <paramref name="outputGraphDef"/>.
+            </summary>
+            <param name="outputGraphDef">Target buffer where the graphs is serialized into.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFGraph.Import(Microsoft.ML.Transforms.TensorFlow.TFBuffer,System.String,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Import a serialized graph into this graph, using the specified prefix.
+            </summary>
+            <returns>The import.</returns>
+            <param name="graphDef">A buffer containing the serialized graph.</param>
+            <param name="prefix">A prefix that will be prepended to names of nodes in the <paramref name="graphDef"/> when they are imported into the graph.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFGraph.Import(Microsoft.ML.Transforms.TensorFlow.TFBuffer,Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Import a serialized graph into this graph, using the specified importing options.
+            </summary>
+            <returns>The import.</returns>
+            <param name="graphDef">A buffer containing the serialized graph.</param>
+            <param name="options">Importing graph options.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFGraph.Import(System.Byte[],System.String,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Import a serialized graph held in a byte array into this graph, using the specified prefix.
+            </summary>
+            <returns>The import.</returns>
+            <param name="buffer">A byte array containing the serialized graph.</param>
+            <param name="prefix">A prefix that will be prepended to names of nodes in the graph when they are imported into the graph.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFGraph.Import(System.Byte[],Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Import a serialized graph held in a byte array into this graph, using the specified import options.
+            </summary>
+            <returns>The import.</returns>
+            <param name="buffer">A byte array containing the serialized graph.</param>
+            <param name="options">Importing graph options.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+            <remarks>
+              If you are tryig to load a file stored using the SavedModel file format, you should use the <see cref="T:TensorFlow.TFSession.FromSavedModel"/> API instead.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFGraph.Item(System.String)">
+            <summary>
+            Gets the <see cref="T:TensorFlow.TFGraph"/> with the specified name, or null if the named operation does not exist in the graph.
+            </summary>
+            <param name="name">Name to lookup.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFGraph.GetEnumerable">
+            <summary>
+            Returns the enumerator that returns all the TFOperations in a graph.
+            </summary>
+            <returns>The enumerator.</returns>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFOperation">
+            <summary>
+            Represents a computation node in the graph.  Tensorflow operations are attached to a <see cref="T:Tensorflow.TFGraph"/>.
+            </summary>
+            <remarks>
+            TFOperations are usually created by  invoking one of the methods in
+            <see cref="T:Tensorflow.TFGraph"/>, but they can also be constructed
+            manually using the low-level <see cref="T:Tensorflow.TFOperationDesc"/> API.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOperation.Handle">
+            <summary>
+            Gets the handle to the unmanaged TF_Operation object.
+            </summary>
+            <value>The handle.</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOperation.Item(System.Int32)">
+            <summary>
+            Returns the handle to the idx-th output of the operation.
+            </summary>
+            <param name="idx">Index of the output in the operation.</param>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOperation.Name">
+            <summary>
+            The name for this operation/
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOperation.NumOutputs">
+            <summary>
+            Gets the number of outputs on this operation.
+            </summary>
+            <value>The number outputs.</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOperation.NumInputs">
+            <summary>
+            Gets the number of inputs for this operation.
+            Import a serialized graph into this graph, using the specified importing options.
+            </summary>
+            <value>The number inputs.</value>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.DeviceType">
+            <summary>
+            Device type
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.DeviceType.CPU">
+            <summary>
+            The device is the Central Processing Unit (CPU)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.DeviceType.GPU">
+            <summary>
+            The device is a Graphics Processing Unit (GPU)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.DeviceType.TPU">
+            <summary>
+            The device is a Tensor Processing Unit (TPU)
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.DeviceAttributes">
+            <summary>
+            Describes the device attributes
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.DeviceAttributes.Name">
+            <summary>
+            The full name of the device (for example, /job:worker/replica:0/...)
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.DeviceAttributes.DeviceType">
+            <summary>
+            Gets the type of the device.
+            </summary>
+            <value>The type of the device.</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.DeviceAttributes.MemoryLimitBytes">
+            <summary>
+            The amount of memory associated with a given device.
+            </summary>
+            <value>The memory limit bytes.</value>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions">
+            <summary>
+            Contains options that are used to control how graph importing works.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions.AddInputMapping(System.String,System.Int32,Microsoft.ML.Transforms.TensorFlow.TFOutput)">
+            <summary>
+            Adds an input mapping from a source name and index to a destination output
+            </summary>
+            <param name="srcName">Source name.</param>
+            <param name="srcIndex">Source index (in the source).</param>
+            <param name="dst">Replacement value for the srcName:srcIndex.</param>
+            <remarks>
+            Set any imported nodes with input `src_name:src_index` to have that input
+            replaced with `dst`. `src_name` refers to a node in the graph to be imported,
+            `dst` references a node already existing in the graph being imported into.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions.AddControlDependency(Microsoft.ML.Transforms.TensorFlow.TFOperation)">
+            <summary>
+            Cause the imported graph to have a control dependency on the provided operation.
+            </summary>
+            <param name="operation">This operation should exist in the graph being imported to.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions.AddReturnOutput(System.String,System.Int32)">
+            <summary>
+            Add an output in the graph definition to be returned via the return outputs parameter.
+            </summary>
+            <param name="operName">Operation name.</param>
+            <param name="index">Operation index.</param>
+            <remarks>
+            If the output is remapped via an input
+            mapping, the corresponding existing tensor in graph will be returned.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions.NumReturnOutputs">
+            <summary>
+            Gets the number return outputs added via AddReturnOutput.
+            </summary>
+            <value>The number return outputs.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions.RemapControlDependency(System.String,Microsoft.ML.Transforms.TensorFlow.TFOperation)">
+            <summary>
+            Sets any imported nodes with a given control input to have it replaced with an operation
+            </summary>
+            <param name="srcName">Node in the graph to be imported.</param>
+            <param name="destination">References an operation that already exists in the graph being imported.</param>
+            <remarks>
+            Set any imported nodes with control input <paramref name="srcName"/> to have that input
+            replaced with <paramref name="destination"/>.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions.SetUniquifyNames(System.Boolean)">
+            <summary>
+            Set whether to uniquify imported operation names.
+            </summary>
+            <param name="uniquifyNames">If set to <c>true</c> imported operation names will be modified if their name already exists in the graph.
+            If set to <c>false</c> conflicting names will be treated as an error.
+            </param>
+            <remarks>
+             Note that this option has no effect if a prefix is set, since the prefix will guarantee all names are
+             Defaults to false.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFImportGraphDefOptions.SetUniquifyPrefix(System.Boolean)">
+            <summary>
+            Sets the uniquify prefix.  This option has no effect if no prefix is specified.
+            </summary>
+            <param name="uniquifyPrefix">If set to <c>true</c> the specified prefix will be modified if it already exists as an
+            operation name or prefix in the graph.
+            If set to <c>false</c> a conflicting prefix will be treated as an error.
+            </param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFSession">
+            <summary>
+            Drives the execution of a graph
+            </summary>
+            <remarks>
+            <para>
+            This creates a new context to execute a TFGraph.   You can use the
+            constructor to create an empty session, or you can load an existing
+            model using the <see cref="M:Microsoft.ML.Transforms.TensorFlow.TFSession.FromSavedModel(Microsoft.ML.Transforms.TensorFlow.TFSessionOptions,Microsoft.ML.Transforms.TensorFlow.TFBuffer,System.String,System.String[],Microsoft.ML.Transforms.TensorFlow.TFGraph,Microsoft.ML.Transforms.TensorFlow.TFBuffer,Microsoft.ML.Transforms.TensorFlow.TFStatus)"/> static method in this class.
+            </para>
+            <para>
+            To execute operations with the graph, call the <see cref="M:Microsoft.ML.Transforms.TensorFlow.TFSession.GetRunner"/>  method
+            which returns an object that you can use to build the operation by providing
+            the inputs, requesting the operations that you want to execute and the desired outputs.
+            </para>
+            <para>
+            The <see cref="M:Microsoft.ML.Transforms.TensorFlow.TFSession.GetRunner"/> method is a high-level helper function that wraps a
+            call to the <see cref="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Run(Microsoft.ML.Transforms.TensorFlow.TFOutput[],Microsoft.ML.Transforms.TensorFlow.TFTensor[],Microsoft.ML.Transforms.TensorFlow.TFOutput[],Microsoft.ML.Transforms.TensorFlow.TFOperation[],Microsoft.ML.Transforms.TensorFlow.TFBuffer,Microsoft.ML.Transforms.TensorFlow.TFBuffer,Microsoft.ML.Transforms.TensorFlow.TFStatus)"/> method which just takes too many parameters that must
+            be kept in sync.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFSession.Graph">
+            <summary>
+            Gets the graph associated with this TensorFlow session.
+            </summary>
+            <value>The graph.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.#ctor(Microsoft.ML.Transforms.TensorFlow.TFGraph,Microsoft.ML.Transforms.TensorFlow.TFSessionOptions,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Creates a new execution session associated with the specified session graph with some configuration options.
+            </summary>
+            <param name="graph">The Graph to which this session is associated.</param>
+            <param name="sessionOptions">Session options.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.#ctor(Microsoft.ML.Transforms.TensorFlow.TFGraph,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Creates a new execution session associated with the specified session graph.
+            </summary>
+            <param name="graph">The Graph to which this session is associated.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.#ctor(Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Creates a new execution session with an empty graph
+            </summary>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+            <remarks>
+            The created graph can be retrieved using the Graph property on the session.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.ListDevices(Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Lists available devices in this session.
+            </summary>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.FromSavedModel(Microsoft.ML.Transforms.TensorFlow.TFSessionOptions,Microsoft.ML.Transforms.TensorFlow.TFBuffer,System.String,System.String[],Microsoft.ML.Transforms.TensorFlow.TFGraph,Microsoft.ML.Transforms.TensorFlow.TFBuffer,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Creates a session and graph from a model stored in the SavedModel file format.
+            </summary>
+            <returns>On success, this populates the provided <paramref name="graph"/> with the contents of the graph stored in the specified model and <paramref name="metaGraphDef"/> with the MetaGraphDef of the loaded model.</returns>
+            <param name="sessionOptions">Session options to use for the new session.</param>
+            <param name="runOptions">Options to use to initialize the state (can be null).</param>
+            <param name="exportDir">must be set to the path of the exported SavedModel.</param>
+            <param name="tags">must include the set of tags used to identify one MetaGraphDef in the SavedModel.</param>
+            <param name="graph">This must be a newly created graph.</param>
+            <param name="metaGraphDef">On success, this will be populated on return with the contents of the MetaGraphDef (can be null).</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+            <remarks>
+            <para>
+            This function creates a new session using the specified <paramref name="sessionOptions"/> and then initializes
+            the state (restoring tensors and other assets) using <paramref name="runOptions"/>.
+            </para>
+            <para>
+            This function loads the data that was saved using the SavedModel file format, as described
+            here: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/README.md
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.CloseSession(Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Closes the session.  Contacts any other processes associated with the session, if applicable.
+            </summary>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+            <remarks>
+            Can not be called after calling DeleteSession.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.DeleteSession(Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Deletes the session.
+            </summary>
+            <param name="status">Status.</param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner">
+            <summary>
+            Use the runner class to easily configure inputs, outputs and targets to be passed to the session runner.
+            </summary>
+            <remarks>
+            <para>
+            The runner has a simple API that allows developers to call the AddTarget, AddInput, AddOutput and Fetch
+            to construct the parameters that will be passed to the TFSession.Run method.
+            </para>
+            <para>
+            Instances of this class are created by calling the GetRunner method on the TFSession.
+            </para>
+            <para>
+            The various methods in this class return an instance to the Runner itsel, to allow
+            to easily construct chains of execution like this:
+            </para>
+            <code>
+            var result = session.GetRunner ().AddINput (myInput).Fetch (MyOutput).Run ();
+            </code>
+            <para>
+            You do not need to chain the operations, this works just the same:
+            </para>
+            <code>
+            runner = session.GetRunner ();
+            runner.AddInput(myInput);
+            runner.Fetch(myOutput);
+            var results = runner.Run();
+            </code>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.AddInput(Microsoft.ML.Transforms.TensorFlow.TFOutput,Microsoft.ML.Transforms.TensorFlow.TFTensor)">
+            <summary>
+            Adds an input to the session
+            </summary>
+            <returns>An instance to the runner, so you can easily chain the operations together.</returns>
+            <param name="input">Incoming port.</param>
+            <param name="value">Value to assing to the incoming port.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.AddInput(System.String,Microsoft.ML.Transforms.TensorFlow.TFTensor)">
+            <summary>
+            Adds an input to the session specified by name, with an optional index in the operation (separated by a colon).
+            </summary>
+            <returns>An instance to the runner, so you can easily chain the operations together.</returns>
+            <param name="input">Incoming port, with an optional index separated by a colon.</param>
+            <param name="value">Value to assing to the incoming port.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.AddTarget(Microsoft.ML.Transforms.TensorFlow.TFOperation[])">
+            <summary>
+            Adds the specified operations as the ones to be retrieved.
+            </summary>
+            <returns>An instance to the runner, so you can easily chain the operations together.</returns>
+            <param name="targets">One or more targets.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.AddTarget(System.String[])">
+            <summary>
+            Adds the specified operation names as the ones to be retrieved.
+            </summary>
+            <returns>An instance to the runner, so you can easily chain the operations together.</returns>
+            <param name="targetNames">One or more target names.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.Fetch(System.String,System.Int32)">
+            <summary>
+            Makes the Run method return the index-th output of the tensor referenced by operation.
+            </summary>
+            <returns>The instance of runner, to allow chaining operations.</returns>
+            <param name="operation">The name of the operation in the graph.</param>
+            <param name="index">The index of the output in the operation.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.Fetch(System.String)">
+            <summary>
+            Makes the Run method return the output of the tensor referenced by operation, the operation string can contain the output index.
+            </summary>
+            <returns>The instance of runner, to allow chaining operations.</returns>
+            <param name="operation">The name of the operation in the graph, which might be a simple name, or it might be name:index,
+            where the index is the .</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.Fetch(Microsoft.ML.Transforms.TensorFlow.TFOutput)">
+            <summary>
+            Makes the Run method return the output of the tensor referenced by output
+            </summary>
+            <returns>The instance of runner, to allow chaining operations.</returns>
+            <param name="output">The output referencing a specified tensor.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.Fetch(Microsoft.ML.Transforms.TensorFlow.TFOutput[])">
+            <summary>
+            Makes the Run method return the output of all the tensor referenced by outputs.
+            </summary>
+            <returns>The instance of runner, to allow chaining operations.</returns>
+            <param name="outputs">The outputs referencing a specified tensor.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.Fetch(System.String[])">
+            <summary>
+            Makes the Run method return the output of all the tensor referenced by outputs.
+            </summary>
+            <returns>The instance of runner, to allow chaining operations.</returns>
+            <param name="outputs">The output sreferencing a specified tensor.</param>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.RunMetadata">
+            <summary>
+            Protocol buffer encoded block containing the metadata passed to the <see cref="M:TensorFlow.TFSession.Run"/> method.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.RunOptions">
+            <summary>
+            Protocol buffer encoded block containing the run options passed to the <see cref="M:TensorFlow.TFSession.Run"/> method.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.Run(Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+             Execute the graph fragments necessary to compute all requested fetches.
+            </summary>
+            <returns>One TFTensor for each call to Fetch that you made, in the order that you made them.</returns>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Runner.Run(Microsoft.ML.Transforms.TensorFlow.TFOutput,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Run the specified operation, by adding it implicity to the output, single return value
+            </summary>
+            <param name="operation">The output of the operation.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+            <remarks>
+            This method is a convenience method, and when you call it, it will clear any
+            calls that you might have done to Fetch() and use the specified operation to Fetch
+            instead.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.GetRunner">
+             <summary>
+             Gets a new runner, this provides a simpler API to prepare the inputs to run on a session
+             </summary>
+             <returns>The runner.</returns>
+             <remarks>
+             The runner has a simple API that allows developers to call the AddTarget, AddInput, AddOutput and Fetch
+             to construct the parameters that will be passed to the TFSession.Run method.
+            
+             The Run method will return an array of TFTensor values, one for each invocation to the Fetch method.
+             </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFSession.Run(Microsoft.ML.Transforms.TensorFlow.TFOutput[],Microsoft.ML.Transforms.TensorFlow.TFTensor[],Microsoft.ML.Transforms.TensorFlow.TFOutput[],Microsoft.ML.Transforms.TensorFlow.TFOperation[],Microsoft.ML.Transforms.TensorFlow.TFBuffer,Microsoft.ML.Transforms.TensorFlow.TFBuffer,Microsoft.ML.Transforms.TensorFlow.TFStatus)">
+            <summary>
+            Executes a pipeline given the specified inputs, inputValues, outputs, targetOpers, runMetadata and runOptions.
+            A simpler API is available by calling the <see cref="M:GetRunner"/> method which performs all the bookkeeping
+            necessary.
+            </summary>
+            <returns>An array of tensors fetched from the requested outputs.</returns>
+            <param name="inputs">Inputs nodes.</param>
+            <param name="inputValues">Input values.</param>
+            <param name="outputs">Output nodes.</param>
+            <param name="targetOpers">Target operations to execute.</param>
+            <param name="runMetadata">Run metadata, a buffer containing the protocol buffer encoded value for https://github.com/tensorflow/tensorflow/blob/r1.9/tensorflow/core/protobuf/config.proto.</param>
+            <param name="runOptions">Run options, a buffer containing the protocol buffer encoded value for https://github.com/tensorflow/tensorflow/blob/r1.9/tensorflow/core/protobuf/config.proto.</param>
+            <param name="status">Status buffer, if specified a status code will be left here, if not specified, a <see cref="T:TensorFlow.TFException"/> exception is raised if there is an error.</param>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFDataType">
+            <summary>
+            The data type for a specific tensor.
+            </summary>
+            <remarks>
+            Tensors have uniform data types, all the elements of the tensor are of this
+            type and they dictate how TensorFlow will treat the data stored.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Unknown">
+            <summary>
+            The TFDataType has not been set
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Float">
+            <summary>
+            Single precission floatint point, 32-bits (C# float)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Double">
+            <summary>
+            Double precission floatint point, 64-bits (C# double)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Int32">
+            <summary>
+            32-bit signed integers (C# int)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.UInt8">
+            <summary>
+            8 bit unsigned integers (C# byte)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Int16">
+            <summary>
+            16-bit signed integers (C# short)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Int8">
+            <summary>
+            8-bit signed integers (C# sbyte)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.String">
+            <summary>
+            Binary blob
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Complex64">
+            <summary>
+            Single precission complex numbers (32-bit floats)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Complex">
+            <summary>
+            32-bit float based complex numbers
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Int64">
+            <summary>
+            64-bit signed integers (C# long)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Bool">
+            <summary>
+            8-bit boolean (C# bool)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.QInt8">
+            <summary>
+            Quantized 8-bit signed integer
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.QUInt8">
+            <summary>
+            Quantized 8-bit unsigned integer
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.QInt32">
+            <summary>
+            Quantized 32-bit signed integer
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.BFloat16">
+            <summary>
+            Float32 truncated to 16 bits.  Only for cast operations.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.QInt16">
+            <summary>
+            Quantized 16-bit signed integer
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.QUInt16">
+            <summary>
+            Quantized 16-bit unsigned integer
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.UInt16">
+            <summary>
+            16-bit unsigned integers (C# long)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Complex128">
+            <summary>
+            Double precission complex numbers (32-bit floats)
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Half">
+            <summary>
+            Half floats - 16-bit half precision floating point.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Resource">
+            <summary>
+            Handle to a mutable resource.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Variant">
+            <summary>
+            Variant data type
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.UInt32">
+            <summary>
+            32-bit unsigned integers
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.UInt64">
+            <summary>
+            64-bit unsigned integers
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFDataType.Float_ref">
+            <summary>
+            Float reference type. It used for defining types of Variables.
+            Please https://www.tensorflow.org/api_docs/python/tf/DType for more details.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFCode">
+            <summary>
+            Status code for invoking a tensorflow operation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.Ok">
+            <summary>
+            Not an error; returned on success
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.Cancelled">
+            <summary>
+            The operation was cancelled (typically by the caller).
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.Unknown">
+            <summary>
+            Unknown error.  An example of where this error may be returned is
+            if a Status value received from another address space belongs to
+            an error-space that is not known in this address space.  Also
+            errors raised by APIs that do not return enough error information
+            may be converted to this error.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.InvalidArgument">
+            <summary>
+            Client specified an invalid argument.  Note that this differs
+            from FailedPrecondition.  InvalidArgumentindicates arguments
+            that are problematic regardless of the state of the system
+            (for example, a malformed file name).
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.DeadlineExceeded">
+            <summary>
+            Deadline expired before operation could complete.  For operations
+            that change the state of the system, this error may be returned
+            even if the operation has completed successfully.  For example, a
+            successful response from a server could have been delayed long
+            enough for the deadline to expire.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.NotFound">
+            <summary>
+            Some requested entity (for example, file or directory) was not found.
+            For privacy reasons, this code may be returned when the client
+            does not have the access right to the entity.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.AlreadyExists">
+            <summary>
+            Some entity that we attempted to create (for example, file or directory) already exists.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.PermissionDenied">
+            <summary>
+            The caller does not have permission to execute the specified
+            operation.  PermissionDenied must not be used for rejections
+            caused by exhausting some resource (use ResourceExhausted
+            instead for those errors).  PermissionDeniedmust not be
+            used if the caller can not be identified (use Unauthenticated
+            instead for those errors).
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.Unauthenticated">
+            <summary>
+            The request does not have valid authentication credentials for the
+            operation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.ResourceExhausted">
+            <summary>
+            Some resource has been exhausted, perhaps a per-user quota, or
+            perhaps the entire file system is out of space.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.FailedPrecondition">
+             <summary>
+             Operation was rejected because the system is not in a state
+             required for the operation's execution.  For example, directory
+             to be deleted may be non-empty, an rmdir operation is applied to
+             a non-directory, etc.
+            
+             A litmus test that may help a service implementor in deciding
+             between FailedPrecondition, Aborted, and Unavailable:
+            
+              (a) Use Unavailableif the client can retry just the failing call.
+              (b) Use Aborted if the client should retry at a higher-level
+                  (for example, restarting a read-modify-write sequence).
+              (c) Use FailedPrecondition if the client should not retry until
+                  the system state has been explicitly fixed. For example, if an "rmdir"
+                  fails because the directory is non-empty, FailedPrecondition
+                  should be returned since the client should not retry unless
+                  they have first fixed up the directory by deleting files from it.
+              (d) Use FailedPrecondition if the client performs conditional
+                  REST Get/Update/Delete on a resource and the resource on the
+                  server does not match the condition. For example, conflicting
+                  read-modify-write on the same resource.
+             </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.Aborted">
+             <summary>
+             The operation was aborted, typically due to a concurrency issue
+             like sequencer check failures, transaction aborts, etc.
+            
+             See litmus test above for deciding between FailedPrecondition,
+             Aborted and Unavailable
+             </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.OutOfRange">
+             <summary>
+             Operation tried to iterate past the valid input range. For example, seeking or
+             reading past end of file.
+            
+             Unlike InvalidArgument, this error indicates a problem that may
+             be fixed if the system state changes. For example, a 32-bit file
+             system will generate InvalidArgument if asked to read at an
+             offset that is not in the range [0,2^32-1], but it will generate
+             OutOfRange if asked to read from an offset past the current
+             file size.
+            
+             There is a fair bit of overlap between FailedPrecondition and
+             OutOfRange.  We recommend using OutOfRane (the more specific
+             error) when it applies so that callers who are iterating through
+             a space can easily look for an OutOfRange error to detect when
+             they are done.
+             </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.Unimplemented">
+            <summary>
+            Operation is not implemented or not supported/enabled in this service.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.Internal">
+            <summary>
+            Internal errors.  Means some invariants expected by underlying
+            system has been broken.  If you see one of these errors,
+            something is very broken.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.Unavailable">
+             <summary>
+             The service is currently unavailable.  This is a most likely a
+             transient condition and may be corrected by retrying with
+             a backoff.
+            
+             See litmus test above for deciding between FailedPrecondition,
+             Aborted, and Unavailable.
+             </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFCode.DataLoss">
+            <summary>
+            Unrecoverable data loss or corruption.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFInput">
+            <summary>
+            Represents a specific input of an operation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFInput.Operation">
+            <summary>
+            The operation that this input is for
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFInput.Index">
+            <summary>
+            The index of the output within the Operation
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFOutput">
+            <summary>
+            Represents a specific output of an operation on a tensor.
+            </summary>
+            <remarks>
+            <para>
+            TFOutput objects represent one of the outputs of an operation in the graph
+            (TFGraph).  Outputs have a data type, and eventually a shape that you can
+            retrieve by calling the <see cref="M:TensorFlow.TFGraph.GetShape"/> method.
+            </para>
+            <para>
+            These can be passed as an input argument to a function for adding operations
+            to a graph, or to the TFSession's Run and GetRunner method as values to be
+            fetched.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFOutput.Index">
+            <summary>
+            The index of the output within the operation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOutput.NumConsumers">
+            <summary>
+            Gets the number consumers.
+            </summary>
+            <value>The number consumers.</value>
+            <remarks>
+            This number can change when new operations are added to the graph.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOutput.OutputType">
+            <summary>
+            Gets the type of the output.
+            </summary>
+            <value>The type of the output.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFOutput.#ctor(Microsoft.ML.Transforms.TensorFlow.TFOperation,System.Int32)">
+            <summary>
+            Initializes a new TFOutput instance.
+            </summary>
+            <param name="operation">The operation to which to attach the output.</param>
+            <param name="index">The index of the output within the operation, if not specified, it defaults to zero.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFOutput.#ctor(Microsoft.ML.Transforms.TensorFlow.TFOutput,System.Int32)">
+            <summary>
+            Initializes a new TFOutput instance from another TFOutput
+            </summary>
+            <param name="output">The other TFOutput that is having its operation attached.</param>
+            <param name="index">The index of the output within the operation, if not specified, it defaults to zero.</param>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOutput.OutputConsumers">
+            <summary>
+            Get list of all current consumers of a specific output of an operation
+            </summary>
+            <value>The output consumers.</value>
+            <remarks>
+            A concurrent modification of the graph can increase the number of consumers of
+            an operation.
+            This can return null if the TFOutput does not point to a valid object.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFOutput.Operation">
+            <summary>
+            The associated operation.
+            </summary>
+            <value>The operation.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFOutput.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFOutput"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFOutput"/>.</returns>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFAttributeType">
+            <summary>
+            Low-level: Enumeration describing the types of a metadata attribute
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.String">
+            <summary>
+            The type of the attribute is a string
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.Int">
+            <summary>
+            The type of the attribute is an int.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.Float">
+            <summary>
+            The type of the attribute is a float
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.Bool">
+            <summary>
+            The type of the attribute is a bool.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.Type">
+            <summary>
+            The type of the attribute is a type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.Shape">
+            <summary>
+            The type of the attribute is a tensor shape
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.Tensor">
+            <summary>
+            The type of the attribute is a tensor
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.Placeholder">
+            <summary>
+            The type of the attribute is a placeholder
+            </summary>
+        </member>
+        <member name="F:Microsoft.ML.Transforms.TensorFlow.TFAttributeType.Func">
+            <summary>
+            The type of the attribute is a function
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFAttributeMetadata">
+            <summary>
+            Low-level: this describes the tensorflow type information for an attribute in the low-level attributes used by operations.
+            </summary>
+            <remarks>
+            This is a low-level operation returned by the <see cref="M:TensorFlow.TFOperation.GetAttributeMetadata"/>.
+            This is included for completeness, but is not generally used from C#, as you have access to the high-level
+            bindings in the <see cref="T:TensorFlow.TFGraph"/> type.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFAttributeMetadata.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFAttributeMetadata"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFAttributeMetadata"/>.</returns>
+        </member>
+        <member name="T:Microsoft.ML.Transforms.TensorFlow.TFShape">
+            <summary>
+            Represents the shape of a tensor, it describes how many dimensions the tensor has in a given axis
+            </summary>
+            <remarks>
+            <para>
+            The shapes can be created by calling the constructor with the number of dimensions
+            in the shape.   The null value is used to specify that the shape is unknown,
+            an empty array is used to create a scalar, and other values are used to specify
+            the number of dimensions.
+            </para>
+            <para>
+            For the Unknown case, you can use <see cref="P:TensorFlor.TFShape.Unknown"/>, for
+            scalars, you can use the <see cref="P:TensorFlor.TFShape.Scalar"/> shape.
+            </para>
+            <para>
+            To create a 2-element vector, use:
+            new TFShape (2)
+            </para>
+            <para>
+            To create a 2x3 matrix, use:
+            new TFShape (2, 3)
+            </para>
+            <para>
+            To create a shape with an unknown number of elements, you can pass the value
+            -1.  This is typically used to indicate the shape of tensors that represent a
+            variable-sized batch of values.
+            </para>
+            <para>
+            To create a matrix with 4 columns and an unknown number of rows:
+            var batch = new TFShape (-1, 4)
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFShape.Unknown">
+            <summary>
+            Represents an unknown number of dimensions in the tensor.
+            </summary>
+            <value>The unknown.</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFShape.Scalar">
+            <summary>
+            This shape is used to represent scalar values.
+            </summary>
+            <value>The scalar.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFShape.#ctor(System.Int64[])">
+             <summary>
+             Initializes a new instance of the <see cref="T:TensorFlow.TFShape"/> class.
+             </summary>
+             <param name="args">This is a params argument, so you can provide multiple values to it.
+             A null value means that this is an unknown shape, a single value is used to create a vector,
+             two values are used to create a 2-D matrix and so on.
+             </param>
+             <remarks>
+            
+             </remarks>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFShape.GetLength(System.Int32)">
+            <summary>
+            Gets the length of the specified dimension in the tensor
+            </summary>
+            <returns>The length, -1 for shapes that have an unknown dimension.</returns>
+            <param name="dimension">Dimension.</param>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFShape.NumDimensions">
+            <summary>
+            Number of dimensions represented by this shape.
+            </summary>
+            <value>The number dimensions, -1 if the number of dimensions is unknown, 0 if the shape represent a scalar, 1 for a vector, 2 for a matrix and so on..</value>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFShape.IsFullySpecified">
+            <summary>
+            Gets a value indicating whether all the dimensions in the <see cref="T:TensorFlow.TFShape"/> are fully specified.
+            </summary>
+            <value><c>true</c> if is fully specified; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFShape.ToArray">
+            <summary>
+            Returns the shape as an array
+            </summary>
+            <returns>null if the shape represents an unknown shape, otherwise an array with N elements, one per dimension, and each element can be either -1 (if the dimension size is unspecified) or the size of the dimension.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFShape.ToIntArray">
+            <summary>
+            Returns the shape as an array
+            </summary>
+            <returns>null if the shape represents an unknown shape, otherwise an array with N elements, one per dimension, and each element can be either -1 (if the dimension size is unspecified) or the size of the dimension.</returns>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFShape.IsLongArray">
+            <summary>
+            Gets a value indicating whether one of the dimensions <see cref="T:TensorFlow.TFShape"/> in the shape is larger than Int32.MaxValue.
+            </summary>
+            <value><c>true</c> if is long array; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFShape.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFShape"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:TensorFlow.TFShape"/>.</returns>
+        </member>
+        <member name="P:Microsoft.ML.Transforms.TensorFlow.TFShape.Item(System.Int32)">
+            <summary>
+            Gets the dimensions for the specified index.
+            </summary>
+            <param name="idx">Index.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFShape.AsTensor">
+            <summary>
+            Returns the shape as a 1-dimensional tensor with each element corresponding to the specified shape dimension.
+            </summary>
+            <returns>The tensor.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFShape.op_Addition(Microsoft.ML.Transforms.TensorFlow.TFShape,Microsoft.ML.Transforms.TensorFlow.TFShape)">
+            <summary>
+            Adds a <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFShape"/> to a <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFShape"/>, yielding a shape made up of the concatenation of the first and the second shapes.
+            </summary>
+            <param name="left">The first <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFShape"/> to add.</param>
+            <param name="right">The second <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFShape"/> to add.</param>
+            <returns>The <see cref="T:TensorFlow.TFShape"/> that is the sum of the values of <c>left</c> and <c>right</c>.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TFShape.op_Implicit(Microsoft.ML.Transforms.TensorFlow.TFShape)~Microsoft.ML.Transforms.TensorFlow.TFTensor">
+            <summary>
+            Performs an implicit conversion from <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFShape"/> to <see cref="T:Microsoft.ML.Transforms.TensorFlow.TFTensor"/>.
+            </summary>
+            <param name="shape">The shape.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TensorFlowUtils.GetModelSchema(Microsoft.ML.Runtime.IExceptionContext,System.String)">
+            <summary>
+            This method retrieves the information about the graph nodes of a TensorFlow model as an <see cref="T:Microsoft.ML.Runtime.Data.ISchema"/>.
+            For every node in the graph that has an output type that is compatible with the types supported by
+            <see cref="T:Microsoft.ML.Transforms.TensorFlowTransform"/>, the output schema contains a column with the name of that node, and the
+            type of its output (including the item type and the shape, if it is known). Every column also contains metadata
+            of kind <see cref="F:Microsoft.ML.Transforms.TensorFlow.TensorFlowUtils.OpType"/>, indicating the operation type of the node, and if that node has inputs in the graph,
+            it contains metadata of kind <see cref="F:Microsoft.ML.Transforms.TensorFlow.TensorFlowUtils.InputOps"/>, indicating the names of the input nodes.
+            </summary>
+            <param name="ectx">An <see cref="T:Microsoft.ML.Runtime.IExceptionContext"/>.</param>
+            <param name="modelFile">The name of the file containing the TensorFlow model. Currently only frozen model
+            format is supported.</param>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TensorFlowUtils.GetModelNodes(System.String)">
+            <summary>
+            This is a convenience method for iterating over the nodes of a TensorFlow model graph. It
+            iterates over the columns of the <see cref="T:Microsoft.ML.Runtime.Data.ISchema"/> returned by <see cref="M:Microsoft.ML.Transforms.TensorFlow.TensorFlowUtils.GetModelSchema(Microsoft.ML.Runtime.IExceptionContext,System.String)"/>,
+            and for each one it returns a tuple containing the name, operation type, column type and an array of input node names.
+            This method is convenient for filtering nodes based on certain criteria, for example, by the operation type.
+            </summary>
+            <param name="modelFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.TensorFlow.TensorFlowUtils.CreateFolderWithAclIfNotExists(Microsoft.ML.Runtime.IHostEnvironment,System.String)">
+            <summary>
+             Given a folder path, create it with proper ACL if it doesn't exist.
+             Fails if the folder name is empty, or can't create the folder.
+            </summary>
+        </member>
+    </members>
+</doc>

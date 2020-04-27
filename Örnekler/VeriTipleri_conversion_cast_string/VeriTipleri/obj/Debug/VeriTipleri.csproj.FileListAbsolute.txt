@@ -1,0 +1,24 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\VeriTipleri\bin\Debug\VeriTipleri.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\VeriTipleri\obj\Debug\VeriTipleri.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\VeriTipleri\bin\Debug\VeriTipleri.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\VeriTipleri\bin\Debug\VeriTipleri.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\VeriTipleri\obj\Debug\VeriTipleri.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\VeriTipleri\obj\Debug\VeriTipleri.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\bin\Debug\VeriTipleri.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\obj\Debug\VeriTipleri.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\obj\Debug\VeriTipleri.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\bin\Debug\VeriTipleri.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\bin\Debug\VeriTipleri.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\obj\Debug\VeriTipleri.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\bin\Debug\VeriTipleri.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\obj\Debug\VeriTipleri.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\obj\Debug\VeriTipleri.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\bin\Debug\VeriTipleri.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\bin\Debug\VeriTipleri.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\VeriTipleri\VeriTipleri\obj\Debug\VeriTipleri.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\VeriTipleri\VeriTipleri\bin\Debug\VeriTipleri.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\VeriTipleri\VeriTipleri\obj\Debug\VeriTipleri.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\VeriTipleri\VeriTipleri\obj\Debug\VeriTipleri.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\VeriTipleri_conversion_cast_string\VeriTipleri\bin\Debug\VeriTipleri.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\VeriTipleri_conversion_cast_string\VeriTipleri\obj\Debug\VeriTipleri.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\VeriTipleri_conversion_cast_string\VeriTipleri\obj\Debug\VeriTipleri.pdb

@@ -1,0 +1,20 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\conversion_cast_string\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\conversion_cast_string\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\conversion_cast_string\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\bin\Debug\veritipi_ornek_reftipi.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\veritipi_ornek_reftipi\veritipi_ornek_reftipi\obj\Debug\veritipi_ornek_reftipi.pdb

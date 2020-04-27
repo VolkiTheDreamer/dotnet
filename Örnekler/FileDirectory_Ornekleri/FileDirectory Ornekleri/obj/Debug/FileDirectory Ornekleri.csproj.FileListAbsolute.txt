@@ -1,0 +1,10 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\FileDirectory Ornekleri\bin\Debug\FileDirectory Ornekleri.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\bin\Debug\FileDirectory Ornekleri.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\bin\Debug\FileDirectory Ornekleri.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\bin\Debug\FileDirectory Ornekleri.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\obj\Debug\FileDirectory Ornekleri.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\obj\Debug\FileDirectory_Ornekleri.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\obj\Debug\FileDirectory_Ornekleri.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\obj\Debug\FileDirectory Ornekleri.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\obj\Debug\FileDirectory Ornekleri.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\FileDirectory_Ornekleri\FileDirectory Ornekleri\obj\Debug\FileDirectory Ornekleri.pdb

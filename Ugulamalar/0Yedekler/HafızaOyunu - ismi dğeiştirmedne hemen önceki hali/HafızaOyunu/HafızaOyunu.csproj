@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B44A77EA-2D19-4CF9-865D-2B0FCF3454DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HafızaOyunu</RootNamespace>
+    <AssemblyName>HafızaOyunu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Volkan\OneDrive\genelpaylaşım\csharpuygulama\SelfMemory\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://1drv.ms/f/s!AsG4Q_Hh_6jbhewcfxGwcddhkNpRZQ/</InstallUrl>
+    <ProductName>Self Memory</ProductName>
+    <PublisherName>Volkan Yurtseven</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2E6D968F87A26E8371AE264D5D4414864172190D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HafızaOyunu_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAnaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnaGiris.Designer.cs">
+      <DependentUpon>FormAnaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOyun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOyun.Designer.cs">
+      <DependentUpon>FormOyun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kutu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mystatikclass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAnaGiris.resx">
+      <DependentUpon>FormAnaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOyun.resx">
+      <DependentUpon>FormOyun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="HafızaOyunu_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_aslan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_ayi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_civciv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_fil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_gergedan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_inek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_kaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_kartal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_kedi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_koyun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_köpek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_kurt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_sincap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_tembel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_tilki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_yilan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hayvanlar_zurafa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_3d_space.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_3d_space_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_70-space_worm-holejpg-xkhu2eSDj5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_9937a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_1039141799.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_20110124154514.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_andromedagalaxy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_BodesGalaxym81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_hs-1995-01-a-1280x800_wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_hs-2000-10-a-1280x800_wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_hs-2002-11-d-1280x800_wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_hs-2007-36-a-1280x800_wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_hs-2009-14-a-1280_wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_img 366.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_NGC_7331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_p0328aa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_p0425aa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_p0501aa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_pleiades.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_saturn2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_Space_View_by_odkrunch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uzay_spaceimages_2101_7105597.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_captainamerica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_catwoman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_deadpool.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_fantastic4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_flash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_girls.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_greenlantern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_hulk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_ironman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_magneto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_muhtesemdortlu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_spider.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_superandbatman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_supergirl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_superman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_thor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Süper kahraman_wolverine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_bezelye.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_brokoli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_domates.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_havuc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_ıspanak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_karnabahar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_karpuz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_kavun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_kayısı.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_kiraz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_kırmızı biber.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_kivi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_mandalina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_mısır.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_muz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_nar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_patlıcan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_portakal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_salatalık.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_sarmısak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_şeftali.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_üzüm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_armut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_çilek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sebze Meyveler_elma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_batman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_bugsbunny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_casper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_garfield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_hulk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_masha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_minion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_nemo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_patrick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_shrek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_simpson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_sunger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_superalie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_superman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ÇizgiFilm Kahramanı_trol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iloveu.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zort.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundoff.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

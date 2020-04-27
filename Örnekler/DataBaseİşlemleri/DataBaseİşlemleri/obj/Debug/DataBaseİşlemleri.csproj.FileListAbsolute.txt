@@ -1,0 +1,16 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\DataBaseİşlemleri\bin\Debug\DataBaseİşlemleri.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\DataBaseİşlemleri\bin\Debug\DataBaseİşlemleri.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.csproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DataBaseİşlemleri\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DataBaseİşlemleri\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DataBaseİşlemleri\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DataBaseİşlemleri\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DataBaseİşlemleri\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DataBaseİşlemleri\DataBaseİşlemleri\obj\Debug\DataBaseİşlemleri.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DataBaseİşlemleri\DataBaseİşlemleri\bin\Debug\DataBaseİşlemleri.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DataBaseİşlemleri\DataBaseİşlemleri\bin\Debug\DataBaseİşlemleri.pdb

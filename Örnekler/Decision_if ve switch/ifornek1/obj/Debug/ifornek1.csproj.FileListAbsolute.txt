@@ -1,0 +1,22 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\if_ornekleri\bin\Debug\if_ornekleri.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\if_ornekleri\bin\Debug\if_ornekleri.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\if_ornekleri\bin\Debug\if_ornekleri.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\if_ornekleri\obj\Debug\if_ornekleri.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\if_ornekleri\obj\Debug\if_ornekleri.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\ifornek1\ifornek1\bin\Debug\ifornek1.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\ifornek1\ifornek1\bin\Debug\ifornek1.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\ifornek1\ifornek1\bin\Debug\ifornek1.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\ifornek1\ifornek1\obj\Debug\ifornek1.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\ifornek1\ifornek1\obj\Debug\ifornek1.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\ifornek1\bin\Debug\ifornek1.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\ifornek1\obj\Debug\ifornek1.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\ifornek1\obj\Debug\ifornek1.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\ifornek1\bin\Debug\ifornek1.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\ifornek1\bin\Debug\ifornek1.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\ifornek1\obj\Debug\ifornek1.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\Decision_if ve switch\ifornek1\bin\Debug\ifornek1.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\Decision_if ve switch\ifornek1\obj\Debug\ifornek1.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\Decision_if ve switch\ifornek1\obj\Debug\ifornek1.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\Decision_if ve switch\ifornek1\bin\Debug\ifornek1.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\Decision_if ve switch\ifornek1\bin\Debug\ifornek1.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\c#2013\Consol Aplikasyonları\Decision_if ve switch\ifornek1\obj\Debug\ifornek1.csprojResolveAssemblyReference.cache

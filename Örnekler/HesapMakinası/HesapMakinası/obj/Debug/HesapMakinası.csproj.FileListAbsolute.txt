@@ -1,0 +1,17 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\HesapMakinası\bin\Debug\HesapMakinası.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\bin\Debug\HesapMakinası.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\bin\Debug\HesapMakinası.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\bin\Debug\HesapMakinası.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.Form1.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.Properties.Resources.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.csproj.GenerateResource.Cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\bin\Debug\HesapMakinası.exe.manifest
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\bin\Debug\HesapMakinası.application
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.exe.manifest
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.application
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\bin\Debug\HesapMakinası.exe.config
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.exe
+C:\Users\Volkan\OneDrive\0-uygulama örneklerim\Visual Studio\Visual Studio 2013\Projects\c#\Form Aplikasyonları\HesapMakinası\HesapMakinası\obj\Debug\HesapMakinası.pdb

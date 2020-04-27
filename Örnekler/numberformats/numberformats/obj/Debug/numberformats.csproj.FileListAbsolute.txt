@@ -1,0 +1,2 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\numberformats\bin\Debug\numberformats.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\numberformats\numberformats\bin\Debug\numberformats.exe.config

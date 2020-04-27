@@ -1,0 +1,20 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\bin\Debug\FormlararasiBilgiTransferi.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\bin\Debug\FormlararasiBilgiTransferi.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\bin\Debug\FormlararasiBilgiTransferi.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.Form2.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.csproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\bin\Debug\FormlararasiBilgiTransferi.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\bin\Debug\FormlararasiBilgiTransferi.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\bin\Debug\FormlararasiBilgiTransferi.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.Form2.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\FormlararasiBilgiTransferi\obj\Debug\FormlararasiBilgiTransferi.pdb

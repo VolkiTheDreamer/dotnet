@@ -1,0 +1,8 @@
+D:\Programming\csProjects\DrillChart\DrillChart\bin\Debug\DrillChart.exe
+D:\Programming\csProjects\DrillChart\DrillChart\bin\Debug\DrillChart.pdb
+D:\Programming\csProjects\DrillChart\DrillChart\obj\Debug\DrillChart.csprojResolveAssemblyReference.cache
+D:\Programming\csProjects\DrillChart\DrillChart\obj\Debug\DrillChart.Form1.resources
+D:\Programming\csProjects\DrillChart\DrillChart\obj\Debug\DrillChart.Properties.Resources.resources
+D:\Programming\csProjects\DrillChart\DrillChart\obj\Debug\DrillChart.csproj.GenerateResource.Cache
+D:\Programming\csProjects\DrillChart\DrillChart\obj\Debug\DrillChart.exe
+D:\Programming\csProjects\DrillChart\DrillChart\obj\Debug\DrillChart.pdb

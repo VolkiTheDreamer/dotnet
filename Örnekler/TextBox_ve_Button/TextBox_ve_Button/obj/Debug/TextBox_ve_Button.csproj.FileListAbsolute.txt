@@ -1,0 +1,27 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.csproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.Form1.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.Properties.Resources.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\bin\Debug\TextBox_ve_Button.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\VS 2013 Projeleri\c#\Form Aplikasyonları\TextBox_ve_Button\TextBox_ve_Button\obj\Debug\TextBox_ve_Button.csproj.GenerateResource.Cache

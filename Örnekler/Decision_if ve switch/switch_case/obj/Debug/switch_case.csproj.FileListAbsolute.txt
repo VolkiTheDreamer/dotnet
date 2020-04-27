@@ -1,0 +1,6 @@
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\switch_case\bin\Debug\switch_case.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\switch_case\bin\Debug\switch_case.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\switch_case\bin\Debug\switch_case.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\switch_case\obj\Debug\switch_case.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\switch_case\obj\Debug\switch_case.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Consol Aplikasyonları\Decision_if ve switch\switch_case\obj\Debug\switch_case.pdb

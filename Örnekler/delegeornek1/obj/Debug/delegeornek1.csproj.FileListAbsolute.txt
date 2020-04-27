@@ -1,0 +1,12 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\delegeornek1\obj\Debug\delegeornek1.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\delegeornek1\bin\Debug\delegeornek1.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\delegeornek1\bin\Debug\delegeornek1.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\delegeornek1\bin\Debug\delegeornek1.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\delegeornek1\obj\Debug\delegeornek1.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\delegeornek1\obj\Debug\delegeornek1.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\delegeornek1\bin\Debug\delegeornek1.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\delegeornek1\bin\Debug\delegeornek1.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\delegeornek1\bin\Debug\delegeornek1.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\delegeornek1\obj\Debug\delegeornek1.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\delegeornek1\obj\Debug\delegeornek1.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\delegeornek1\obj\Debug\delegeornek1.pdb

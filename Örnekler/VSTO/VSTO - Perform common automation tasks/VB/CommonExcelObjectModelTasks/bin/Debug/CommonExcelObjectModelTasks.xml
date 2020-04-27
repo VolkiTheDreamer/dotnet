@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CommonExcelObjectModelTasks
+</name>
+</assembly>
+<members>
+<member name="P:CommonExcelObjectModelTasks.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:CommonExcelObjectModelTasks.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:CommonExcelObjectModelTasks.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.#ctor(Microsoft.Office.Tools.Excel.ApplicationFactory,System.IServiceProvider)">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.Initialize">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.FinishInitialization">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.InitializeDataBindings">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.InitializeCachedData">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.InitializeData">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.BindToData">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.StartCaching(System.String)">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.StopCaching(System.String)">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.IsCached(System.String)">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.BeginInitialization">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.EndInitialization">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.InitializeControls">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.InitializeComponents">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.NeedsFill(System.String)">
+</member><member name="M:CommonExcelObjectModelTasks.ThisAddIn.OnShutdown">
+</member><member name="T:CommonExcelObjectModelTasks.ThisAddIn">
+</member><member name="M:CommonExcelObjectModelTasks.Globals.#ctor">
+</member><member name="T:CommonExcelObjectModelTasks.Globals">
+</member><member name="M:CommonExcelObjectModelTasks.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+</member><member name="T:CommonExcelObjectModelTasks.ThisRibbonCollection">
+</member>
+</members>
+</doc>

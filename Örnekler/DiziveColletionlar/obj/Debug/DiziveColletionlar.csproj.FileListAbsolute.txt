@@ -1,0 +1,13 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\DiziveColletionlar\bin\Debug\DiziveColletionlar.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\DiziveColletionlar\bin\Debug\DiziveColletionlar.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\DiziveColletionlar\obj\Debug\DiziveColletionlar.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\DiziveColletionlar\obj\Debug\DiziveColletionlar.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\DiziveColletionlar\obj\Debug\DiziveColletionlar.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DiziveColletionlar\bin\Debug\DiziveColletionlar.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DiziveColletionlar\bin\Debug\DiziveColletionlar.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DiziveColletionlar\obj\Debug\DiziveColletionlar.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DiziveColletionlar\obj\Debug\DiziveColletionlar.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DiziveColletionlar\bin\Debug\DiziveColletionlar.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DiziveColletionlar\bin\Debug\MyUtility.dll
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DiziveColletionlar\bin\Debug\MyUtility.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\DiziveColletionlar\obj\Debug\DiziveColletionlar.csprojResolveAssemblyReference.cache

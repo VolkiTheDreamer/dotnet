@@ -1,0 +1,17 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\BGWandProgressbar\bin\Debug\BGWandProgressbar.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\BGWandProgressbar\bin\Debug\BGWandProgressbar.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\BGWandProgressbar\obj\Debug\BGWandProgressbar.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\BGWandProgressbar\obj\Debug\BGWandProgressbar.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\BGWandProgressbar\obj\Debug\BGWandProgressbar.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\BGWandProgressbar\obj\Debug\BGWandProgressbar.csproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\BGWandProgressbar\obj\Debug\BGWandProgressbar.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\BGWandProgressbar\obj\Debug\BGWandProgressbar.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\obj\Debug\BGWandProgressbar.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\obj\Debug\BGWandProgressbar.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\obj\Debug\BGWandProgressbar.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\obj\Debug\BGWandProgressbar.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\obj\Debug\BGWandProgressbar.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\bin\Debug\BGWandProgressbar.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\bin\Debug\BGWandProgressbar.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\obj\Debug\BGWandProgressbar.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\BGWandProgressbar\bin\Debug\BGWandProgressbar.exe.config

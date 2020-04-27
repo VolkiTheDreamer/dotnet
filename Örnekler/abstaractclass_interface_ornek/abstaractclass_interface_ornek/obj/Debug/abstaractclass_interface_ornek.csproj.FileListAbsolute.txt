@@ -1,0 +1,6 @@
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\abstaractclass_interface_ornek\abstaractclass_interface_ornek\bin\Debug\abstaractclass_interface_ornek.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\abstaractclass_interface_ornek\abstaractclass_interface_ornek\bin\Debug\abstaractclass_interface_ornek.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\abstaractclass_interface_ornek\abstaractclass_interface_ornek\bin\Debug\abstaractclass_interface_ornek.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\abstaractclass_interface_ornek\abstaractclass_interface_ornek\obj\Debug\abstaractclass_interface_ornek.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\abstaractclass_interface_ornek\abstaractclass_interface_ornek\obj\Debug\abstaractclass_interface_ornek.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\abstaractclass_interface_ornek\abstaractclass_interface_ornek\obj\Debug\abstaractclass_interface_ornek.pdb

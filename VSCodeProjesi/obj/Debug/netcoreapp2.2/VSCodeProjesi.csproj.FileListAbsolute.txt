@@ -1,0 +1,11 @@
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\bin\Debug\netcoreapp2.2\VSCodeProjesi.deps.json
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\bin\Debug\netcoreapp2.2\VSCodeProjesi.runtimeconfig.json
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\bin\Debug\netcoreapp2.2\VSCodeProjesi.runtimeconfig.dev.json
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\bin\Debug\netcoreapp2.2\VSCodeProjesi.dll
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\bin\Debug\netcoreapp2.2\VSCodeProjesi.pdb
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\obj\Debug\netcoreapp2.2\VSCodeProjesi.csprojAssemblyReference.cache
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\obj\Debug\netcoreapp2.2\VSCodeProjesi.csproj.CoreCompileInputs.cache
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\obj\Debug\netcoreapp2.2\VSCodeProjesi.AssemblyInfoInputs.cache
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\obj\Debug\netcoreapp2.2\VSCodeProjesi.AssemblyInfo.cs
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\obj\Debug\netcoreapp2.2\VSCodeProjesi.dll
+e:\OneDrive\Uygulama Geliştirme\Visual Studio\VSCodeProjesi\obj\Debug\netcoreapp2.2\VSCodeProjesi.pdb

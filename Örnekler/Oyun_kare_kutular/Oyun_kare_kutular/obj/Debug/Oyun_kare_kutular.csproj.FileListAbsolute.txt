@@ -1,0 +1,11 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\Oyun_kare_kutular\bin\Debug\Oyun_kare_kutular.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\bin\Debug\Oyun_kare_kutular.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\bin\Debug\Oyun_kare_kutular.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\bin\Debug\Oyun_kare_kutular.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\obj\Debug\Oyun_kare_kutular.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\obj\Debug\Oyun_kare_kutular.EsasForm.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\obj\Debug\Oyun_kare_kutular.Giris.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\obj\Debug\Oyun_kare_kutular.Properties.Resources.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\obj\Debug\Oyun_kare_kutular.csproj.GenerateResource.Cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\obj\Debug\Oyun_kare_kutular.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\Oyun_kare_kutular\Oyun_kare_kutular\obj\Debug\Oyun_kare_kutular.pdb

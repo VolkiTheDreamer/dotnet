@@ -1,0 +1,3 @@
+C:\Users\Volkan\Documents\Visual Studio 2008\Projects\c#\Excel Addins\FirstExcelAddin\FirstExcelAddin\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Volkan\Documents\Visual Studio 2008\Projects\c#\Excel Addins\FirstExcelAddin\FirstExcelAddin\obj\Debug\FirstExcelAddin.Properties.Resources.resources
+C:\Users\Volkan\Documents\Visual Studio 2008\Projects\c#\Excel Addins\FirstExcelAddin\FirstExcelAddin\obj\Debug\FirstExcelAddin.csproj.GenerateResource.Cache

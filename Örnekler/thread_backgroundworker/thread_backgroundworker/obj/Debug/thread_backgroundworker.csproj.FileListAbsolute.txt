@@ -1,0 +1,14 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\thread_backgroundworker\bin\Debug\thread_backgroundworker.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\thread_backgroundworker\obj\Debug\thread_backgroundworker.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\thread_backgroundworker\obj\Debug\BackgroundWorkerExample.FibonacciForm.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\thread_backgroundworker\obj\Debug\thread_backgroundworker.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\thread_backgroundworker\obj\Debug\thread_backgroundworker.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\bin\Debug\thread_backgroundworker.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\bin\Debug\thread_backgroundworker.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\bin\Debug\thread_backgroundworker.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\obj\Debug\thread_backgroundworker.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\obj\Debug\BackgroundWorkerExample.FibonacciForm.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\obj\Debug\thread_backgroundworker.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\obj\Debug\thread_backgroundworker.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\obj\Debug\thread_backgroundworker.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\thread_backgroundworker\thread_backgroundworker\obj\Debug\thread_backgroundworker.pdb

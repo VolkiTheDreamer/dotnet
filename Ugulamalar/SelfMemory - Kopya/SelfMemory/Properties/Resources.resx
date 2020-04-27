@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="arkaplan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arkaplan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_aslan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_aslan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_ayi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_ayi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_civciv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_civciv.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_fil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_fil.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_gergedan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_gergedan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_inek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_inek.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_kaplan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_kaplan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_kartal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_kartal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_kedi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_kedi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_koyun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_koyun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_kurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_kurt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_köpek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_köpek.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_sincap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_sincap.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_tembel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_tembel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_tilki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_tilki.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_yilan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_yilan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hayvanlar_zurafa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hayvanlar_zurafa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_armut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_armut.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_bezelye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_bezelye.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_brokoli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_brokoli.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_domates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_domates.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_elma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_elma.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_havuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_havuc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_karnabahar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_karnabahar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_karpuz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_karpuz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_kavun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_kavun.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_kayısı" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_kayısı.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_kiraz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_kiraz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_kivi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_kivi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_kırmızı_biber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_kırmızı biber.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_mandalina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_mandalina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_muz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_muz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_mısır" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_mısır.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_nar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_nar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_patlıcan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_patlıcan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_portakal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_portakal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_salatalık" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_salatalık.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_sarmısak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_sarmısak.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_çilek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_çilek.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_üzüm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_üzüm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_ıspanak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_ıspanak.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sebze_Meyveler_şeftali" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sebze Meyveler_şeftali.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soundoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soundoff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_captainamerica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_captainamerica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_catwoman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_catwoman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_deadpool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_deadpool.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_fantastic4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_fantastic4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_flash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_flash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_girls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_girls.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_greenlantern" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_greenlantern.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_hulk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_hulk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_ironman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_ironman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_magneto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_magneto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_muhtesemdortlu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_muhtesemdortlu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_spider" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_spider.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_superandbatman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_superandbatman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_supergirl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_supergirl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_superman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_superman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_thor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_thor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Süper_kahraman_wolverine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Süper kahraman_wolverine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_1039141799" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_1039141799.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_20110124154514" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_20110124154514.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_3d_space" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_3d_space.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_3d_space_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_3d_space_7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_70_space_worm_holejpg_xkhu2eSDj5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_70-space_worm-holejpg-xkhu2eSDj5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_9937a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_9937a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_andromedagalaxy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_andromedagalaxy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_BodesGalaxym81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_BodesGalaxym81.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_hs_1995_01_a_1280x800_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_hs-1995-01-a-1280x800_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_hs_2000_10_a_1280x800_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_hs-2000-10-a-1280x800_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_hs_2002_11_d_1280x800_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_hs-2002-11-d-1280x800_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_hs_2007_36_a_1280x800_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_hs-2007-36-a-1280x800_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_hs_2009_14_a_1280_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_hs-2009-14-a-1280_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_img_366" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_img 366.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_NGC_7331" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_NGC_7331.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_p0328aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_p0328aa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_p0425aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_p0425aa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_p0501aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_p0501aa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_pleiades" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_pleiades.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_saturn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_saturn2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_spaceimages_2101_7105597" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_spaceimages_2101_7105597.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uzay_Space_View_by_odkrunch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Uzay_Space_View_by_odkrunch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_batman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_batman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_bugsbunny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_bugsbunny.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_casper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_casper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_garfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_garfield.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_hulk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_hulk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_masha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_masha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_mini.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_minion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_minion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_nemo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_nemo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_patrick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_patrick.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_shrek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_shrek.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_simpson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_simpson.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_sunger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_sunger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_superalie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_superalie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_superman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_superman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ÇizgiFilm_Kahramanı_trol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ÇizgiFilm Kahramanı_trol.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iloveu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iloveu.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\success.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="zort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zort.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Graphicloads_Medical_Health_Human_brain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphicloads-Medical-Health-Human-brain.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

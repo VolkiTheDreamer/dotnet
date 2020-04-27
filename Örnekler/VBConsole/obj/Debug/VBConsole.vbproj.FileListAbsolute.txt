@@ -1,0 +1,10 @@
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\bin\Debug\VBConsole.exe.config
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\bin\Debug\VBConsole.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\bin\Debug\VBConsole.pdb
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\bin\Debug\VBConsole.xml
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\obj\Debug\VBConsole.vbprojAssemblyReference.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\obj\Debug\VBConsole.Resources.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\obj\Debug\VBConsole.vbproj.GenerateResource.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\obj\Debug\VBConsole.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\obj\Debug\VBConsole.xml
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\VBConsole\obj\Debug\VBConsole.pdb

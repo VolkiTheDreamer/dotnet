@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1c1e217c-1475-400e-91a7-b2be1bd6efa0Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>VSTO - Data Analysis with Excel (Visual Studio 2012)</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>VSTO - Data Analysis with Excel (Visual Studio 2012)</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Microsoft Office Excel 2010, .NET Framework 4.0
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Excel, VSTO, Generate Excel Workbook
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">9/7/2012</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/VSTO-Data-Analysis-with-1f0fc571">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>This sample runs in Microsoft Office Excel 2010.</p>
+<p>This sample demonstrates data analysis tasks executed using toolbar buttons and menus in Microsoft Office Excel 2010. The data is stored in XML files.</p>
+<p>In addition, the sample is completely localizable; it demonstrates how to take advantage of System.Resources..::.ResourceManager and managed resource (RESX) files. The code was written to be globalized using culture-switching techniques that were necessary
+ in earlier versions of Visual Studio Tools for Office. Those techniques are no longer necessary because of a change in how Visual Studio Tools for Office works with Excel. For more information, see Globalization and Localization of Office Solutions, Formatting
+ Data in Excel with Various Regional Settings, and How to: Make String Literals Region-safe in Excel Using Reflection.</p>
+<h3>Note:</h3>
+<p>This sample does not run if you have an English language version of Office running on Windows with regional settings other than English (United States).</p>
+<p>The sample is a simple inventory management tool for a fictitious ice cream store. The workbook has systems for tracking sales, inventory in storage, and the products sold. Each of these systems stores data in XML files.</p>
+<p>The store has the following constraints on inventory:</p>
+<ul>
+<li>
+<p>Storage capacity is limited to 300 units of ice cream.</p>
+</li><li>
+<p>Ice cream orders are delivered once per week, in the morning.</p>
+</li><li>
+<p>Orders must be placed a minimum of two days before scheduled delivery date. The schedule is to place the order on Tuesday, and receive delivery on Thursday.</p>
+</li><li>
+<p>If additional stock is needed outside of the normal delivery schedule, there is an additional charge of 25 to have the order delivered.</p>
+</li></ul>
+<h3>Security Note:</h3>
+<p>This sample code is intended to illustrate a concept, and it shows only the code that is relevant to that concept. It may not meet the security requirements for a specific environment, and it should not be used exactly as shown. We recommend that you add
+ security and error-handling code to make your projects more secure and robust. Microsoft provides this sample code &quot;AS IS&quot; with no warranties.</p>
+<p>For information about how to install the sample project on your computer, see How to: Install and Use Sample Files Found in Help.</p>
+<h1><span>Building the Sample</span></h1>
+<ol>
+<li>Press F5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ The workbook opens to the Inventory worksheet, which displays a pivot table of average daily sales and average daily profits per flavor and a ListObject control that shows the previous day&rsquo;s sales data. Notice that a group named<span class="ui">Menu
+ Commands</span> and a group named <span class="ui">Custom Toolbars</span> have been added to the<span class="ui">Add-Ins</span> tab of the Ribbon. An
+<span class="ui">Orders</span> menu has been added to the<span class="ui">Menu Commands</span> group, and two buttons that correspond to the two menu items have been added to the<span class="ui">Custom Toolbars</span> group.
+</li><li>View historical sales data by selecting a different date in the Calendar control. If you select the last day of data in the data source, two additional columns (<span class="ui">Estimated Inventory</span> and<span class="ui">Recommendation</span>) are
+ displayed. </li><li>
+<p>Click <span class="ui">Add New Date</span> to add data for a new day.</p>
+<p>The ListObject control is cleared so you can enter the end-of-day inventory values for each flavor. As you enter the current inventory for each ice cream flavor, the<span class="ui">Estimated Inventory</span> column shows expected end-of-week shortfalls
+ or overages. The<span class="ui">Recommendation</span> column shows whether it makes sense to create an unscheduled order. The actions pane shows a list of high inventory items and low inventory items.</p>
+</li><li>
+<p>Click <span class="ui">Save Data</span> to save your changes.</p>
+</li><li>
+<p>Click an ice cream flavor in one of the lists on the actions pane.</p>
+<p>Historical sales data and a trend chart on that flavor appear in the Details worksheet.</p>
+</li><li>
+<p>If an unscheduled order is recommended, click <span class="ui">Create</span> to determine which flavors and how much to order.</p>
+</li><li>
+<p>A new worksheet named <span class="ui">Unscheduled Order_</span><span class="placeholder">&lt;Date&gt;</span> is added to the workbook. The worksheet estimates the quantity of each ice cream flavor that should be ordered to cover any shortage for the
+ rest of the week.</p>
+</li><li>
+<p>Click <span class="ui">Create Weekly Order</span> on the <span class="ui">
+Orders</span> menu to create the weekly order.</p>
+</li></ol>
+<li>
+<p style="padding-left:30px">Sales information is read from the XML files for the previous two weeks, the average of the daily sales is calculated, and a standard deviation of the distribution is determined. An estimate of future sales is calculated based on
+ average daily sales plus two standard deviations, multiplied by seven days. This gives a 95.4% probability that the amount ordered will cover the week&rsquo;s expected sales.</p>
+<p style="padding-left:30px">A new worksheet named <span class="ui">Weekly Order_</span><span class="placeholder">&lt;Date&gt;</span> is added to the workbook.<span class="placeholder">&lt;Date&gt;</span> is the projected order date.</p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p>The sample demonstrates the following tasks:</p>
+<ul>
+<li>
+<p>Reading data from XML files.</p>
+</li><li>
+<p>Customizing menus and toolbars.</p>
+</li><li>
+<p>Using Excel built-in functions to analyze data.</p>
+</li><li>
+<p>Creating pivot tables that are linked to data in XML files.</p>
+</li><li>
+<p>Binding XML data to Excel list controls.</p>
+</li><li>
+<p>Creating charts.</p>
+</li><li>
+<p>Preparing user interface layout and strings for localization.</p>
+</li></ul>
+<h1>Screenshot</h1>
+<h1><img src="description/Screenshot.png" alt="" width="484" height="411"></h1>
+<h1>sdf</h1>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span><span>Visual Basic</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span><span class="hidden">vb</span>
+<pre class="hidden">        /// &lt;summary&gt; 
+        /// Escapes special characters in a name and truncates it so that it 
+        /// could be used as a worksheet name in Excel. The name is truncated to 31 
+        /// characters; the characters ':', '\', '/', '?', '*', '[' and ']' are replaced 
+        /// with '_'. 
+        /// &lt;/summary&gt; 
+        /// &lt;param name=&quot;name&quot;&gt;The original name.&lt;/param&gt; 
+        /// &lt;returns&gt;The escaped name.&lt;/returns&gt; 
+        static internal string CreateValidWorksheetName(string name) 
+        { 
+            // Worksheet name cannot be longer than 31 characters. 
+            <a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Text.StringBuilder.aspx"  title="Auto generated link to System.Text.StringBuilder">System.Text.StringBuilder</a> escapedString; 
+ 
+            if (name.Length &lt;= 31) 
+            { 
+                escapedString = new <a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Text.StringBuilder.aspx"  title="Auto generated link to System.Text.StringBuilder">System.Text.StringBuilder</a>(name); 
+            } 
+            else 
+            { 
+                escapedString = new <a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Text.StringBuilder.aspx"  title="Auto generated link to System.Text.StringBuilder">System.Text.StringBuilder</a>(name, 0, 31, 31); 
+            } 
+ 
+            for (int i = 0; i &lt; escapedString.Length; i&#43;&#43;) 
+            { 
+                if (escapedString[i] == ':' || 
+                    escapedString[i] == '\\' || 
+                    escapedString[i] == '/' || 
+                    escapedString[i] == '?' || 
+                    escapedString[i] == '*' || 
+                    escapedString[i] == '[' || 
+                    escapedString[i] == ']') 
+                { 
+                    escapedString[i] = '_'; 
+                } 
+            } 
+ 
+            return escapedString.ToString(); 
+        }</pre>
+<pre class="hidden">    ''' &lt;summary&gt; 
+    ''' Escapes special characters in a name and truncates it so that it 
+    ''' could be used as a worksheet name in Excel. The name is truncated to 31 
+    ''' characters; the characters ':', '\', '/', '?', '*', '[' and ']' are replaced 
+    ''' with '_'. 
+    ''' &lt;/summary&gt; 
+    ''' &lt;param name=&quot;name&quot;&gt;The original name.&lt;/param&gt; 
+    ''' &lt;returns&gt;The escaped name.&lt;/returns&gt; 
+    Public Shared Function CreateValidWorksheetName(ByVal name As String) As String 
+        ' Worksheet name cannot be longer than 31 characters. 
+        Dim escapedString As <a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Text.StringBuilder.aspx"  title="Auto generated link to System.Text.StringBuilder">System.Text.StringBuilder</a> 
+ 
+        If (name.Length &lt;= 31) Then 
+            escapedString = New <a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Text.StringBuilder.aspx"  title="Auto generated link to System.Text.StringBuilder">System.Text.StringBuilder</a>(name) 
+        Else 
+            escapedString = New <a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Text.StringBuilder.aspx"  title="Auto generated link to System.Text.StringBuilder">System.Text.StringBuilder</a>(name, 0, 31, 31) 
+        End If 
+ 
+        For i As Integer = 0 To escapedString.Length - 1 
+            If escapedString(i) = &quot;:&quot;c Or _ 
+             escapedString(i) = &quot;\&quot;c Or _ 
+             escapedString(i) = &quot;/&quot;c Or _ 
+             escapedString(i) = &quot;?&quot;c Or _ 
+             escapedString(i) = &quot;*&quot;c Or _ 
+             escapedString(i) = &quot;[&quot;c Or _ 
+             escapedString(i) = &quot;]&quot;c Then 
+                escapedString(i) = &quot;_&quot;c 
+            End If 
+        Next 
+ 
+        Return escapedString.ToString() 
+    End Function</pre>
+<div class="preview">
+<pre class="csharp">&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;summary&gt;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;Escapes&nbsp;special&nbsp;characters&nbsp;in&nbsp;a&nbsp;name&nbsp;and&nbsp;truncates&nbsp;it&nbsp;so&nbsp;that&nbsp;it&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;could&nbsp;be&nbsp;used&nbsp;as&nbsp;a&nbsp;worksheet&nbsp;name&nbsp;in&nbsp;Excel.&nbsp;The&nbsp;name&nbsp;is&nbsp;truncated&nbsp;to&nbsp;31&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;characters;&nbsp;the&nbsp;characters&nbsp;':',&nbsp;'\',&nbsp;'/',&nbsp;'?',&nbsp;'*',&nbsp;'['&nbsp;and&nbsp;']'&nbsp;are&nbsp;replaced&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;with&nbsp;'_'.&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;/summary&gt;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;param&nbsp;name=&quot;name&quot;&gt;The&nbsp;original&nbsp;name.&lt;/param&gt;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">///&nbsp;&lt;returns&gt;The&nbsp;escaped&nbsp;name.&lt;/returns&gt;&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">static</span>&nbsp;<span class="cs__keyword">internal</span>&nbsp;<span class="cs__keyword">string</span>&nbsp;CreateValidWorksheetName(<span class="cs__keyword">string</span>&nbsp;name)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;Worksheet&nbsp;name&nbsp;cannot&nbsp;be&nbsp;longer&nbsp;than&nbsp;31&nbsp;characters.&nbsp;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.Text.StringBuilder&nbsp;escapedString;&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(name.Length&nbsp;&lt;=&nbsp;<span class="cs__number">31</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Text.StringBuilder.aspx"  title="Auto generated link to System.Text.StringBuilder">System.Text.StringBuilder</a>(name);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">else</span>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;<a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Text.StringBuilder.aspx"  title="Auto generated link to System.Text.StringBuilder">System.Text.StringBuilder</a>(name,&nbsp;<span class="cs__number">0</span>,&nbsp;<span class="cs__number">31</span>,&nbsp;<span class="cs__number">31</span>);&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">for</span>&nbsp;(<span class="cs__keyword">int</span>&nbsp;i&nbsp;=&nbsp;<span class="cs__number">0</span>;&nbsp;i&nbsp;&lt;&nbsp;escapedString.Length;&nbsp;i&#43;&#43;)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">if</span>&nbsp;(escapedString[i]&nbsp;==&nbsp;<span class="cs__string">':'</span>&nbsp;||&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString[i]&nbsp;==&nbsp;<span class="cs__string">'\\'</span>&nbsp;||&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString[i]&nbsp;==&nbsp;<span class="cs__string">'/'</span>&nbsp;||&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString[i]&nbsp;==&nbsp;<span class="cs__string">'?'</span>&nbsp;||&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString[i]&nbsp;==&nbsp;<span class="cs__string">'*'</span>&nbsp;||&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString[i]&nbsp;==&nbsp;<span class="cs__string">'['</span>&nbsp;||&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString[i]&nbsp;==&nbsp;<span class="cs__string">']'</span>)&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escapedString[i]&nbsp;=&nbsp;<span class="cs__string">'_'</span>;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">return</span>&nbsp;escapedString.ToString();&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+</div>
+</div>
+</div>
+<h1>More Information</h1>
+<p>For more information about Office developer tools in Visual Studio, see <a href="http://msdn.microsoft.com/en-us/vsto/default.aspx">
+http://msdn.microsoft.com/en-us/vsto/default.aspx</a>.</p>
+</li>
+</div>
+
+
+    </div>
+</body>
+</html>

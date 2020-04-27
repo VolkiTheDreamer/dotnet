@@ -1,0 +1,50 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\bin\Debug\ThreadOrnek.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\bin\Debug\ThreadOrnek.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\bin\Debug\ThreadOrnek.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\obj\Debug\ThreadOrnek.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\obj\Debug\ThreadOrnek.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\obj\Debug\ThreadOrnek.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\obj\Debug\ThreadOrnek.csproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\obj\Debug\ThreadOrnek.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\ThreadOrnek\obj\Debug\ThreadOrnek.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\bin\Debug\ThreadOrnek.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\bin\Debug\ThreadOrnek.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\bin\Debug\ThreadOrnek.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\obj\Debug\ThreadOrnek.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\obj\Debug\ThreadOrnek.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\obj\Debug\ThreadOrnek.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\obj\Debug\ThreadOrnek.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\obj\Debug\ThreadOrnek.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\obj\Debug\ThreadOrnek.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadOrnek\obj\Debug\ThreadOrnek.TaskForm.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\bin\Debug\ThreadOrnek.exe.config
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\bin\Debug\ThreadOrnek.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\bin\Debug\ThreadOrnek.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.Form1.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.TaskForm.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.Asenkron.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.TaskScheduleOrnek.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.KutuSihirbazı.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.async3.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.BGWOrnek.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\bin\Debug\ThreadOrnek.exe.config
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\bin\Debug\ThreadOrnek.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\bin\Debug\ThreadOrnek.pdb
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.csprojAssemblyReference.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.Asenkron.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.async3.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.BGWOrnek.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.Form1.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.KutuSihirbazı.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.Properties.Resources.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.TaskForm.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.TaskScheduleOrnek.resources
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.csproj.GenerateResource.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.csproj.CoreCompileInputs.cache
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.exe
+E:\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\ThreadTaskOrnek\obj\Debug\ThreadOrnek.pdb

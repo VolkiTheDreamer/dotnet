@@ -1,0 +1,4 @@
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\Attributes Sample\C#\bin\Debug\Attributes.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\Attributes Sample\C#\bin\Debug\Attributes.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\Attributes Sample\C#\obj\Debug\Attributes.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\Örnekler\Attributes Sample\C#\obj\Debug\Attributes.pdb

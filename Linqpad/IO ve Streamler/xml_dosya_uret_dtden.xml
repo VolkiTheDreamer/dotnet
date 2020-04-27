@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <MyTableName>
+    <AnaID>1</AnaID>
+    <AnaKonu>Excel</AnaKonu>
+  </MyTableName>
+  <MyTableName>
+    <AnaID>2</AnaID>
+    <AnaKonu>VBAMakro</AnaKonu>
+  </MyTableName>
+  <MyTableName>
+    <AnaID>3</AnaID>
+    <AnaKonu>VSTO</AnaKonu>
+  </MyTableName>
+  <MyTableName>
+    <AnaID>4</AnaID>
+    <AnaKonu>Fasulye</AnaKonu>
+  </MyTableName>
+</DocumentElement>

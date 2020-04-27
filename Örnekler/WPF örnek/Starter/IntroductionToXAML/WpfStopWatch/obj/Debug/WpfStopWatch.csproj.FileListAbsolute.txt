@@ -1,0 +1,45 @@
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\App.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\WpfStopWatch_MarkupCompile.cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\WpfStopWatch.g.resources
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\WpfStopWatch.Properties.Resources.resources
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\WpfStopWatch.csproj.GenerateResource.Cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\bin\Debug\WpfStopWatch.exe
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\bin\Debug\WpfStopWatch.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\StopWatch.baml
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\StopWatch.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\WpfStopWatch.exe
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\WpfStopWatch.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\App.baml
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\WpfStopWatch\obj\Debug\WpfStopWatch_MarkupCompile.lref
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\bin\Debug\WpfStopWatch.exe
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\bin\Debug\WpfStopWatch.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\App.baml
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\StopWatch.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\App.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\WpfStopWatch_MarkupCompile.cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\WpfStopWatch_MarkupCompile.lref
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\StopWatch.baml
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.g.resources
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.Properties.Resources.resources
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.csproj.GenerateResource.Cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.exe
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\bin\Debug\WpfStopWatch.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\bin\Debug\WpfStopWatch.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.csprojResolveAssemblyReference.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\App.baml
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\StopWatch.g.cs
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\App.g.cs
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\WpfStopWatch_MarkupCompile.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\WpfStopWatch_MarkupCompile.lref
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\StopWatch.baml
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.g.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\WpfStopWatch\obj\Debug\WpfStopWatch.csproj.GenerateResource.Cache

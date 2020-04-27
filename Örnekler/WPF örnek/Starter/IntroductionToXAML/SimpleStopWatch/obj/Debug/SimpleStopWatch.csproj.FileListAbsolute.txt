@@ -1,0 +1,35 @@
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\bin\Debug\SimpleStopWatch.exe
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\bin\Debug\SimpleStopWatch.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\Window1.baml
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\Window1.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\App.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\SimpleStopWatch_MarkupCompile.cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\SimpleStopWatch.g.resources
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\SimpleStopWatch.Properties.Resources.resources
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\SimpleStopWatch.csproj.GenerateResource.Cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\SimpleStopWatch.exe
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\WpfStopWatch\SimpleStopWatch\obj\Debug\SimpleStopWatch.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.exe
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\bin\Debug\SimpleStopWatch.exe
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\bin\Debug\SimpleStopWatch.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\Window1.baml
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\Window1.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\App.g.cs
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch_MarkupCompile.cache
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.g.resources
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.Properties.Resources.resources
+C:\Users\Jeremy\Documents\Visual Studio 2008\Projects\CodeCamp\Starter\IntroToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.csproj.GenerateResource.Cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\bin\Debug\SimpleStopWatch.exe
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\bin\Debug\SimpleStopWatch.pdb
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\Window1.baml
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\Window1.g.cs
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\App.g.cs
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch_MarkupCompile.cache
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.g.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.Properties.Resources.resources
+C:\Users\Volkan\OneDrive\Uygulama Geliştirme\Visual Studio\VS 2015\Projects\c#\WPF örnek\Starter\IntroductionToXAML\SimpleStopWatch\obj\Debug\SimpleStopWatch.csproj.GenerateResource.Cache

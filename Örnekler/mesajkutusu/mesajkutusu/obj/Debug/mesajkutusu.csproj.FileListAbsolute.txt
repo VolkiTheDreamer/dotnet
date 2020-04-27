@@ -1,0 +1,20 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\mesajkutusu\bin\Debug\mesajkutusu.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\mesajkutusu\bin\Debug\mesajkutusu.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\mesajkutusu\bin\Debug\mesajkutusu.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\mesajkutusu\obj\Debug\mesajkutusu.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\mesajkutusu\obj\Debug\mesajkutusu.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\mesajkutusu\obj\Debug\mesajkutusu.csproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\mesajkutusu\obj\Debug\mesajkutusu.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\mesajkutusu\obj\Debug\mesajkutusu.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\bin\Debug\mesajkutusu.exe.config
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.Form1.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.Form2.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.Form3.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.Form4.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.Properties.Resources.resources
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.csproj.GenerateResource.Cache
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\bin\Debug\mesajkutusu.exe
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\bin\Debug\mesajkutusu.pdb
+C:\Users\Volkan\Documents\Visual Studio 2013\Projects\c#\Form Aplikasyonları\mesajkutusu\mesajkutusu\obj\Debug\mesajkutusu.csprojResolveAssemblyReference.cache

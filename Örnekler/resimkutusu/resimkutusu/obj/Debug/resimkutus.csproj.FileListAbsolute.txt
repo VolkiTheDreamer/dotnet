@@ -1,0 +1,8 @@
+C:\Users\Volkan\AppData\Local\Temporary Projects\resimkutus\bin\Debug\resimkutus.exe.config
+C:\Users\Volkan\AppData\Local\Temporary Projects\resimkutus\bin\Debug\resimkutus.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\resimkutus\bin\Debug\resimkutus.pdb
+C:\Users\Volkan\AppData\Local\Temporary Projects\resimkutus\obj\Debug\resimkutus.Form1.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\resimkutus\obj\Debug\resimkutus.Properties.Resources.resources
+C:\Users\Volkan\AppData\Local\Temporary Projects\resimkutus\obj\Debug\resimkutus.csproj.GenerateResource.Cache
+C:\Users\Volkan\AppData\Local\Temporary Projects\resimkutus\obj\Debug\resimkutus.exe
+C:\Users\Volkan\AppData\Local\Temporary Projects\resimkutus\obj\Debug\resimkutus.pdb
