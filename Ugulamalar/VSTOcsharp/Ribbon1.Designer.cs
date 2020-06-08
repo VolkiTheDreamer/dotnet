@@ -34,6 +34,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl8 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl9 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl10 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl11 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher ribbonDialogLauncherImpl1 = this.Factory.CreateRibbonDialogLauncher();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ribbon1));
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl1 = this.Factory.CreateRibbonDropDownItem();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl2 = this.Factory.CreateRibbonDropDownItem();
@@ -42,15 +47,26 @@
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl5 = this.Factory.CreateRibbonDropDownItem();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl6 = this.Factory.CreateRibbonDropDownItem();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl7 = this.Factory.CreateRibbonDropDownItem();
-            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl8 = this.Factory.CreateRibbonDropDownItem();
-            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl9 = this.Factory.CreateRibbonDropDownItem();
-            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl10 = this.Factory.CreateRibbonDropDownItem();
-            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl11 = this.Factory.CreateRibbonDropDownItem();
-            Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher ribbonDialogLauncherImpl1 = this.Factory.CreateRibbonDialogLauncher();
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.button1 = this.Factory.CreateRibbonButton();
             this.group5 = this.Factory.CreateRibbonGroup();
+            this.group6 = this.Factory.CreateRibbonGroup();
+            this.buttonGroup2 = this.Factory.CreateRibbonButtonGroup();
+            this.group4 = this.Factory.CreateRibbonGroup();
+            this.comboBox1 = this.Factory.CreateRibbonComboBox();
+            this.dropDown1 = this.Factory.CreateRibbonDropDown();
+            this.group7 = this.Factory.CreateRibbonGroup();
+            this.tab2 = this.Factory.CreateRibbonTab();
+            this.group2 = this.Factory.CreateRibbonGroup();
+            this.separator1 = this.Factory.CreateRibbonSeparator();
+            this.group3 = this.Factory.CreateRibbonGroup();
+            this.buttonGroup1 = this.Factory.CreateRibbonButtonGroup();
+            this.box2 = this.Factory.CreateRibbonBox();
+            this.editBox1 = this.Factory.CreateRibbonEditBox();
+            this.checkBox1 = this.Factory.CreateRibbonCheckBox();
+            this.box1 = this.Factory.CreateRibbonBox();
+            this.button3 = this.Factory.CreateRibbonButton();
+            this.button1 = this.Factory.CreateRibbonButton();
             this.menu1 = this.Factory.CreateRibbonMenu();
             this.button13 = this.Factory.CreateRibbonButton();
             this.button14 = this.Factory.CreateRibbonButton();
@@ -64,19 +80,13 @@
             this.button18 = this.Factory.CreateRibbonButton();
             this.button19 = this.Factory.CreateRibbonButton();
             this.button20 = this.Factory.CreateRibbonButton();
-            this.group6 = this.Factory.CreateRibbonGroup();
-            this.buttonGroup2 = this.Factory.CreateRibbonButtonGroup();
             this.gallery1 = this.Factory.CreateRibbonGallery();
             this.gallery2 = this.Factory.CreateRibbonGallery();
             this.gallery4 = this.Factory.CreateRibbonGallery();
             this.gallery3 = this.Factory.CreateRibbonGallery();
-            this.group4 = this.Factory.CreateRibbonGroup();
-            this.comboBox1 = this.Factory.CreateRibbonComboBox();
-            this.dropDown1 = this.Factory.CreateRibbonDropDown();
             this.button15 = this.Factory.CreateRibbonButton();
             this.button21 = this.Factory.CreateRibbonButton();
             this.button22 = this.Factory.CreateRibbonButton();
-            this.group7 = this.Factory.CreateRibbonGroup();
             this.splitButton1 = this.Factory.CreateRibbonSplitButton();
             this.button26 = this.Factory.CreateRibbonButton();
             this.button27 = this.Factory.CreateRibbonButton();
@@ -84,26 +94,16 @@
             this.button28 = this.Factory.CreateRibbonButton();
             this.button29 = this.Factory.CreateRibbonButton();
             this.toggleButton1 = this.Factory.CreateRibbonToggleButton();
-            this.tab2 = this.Factory.CreateRibbonTab();
-            this.group2 = this.Factory.CreateRibbonGroup();
             this.button2 = this.Factory.CreateRibbonButton();
             this.button4 = this.Factory.CreateRibbonButton();
             this.button5 = this.Factory.CreateRibbonButton();
-            this.separator1 = this.Factory.CreateRibbonSeparator();
             this.button6 = this.Factory.CreateRibbonButton();
-            this.group3 = this.Factory.CreateRibbonGroup();
-            this.buttonGroup1 = this.Factory.CreateRibbonButtonGroup();
             this.button7 = this.Factory.CreateRibbonButton();
             this.button8 = this.Factory.CreateRibbonButton();
             this.button9 = this.Factory.CreateRibbonButton();
-            this.box2 = this.Factory.CreateRibbonBox();
-            this.editBox1 = this.Factory.CreateRibbonEditBox();
-            this.checkBox1 = this.Factory.CreateRibbonCheckBox();
-            this.box1 = this.Factory.CreateRibbonBox();
             this.button10 = this.Factory.CreateRibbonButton();
             this.button11 = this.Factory.CreateRibbonButton();
             this.button12 = this.Factory.CreateRibbonButton();
-            this.button3 = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.group5.SuspendLayout();
@@ -136,18 +136,146 @@
             this.group1.Label = "group1";
             this.group1.Name = "group1";
             // 
-            // button1
-            // 
-            this.button1.Label = "button1";
-            this.button1.Name = "button1";
-            this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
-            // 
             // group5
             // 
             this.group5.Items.Add(this.menu1);
             this.group5.Items.Add(this.menu2);
             this.group5.Label = "Dosyalar";
             this.group5.Name = "group5";
+            // 
+            // group6
+            // 
+            this.group6.Items.Add(this.buttonGroup2);
+            this.group6.Items.Add(this.gallery4);
+            this.group6.Items.Add(this.gallery3);
+            this.group6.Label = "Galeriler";
+            this.group6.Name = "group6";
+            // 
+            // buttonGroup2
+            // 
+            this.buttonGroup2.Items.Add(this.gallery1);
+            this.buttonGroup2.Items.Add(this.gallery2);
+            this.buttonGroup2.Name = "buttonGroup2";
+            // 
+            // group4
+            // 
+            this.group4.Items.Add(this.comboBox1);
+            this.group4.Items.Add(this.dropDown1);
+            this.group4.Label = "combo ve drop";
+            this.group4.Name = "group4";
+            // 
+            // comboBox1
+            // 
+            ribbonDropDownItemImpl8.Image = ((System.Drawing.Image)(resources.GetObject("ribbonDropDownItemImpl8.Image")));
+            ribbonDropDownItemImpl8.Label = "Item0";
+            ribbonDropDownItemImpl9.Image = ((System.Drawing.Image)(resources.GetObject("ribbonDropDownItemImpl9.Image")));
+            ribbonDropDownItemImpl9.Label = "Item1";
+            this.comboBox1.Items.Add(ribbonDropDownItemImpl8);
+            this.comboBox1.Items.Add(ribbonDropDownItemImpl9);
+            this.comboBox1.Label = "comboBox1";
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.OfficeImageId = "AddAccount";
+            this.comboBox1.ShowImage = true;
+            this.comboBox1.Text = null;
+            // 
+            // dropDown1
+            // 
+            this.dropDown1.Buttons.Add(this.button15);
+            this.dropDown1.Buttons.Add(this.button21);
+            this.dropDown1.Buttons.Add(this.button22);
+            this.dropDown1.Image = ((System.Drawing.Image)(resources.GetObject("dropDown1.Image")));
+            ribbonDropDownItemImpl10.Label = "Item0";
+            ribbonDropDownItemImpl10.OfficeImageId = "_3DPerspectiveIncrease";
+            ribbonDropDownItemImpl11.Label = "Item1";
+            ribbonDropDownItemImpl11.OfficeImageId = "_3DSurfaceWireFrameClassic";
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl10);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl11);
+            this.dropDown1.Label = "dropDown1";
+            this.dropDown1.Name = "dropDown1";
+            this.dropDown1.ShowImage = true;
+            // 
+            // group7
+            // 
+            this.group7.Items.Add(this.splitButton1);
+            this.group7.Items.Add(this.splitButton2);
+            this.group7.Items.Add(this.toggleButton1);
+            this.group7.Label = "group7";
+            this.group7.Name = "group7";
+            // 
+            // tab2
+            // 
+            this.tab2.Groups.Add(this.group2);
+            this.tab2.Groups.Add(this.group3);
+            this.tab2.Label = "tab2";
+            this.tab2.Name = "tab2";
+            // 
+            // group2
+            // 
+            this.group2.DialogLauncher = ribbonDialogLauncherImpl1;
+            this.group2.Items.Add(this.button2);
+            this.group2.Items.Add(this.button4);
+            this.group2.Items.Add(this.button5);
+            this.group2.Items.Add(this.separator1);
+            this.group2.Items.Add(this.button6);
+            this.group2.Label = "VSTO test";
+            this.group2.Name = "group2";
+            this.group2.DialogLauncherClick += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.group2_DialogLauncherClick);
+            // 
+            // separator1
+            // 
+            this.separator1.Name = "separator1";
+            // 
+            // group3
+            // 
+            this.group3.Items.Add(this.buttonGroup1);
+            this.group3.Items.Add(this.box2);
+            this.group3.Items.Add(this.box1);
+            this.group3.Label = "group3";
+            this.group3.Name = "group3";
+            // 
+            // buttonGroup1
+            // 
+            this.buttonGroup1.Items.Add(this.button7);
+            this.buttonGroup1.Items.Add(this.button8);
+            this.buttonGroup1.Items.Add(this.button9);
+            this.buttonGroup1.Name = "buttonGroup1";
+            // 
+            // box2
+            // 
+            this.box2.Items.Add(this.editBox1);
+            this.box2.Items.Add(this.checkBox1);
+            this.box2.Name = "box2";
+            // 
+            // editBox1
+            // 
+            this.editBox1.Label = "editBox1";
+            this.editBox1.Name = "editBox1";
+            this.editBox1.Text = null;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Label = "checkBox1";
+            this.checkBox1.Name = "checkBox1";
+            // 
+            // box1
+            // 
+            this.box1.BoxStyle = Microsoft.Office.Tools.Ribbon.RibbonBoxStyle.Vertical;
+            this.box1.Items.Add(this.button10);
+            this.box1.Items.Add(this.button11);
+            this.box1.Items.Add(this.button12);
+            this.box1.Name = "box1";
+            // 
+            // button3
+            // 
+            this.button3.Label = "Ribbon Ayarları";
+            this.button3.Name = "button3";
+            this.button3.ShowImage = true;
+            // 
+            // button1
+            // 
+            this.button1.Label = "button1";
+            this.button1.Name = "button1";
+            this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
             // 
             // menu1
             // 
@@ -250,20 +378,6 @@
             this.button20.Name = "button20";
             this.button20.ShowImage = true;
             // 
-            // group6
-            // 
-            this.group6.Items.Add(this.buttonGroup2);
-            this.group6.Items.Add(this.gallery4);
-            this.group6.Items.Add(this.gallery3);
-            this.group6.Label = "Galeriler";
-            this.group6.Name = "group6";
-            // 
-            // buttonGroup2
-            // 
-            this.buttonGroup2.Items.Add(this.gallery1);
-            this.buttonGroup2.Items.Add(this.gallery2);
-            this.buttonGroup2.Name = "buttonGroup2";
-            // 
             // gallery1
             // 
             this.gallery1.Image = ((System.Drawing.Image)(resources.GetObject("gallery1.Image")));
@@ -321,43 +435,6 @@
             this.gallery3.OfficeImageId = "AccessTableContacts";
             this.gallery3.ShowImage = true;
             // 
-            // group4
-            // 
-            this.group4.Items.Add(this.comboBox1);
-            this.group4.Items.Add(this.dropDown1);
-            this.group4.Label = "combo ve drop";
-            this.group4.Name = "group4";
-            // 
-            // comboBox1
-            // 
-            ribbonDropDownItemImpl8.Image = ((System.Drawing.Image)(resources.GetObject("ribbonDropDownItemImpl8.Image")));
-            ribbonDropDownItemImpl8.Label = "Item0";
-            ribbonDropDownItemImpl9.Image = ((System.Drawing.Image)(resources.GetObject("ribbonDropDownItemImpl9.Image")));
-            ribbonDropDownItemImpl9.Label = "Item1";
-            this.comboBox1.Items.Add(ribbonDropDownItemImpl8);
-            this.comboBox1.Items.Add(ribbonDropDownItemImpl9);
-            this.comboBox1.Label = "comboBox1";
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.OfficeImageId = "AddAccount";
-            this.comboBox1.ShowImage = true;
-            this.comboBox1.Text = null;
-            // 
-            // dropDown1
-            // 
-            this.dropDown1.Buttons.Add(this.button15);
-            this.dropDown1.Buttons.Add(this.button21);
-            this.dropDown1.Buttons.Add(this.button22);
-            this.dropDown1.Image = ((System.Drawing.Image)(resources.GetObject("dropDown1.Image")));
-            ribbonDropDownItemImpl10.Label = "Item0";
-            ribbonDropDownItemImpl10.OfficeImageId = "_3DPerspectiveIncrease";
-            ribbonDropDownItemImpl11.Label = "Item1";
-            ribbonDropDownItemImpl11.OfficeImageId = "_3DSurfaceWireFrameClassic";
-            this.dropDown1.Items.Add(ribbonDropDownItemImpl10);
-            this.dropDown1.Items.Add(ribbonDropDownItemImpl11);
-            this.dropDown1.Label = "dropDown1";
-            this.dropDown1.Name = "dropDown1";
-            this.dropDown1.ShowImage = true;
-            // 
             // button15
             // 
             this.button15.Label = "button15";
@@ -372,14 +449,6 @@
             // 
             this.button22.Label = "button22";
             this.button22.Name = "button22";
-            // 
-            // group7
-            // 
-            this.group7.Items.Add(this.splitButton1);
-            this.group7.Items.Add(this.splitButton2);
-            this.group7.Items.Add(this.toggleButton1);
-            this.group7.Label = "group7";
-            this.group7.Name = "group7";
             // 
             // splitButton1
             // 
@@ -430,27 +499,6 @@
             this.toggleButton1.Label = "toggleButton1";
             this.toggleButton1.Name = "toggleButton1";
             // 
-            // tab2
-            // 
-            this.tab2.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
-            this.tab2.ControlId.OfficeId = "TabData";
-            this.tab2.Groups.Add(this.group2);
-            this.tab2.Groups.Add(this.group3);
-            this.tab2.Label = "TabData";
-            this.tab2.Name = "tab2";
-            // 
-            // group2
-            // 
-            this.group2.DialogLauncher = ribbonDialogLauncherImpl1;
-            this.group2.Items.Add(this.button2);
-            this.group2.Items.Add(this.button4);
-            this.group2.Items.Add(this.button5);
-            this.group2.Items.Add(this.separator1);
-            this.group2.Items.Add(this.button6);
-            this.group2.Label = "VSTO test";
-            this.group2.Name = "group2";
-            this.group2.DialogLauncherClick += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.group2_DialogLauncherClick);
-            // 
             // button2
             // 
             this.button2.Label = "dosya yarat";
@@ -469,30 +517,11 @@
             this.button5.Name = "button5";
             this.button5.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button5_Click);
             // 
-            // separator1
-            // 
-            this.separator1.Name = "separator1";
-            // 
             // button6
             // 
             this.button6.Label = "range işleri";
             this.button6.Name = "button6";
             this.button6.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button6_Click);
-            // 
-            // group3
-            // 
-            this.group3.Items.Add(this.buttonGroup1);
-            this.group3.Items.Add(this.box2);
-            this.group3.Items.Add(this.box1);
-            this.group3.Label = "group3";
-            this.group3.Name = "group3";
-            // 
-            // buttonGroup1
-            // 
-            this.buttonGroup1.Items.Add(this.button7);
-            this.buttonGroup1.Items.Add(this.button8);
-            this.buttonGroup1.Items.Add(this.button9);
-            this.buttonGroup1.Name = "buttonGroup1";
             // 
             // button7
             // 
@@ -509,31 +538,6 @@
             this.button9.Label = "button9";
             this.button9.Name = "button9";
             // 
-            // box2
-            // 
-            this.box2.Items.Add(this.editBox1);
-            this.box2.Items.Add(this.checkBox1);
-            this.box2.Name = "box2";
-            // 
-            // editBox1
-            // 
-            this.editBox1.Label = "editBox1";
-            this.editBox1.Name = "editBox1";
-            this.editBox1.Text = null;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Label = "checkBox1";
-            this.checkBox1.Name = "checkBox1";
-            // 
-            // box1
-            // 
-            this.box1.BoxStyle = Microsoft.Office.Tools.Ribbon.RibbonBoxStyle.Vertical;
-            this.box1.Items.Add(this.button10);
-            this.box1.Items.Add(this.button11);
-            this.box1.Items.Add(this.button12);
-            this.box1.Name = "box1";
-            // 
             // button10
             // 
             this.button10.Label = "button10";
@@ -548,12 +552,6 @@
             // 
             this.button12.Label = "button12";
             this.button12.Name = "button12";
-            // 
-            // button3
-            // 
-            this.button3.Label = "Ribbon Ayarları";
-            this.button3.Name = "button3";
-            this.button3.ShowImage = true;
             // 
             // Ribbon1
             // 

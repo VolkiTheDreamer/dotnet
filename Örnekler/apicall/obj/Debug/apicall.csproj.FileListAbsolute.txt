@@ -1,0 +1,12 @@
+C:\Users\volka\source\repos\apicall\bin\Debug\apicall.exe.config
+C:\Users\volka\source\repos\apicall\bin\Debug\apicall.exe
+C:\Users\volka\source\repos\apicall\bin\Debug\apicall.pdb
+C:\Users\volka\source\repos\apicall\obj\Debug\apicall.csprojAssemblyReference.cache
+C:\Users\volka\source\repos\apicall\obj\Debug\apicall.Form1.resources
+C:\Users\volka\source\repos\apicall\obj\Debug\apicall.Properties.Resources.resources
+C:\Users\volka\source\repos\apicall\obj\Debug\apicall.csproj.GenerateResource.cache
+C:\Users\volka\source\repos\apicall\obj\Debug\apicall.exe
+C:\Users\volka\source\repos\apicall\obj\Debug\apicall.pdb
+C:\Users\volka\source\repos\apicall\bin\Debug\Newtonsoft.Json.dll
+C:\Users\volka\source\repos\apicall\bin\Debug\Newtonsoft.Json.xml
+C:\Users\volka\source\repos\apicall\obj\Debug\apicall.csproj.CopyComplete

@@ -1,0 +1,6 @@
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\obj\Debug\VolkansUtility.csprojAssemblyReference.cache
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\bin\Debug\VolkansUtility.dll.config
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\bin\Debug\VolkansUtility.dll
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\bin\Debug\VolkansUtility.pdb
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\obj\Debug\VolkansUtility.dll
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\obj\Debug\VolkansUtility.pdb

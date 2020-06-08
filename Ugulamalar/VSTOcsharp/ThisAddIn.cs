@@ -25,7 +25,7 @@ namespace VSTOcsharp
             //frm2.Show();
             //Form1 frm3 = new Form1();
             //frm3.Show();        
-            if (DateTime.Today>Convert.ToDateTime("31.12.2019"))
+            if (DateTime.Today>Convert.ToDateTime("31.12.2020"))
             {
                 MessageBox.Show("Add'in in süresi dolmuştur.");
                 Globals.Ribbons.Ribbon1.Dispose();
