@@ -76,7 +76,8 @@ namespace apicall
             rClient.endPoint = @"https://reqres.in/api/users";
 
             string strResponse = string.Empty;
-            strResponse = await rClient.Postala("volkan","consultant");
+            //strResponse = await rClient.Postala2("volkan","consultant");
+            strResponse = await rClient.Postala();
             debugouptput(strResponse);
         }
     }

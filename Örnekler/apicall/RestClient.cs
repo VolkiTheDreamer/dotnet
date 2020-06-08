@@ -24,14 +24,14 @@ namespace apicall
         public RestClient()
         {
             endPoint = string.Empty;
-            httpMethod = httpVerb.GET;
+            //httpMethod = httpVerb.GET;
         }
 
         public async Task<string> makeRequest()
         {
             string strResponseValue = string.Empty;
             HttpWebRequest request = (HttpWebRequest)WebRequest.CreateHttp(endPoint);
-            request.Method = httpMethod.ToString();
+            request.Method = httpVerb.GET.ToString();
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
             {
                 if (response.StatusCode !=HttpStatusCode.OK)
@@ -74,7 +74,32 @@ namespace apicall
             return string.Empty;
         }
 
-        public async Task<string> Postala(string name, string job)
+
+        public async Task<string> Postala()
+        {
+            string strResponseValue = string.Empty;
+            HttpWebRequest request = (HttpWebRequest)WebRequest.CreateHttp(endPoint);
+            request.Method = httpVerb.POST.ToString();
+            request.ContentType = "application/json";
+                        
+            string postdata = "{\"name\":\"test\",\"job\":\"danisman\"}";
+
+            using (Stream requestStream = request.GetRequestStream())
+            {                    
+                using (StreamWriter sw = new StreamWriter(requestStream))
+                {
+                    await sw.WriteAsync(postdata);
+                    HttpWebRequest response = (HttpWebRequest)WebRequest.CreateHttp(endPoint);
+                    using (StreamReader reader = new StreamReader(response.GetRequestStream()))
+                    {
+                        var sonuc = await reader.ReadToEndAsync();
+                        return sonuc;
+                    }
+                }
+            }                        
+        }
+
+        public async Task<string> Postala2(string name, string job)
         {
             //excel range/table to datatable, sonra datatable to json, veya varsa doğrudan excel to json
             var inputdata = new Dictionary<string, string>
