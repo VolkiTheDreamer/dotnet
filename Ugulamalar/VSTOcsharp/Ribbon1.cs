@@ -10,9 +10,15 @@ namespace VSTOcsharp
 {
     public partial class Ribbon1
     {
+        public MyUserControl myusercontrol1; //taskpane için
+        public Microsoft.Office.Tools.CustomTaskPane myCustomTaskPane; //taskpane için
+
+        public Excel.Application app;
+
         private void Ribbon1_Load(object sender, RibbonUIEventArgs e)
         {
-           
+            app = Globals.ThisAddIn.Application;
+            button20.Image = Properties.Resources._0.ToBitmap(); 
         }
 
         private void button1_Click(object sender, RibbonControlEventArgs e)
@@ -24,7 +30,7 @@ namespace VSTOcsharp
         private void button2_Click(object sender, RibbonControlEventArgs e)
         {
             Excel.Workbook wb = Globals.ThisAddIn.Application.Workbooks.Add();
-            
+
         }
 
         private void button4_Click(object sender, RibbonControlEventArgs e)
@@ -42,21 +48,21 @@ namespace VSTOcsharp
             //MessageBox.Show(hucre.Address + " adresindeki hucrenin değeri:" + deger.ToString());
 
             try
-            {                
+            {
                 Excel.Range hucre = MyStatik.app.Selection; //castinge gerek yok, çünkü zaten değişkenin tipini belirtiyoruz
                 int deger = (int)(hucre.Value2); //double'dan integera dönüşüm
                 MessageBox.Show(hucre.Address + " adresindeki hucrenin değeri:" + deger.ToString());
                 //değişken atamasız durum
-                MessageBox.Show(MyStatik.app.Selection.Value2.ToString()); //intellisense çıkmaz
-                MessageBox.Show(((Excel.Range)MyStatik.app.Selection).Value2.ToString()); //intellisense çıkar
+                MessageBox.Show(MyStatik.app.Selection.Value2.ToString()); //casting yapmadığımız için intellisense çıkmaz
+                MessageBox.Show(((Excel.Range)MyStatik.app.Selection).Value2.ToString()); //intellisense çıkar                
             }
             catch (NullReferenceException)
             {
                 MessageBox.Show("Seçili bir hücre yok, lütfen bir hücre seçip tekrar deneyin.");
-            }      
+            }
             catch (Exception ex)
             {
-                if (ex.HResult==-2146233088)
+                if (ex.HResult == -2146233088)
                 {
                     MessageBox.Show("Şuan nümerik değeri olan bir hücrede bulunmuyorsunuz.");
                     MessageBox.Show(String.Format("HRresult:{0},\n\nMesaj:{1}", ex.HResult.ToString(), ex.Message));
@@ -64,7 +70,7 @@ namespace VSTOcsharp
                 else
                 {
                     MessageBox.Show(String.Format("HRresult:{0},\n\nMesaj:{1}", ex.HResult.ToString(), ex.Message));
-                }                
+                }
             }
         }
 
@@ -112,12 +118,30 @@ namespace VSTOcsharp
 
         private void splitButton1_Click(object sender, RibbonControlEventArgs e)
         {
-            //
+            //split1in default butonu            
         }
+
 
         private void button26_Click(object sender, RibbonControlEventArgs e)
         {
-            //
+            //splitin içindeki ilk buton
+        }
+
+        private void button30_Click(object sender, RibbonControlEventArgs e)
+        {
+            this.myusercontrol1 = new MyUserControl();
+            this.myCustomTaskPane = Globals.ThisAddIn.CustomTaskPanes.Add(this.myusercontrol1, "İlk Task Pane");
+            this.myCustomTaskPane.Visible = true;
+            this.myCustomTaskPane.Width = 200;
+        }
+
+        private void toggleButton1_Click(object sender, RibbonControlEventArgs e)           
+        {
+            Globals.Ribbons.Ribbon1.tab3.Visible = toggleButton1.Checked; //ribbonu görünür kılıyoruz           
+            if (toggleButton1.Checked)
+            {
+                Globals.Ribbons.Ribbon1.RibbonUI.ActivateTab("tab3");//sonra da aktif hale getiriyoruz            
+            }            
         }
     }
 }

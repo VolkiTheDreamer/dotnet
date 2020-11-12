@@ -9,6 +9,10 @@ namespace VolkansUtility
 {
     public static class Statics
     {
+        /// <summary>
+        /// Bunları da Extensions içine alalım, sadece extension olsunlar
+        /// </summary>
+        /// <param name="s"></param>
         #region StringMetodlar
         public static void DumpToConsole(string s)
         {

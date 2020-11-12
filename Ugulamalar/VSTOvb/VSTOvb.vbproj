@@ -187,7 +187,25 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmSetting1.Designer.vb">
+      <DependentUpon>frmSetting1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetting1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GenelModul.vb" />
+    <Compile Include="MyUserControl.Designer.vb">
+      <DependentUpon>MyUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RenkliTextBox.Designer.vb">
+      <DependentUpon>RenkliTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RenkliTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Ribbon1.Designer.vb">
       <DependentUpon>Ribbon1.vb</DependentUpon>
     </Compile>
@@ -197,6 +215,15 @@
     <Compile Include="ThisAddIn.vb">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="frmSetting1.resx">
+      <DependentUpon>frmSetting1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyUserControl.resx">
+      <DependentUpon>MyUserControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenkliTextBox.resx">
+      <DependentUpon>RenkliTextBox.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ribbon1.resx">
       <DependentUpon>Ribbon1.vb</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +255,42 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="VSTOvb_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4islem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4islem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc1_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makas_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makas2_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makas40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_0.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_3.ico" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

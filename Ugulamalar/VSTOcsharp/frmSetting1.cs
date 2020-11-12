@@ -26,7 +26,7 @@ namespace VSTOcsharp
         private void frmSetting1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default.Anaklasor = this.txtKlasor.Text;
-            Properties.Settings.Default.YeniWbSheetAdedi = int.Parse(this.txtSheetAded.Text);
+            Properties.Settings.Default.YeniWbSheetAdedi = int.Parse(this.txtSheetAded.Text);//parsing, string bir ifadeden sayısal metin çıkarma işlemidir
             Properties.Settings.Default.Anaklasor=this.renkliTextBox1.Controls[0].Text;
             Properties.Settings.Default.Save(); //bunu yazmazsak ayarlar kaydolmaz
         }

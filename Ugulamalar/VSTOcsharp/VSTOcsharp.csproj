@@ -171,9 +171,11 @@
     </Compile>
     <EmbeddedResource Include="frmSetting1.resx">
       <DependentUpon>frmSetting1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MyUserControl.resx">
       <DependentUpon>MyUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -187,9 +189,11 @@
     </Compile>
     <EmbeddedResource Include="RenkliTextBox.resx">
       <DependentUpon>RenkliTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Ribbon1.resx">
       <DependentUpon>Ribbon1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -247,19 +251,10 @@
     <None Include="Resources\makas.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\_0.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\_1.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\_2.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\_3.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icon1.ico" />
+    <Content Include="Resources\_0.ico" />
+    <Content Include="Resources\_1.ico" />
+    <Content Include="Resources\_2.ico" />
+    <Content Include="Resources\_3.ico" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

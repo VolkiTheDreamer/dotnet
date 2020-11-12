@@ -7,16 +7,23 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Reflection;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace VolkansUtility
 {
     public static class Conversion
     {
+        /// <summary>
+        /// all of these methods are used as extension methods
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <returns></returns>
         public static DataTable ListofArraytoDatatable<T>(this List<T[]> list)
         {
             DataTable table = new DataTable();
 
-            //adding columns dependiong on the number for items in the array
+            //adding columns depending on the number for items in the array
             for (int i = 0; i < list[0].Length; i++)
             {
                 table.Columns.Add("Column_" + i);
@@ -31,7 +38,7 @@ namespace VolkansUtility
         }
         public static DataTable ListofSomeClassToDatatable<T>(this List<T> list)
         {
-            //if experinecing performance problem, try on fastmember package
+            //if experiencing performance problem, try on fastmember package
             DataTable table = new DataTable();
 
             //adding columns depending on the number for property of the class
@@ -58,9 +65,10 @@ namespace VolkansUtility
             foreach (DataRow row in dt.Rows)
             {
                 T item = GetItem<T>(row);
+                data.Add(item);
             }
 
-            T GetItem<T>(DataRow dr) ///warning?
+            T GetItem<T>(DataRow dr)
             {
                 Type temp = typeof(T);
                 T obj = Activator.CreateInstance<T>();
@@ -84,21 +92,20 @@ namespace VolkansUtility
         }
         public static DataTable DictToDatatable<TKey, TValue>(this Dictionary<TKey, TValue> dict)
         {
-            ///test etmedim
             DataTable table = new DataTable();
 
-            //adding columns dependiong on the number for items in the array
-            for (int i = 0; i < 2; i++)
-            {
-                table.Columns.Add("Column_" + i);
-            }
+            table.Columns.Add("Key");
+            table.Columns.Add("Value");
 
-            //add rows
             foreach (var kv in dict)
             {
-                table.Rows.Add(kv);
+                DataRow dr = table.NewRow();
+                dr[0] = kv.Key;
+                dr[1] = kv.Value;
+                table.Rows.Add(dr);
             }
             return table;
+
         }
         public static ILookup<TKey, TValue> DatatabletoLookup<TKey, TValue>(this DataTable dt, int keyindex, int valueindex)
         {
@@ -118,7 +125,7 @@ namespace VolkansUtility
         {
             return (DataTable)(dgv.DataSource);
         }
-        public static List<T> DatagridviewKolonList<T>(this DataGridView dgv,int colindex)
+        public static List<T> DatagridviewKolonToList<T>(this DataGridView dgv,int colindex)
         {
             List<T> mylist = new List<T>();
             try
@@ -143,6 +150,28 @@ namespace VolkansUtility
         {
             return list1.Zip(list2, (k, v) => new { Key = k, Value = v }).ToDictionary(x => x.Key, x => x.Value);
             //or return Enumerable.Range(0, list1.Count).ToDictionary(i => list1[i], i => list2[i]);            
+        }
+        public static List<Tuple<T1,T2,T3>> DatatableToListOfTuples<T1,T2,T3>(this DataTable dt,int i, int j, int k)
+        {
+            List<Tuple<T1, T2, T3>> list = new List<Tuple<T1, T2, T3>>();
+            foreach (DataRow dr in dt.Rows)
+            {
+                list.Add(Tuple.Create((T1)dr[i], (T2)dr[j], (T3)dr[k]));
+            }
+            return list;
+        }
+        public static List<string> rangeToList(Excel.Range inputRng, bool isDistinct=false, bool isToLower=true)
+        {
+            object[,] cellValues = (object[,])inputRng.Value2;
+            List<string> lst;
+            if (isToLower)
+                lst = cellValues.Cast<object>().ToList().ConvertAll(x => Convert.ToString(x).ToLower());
+            else
+                lst = cellValues.Cast<object>().ToList().ConvertAll(x => Convert.ToString(x));
+
+            if (isDistinct)
+                lst = lst.Distinct().ToList();
+            return lst;
         }
     } 
 }
