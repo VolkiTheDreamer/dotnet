@@ -1,0 +1,13 @@
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\bin\Debug\InvestPY.dll
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\bin\Debug\InvestPY.pdb
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\bin\Debug\InvestPY.dll.manifest
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\bin\Debug\InvestPY.vsto
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\obj\Debug\InvestPY.Properties.Resources.resources
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\obj\Debug\InvestPY.Ribbon1.resources
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\obj\Debug\InvestPY.SettingsForm.resources
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\obj\Debug\InvestPY.csproj.GenerateResource.cache
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\obj\Debug\InvestPY.csproj.CopyComplete
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\obj\Debug\InvestPY.dll
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\obj\Debug\InvestPY.pdb
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\InvestPY\InvestPY\obj\Debug\InvestPY.csprojAssemblyReference.cache
