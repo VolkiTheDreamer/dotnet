@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace VolkansUtility
 {
@@ -14,16 +16,7 @@ namespace VolkansUtility
         /// </summary>
         /// <param name="s"></param>
         #region StringMetodlar
-        public static void DumpToConsole(string s)
-        {
-            Console.WriteLine(s);
-        }
-
-        public static void DumpToOutput(string s)
-        {
-            System.Diagnostics.Trace.WriteLine(s);
-        }
-
+        
         public static string KökDizimsinGetir()
         {
             return AppDomain.CurrentDomain.BaseDirectory;
@@ -118,6 +111,28 @@ namespace VolkansUtility
                 System.Diagnostics.Trace.WriteLine(de.Key.ToString() + "," + de.Value.ToString());
             }
             System.Diagnostics.Trace.WriteLine("\r\n");
+        }
+
+        public static Excel.Workbook GetActiveWorkbook()
+        {
+            Excel.Application app = (Excel.Application)Marshal.GetActiveObject("Excel.Application");
+            app.Visible = true;
+            return app.ActiveWorkbook;
+        }
+
+        public static Excel.Application GetExcel()
+        {
+            //release marhshal?
+            Excel.Application app;
+            if (System.Diagnostics.Process.GetProcessesByName("EXCEL").Count() > 0)
+            {
+                app = (Excel.Application)Marshal.GetActiveObject("Excel.Application");
+            }
+            else
+            {
+                app = new Excel.Application();
+            }
+            return app;
         }
 
         #endregion

@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Office.Tools.Ribbon;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Windows.Forms;
+using System.Deployment.Application;
 
 namespace VSTOcsharp
 {
@@ -18,7 +19,8 @@ namespace VSTOcsharp
         private void Ribbon1_Load(object sender, RibbonUIEventArgs e)
         {
             app = Globals.ThisAddIn.Application;
-            button20.Image = Properties.Resources._0.ToBitmap(); 
+            button20.Image = Properties.Resources._0.ToBitmap();
+            this.label1.Label = ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString(4);
         }
 
         private void button1_Click(object sender, RibbonControlEventArgs e)

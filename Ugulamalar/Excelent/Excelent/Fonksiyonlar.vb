@@ -6,10 +6,10 @@
 'Imports System
 'Imports System.Runtime.InteropServices
 'Imports WIN32 = Microsoft.Win32
-'<Guid("EB56B059-322B-4216-AB4A-8AE957770951")> _
-'<ClassInterface(ClassInterfaceType.AutoDual), ComVisible(True)> _
+'<Guid("EB56B059-322B-4216-AB4A-8AE957770951")>
+'<ClassInterface(ClassInterfaceType.AutoDual), ComVisible(True)>
 'Public Class Fonksiyonlar
-'    Public Function superconcat(Hucre_grubu As Excel.Range, isaret As String)
+'    Public Function superconcatvsto(Hucre_grubu As Excel.Range, isaret As String)
 '        '.NETte automation addinlerde description ve category oluyor, uzun b yöntemi var gibi
 '        'veya Excel.DNA gibi araçlarda olabiliyor
 '        'try cath yap
@@ -22,33 +22,33 @@
 '            End If
 '        Next k
 
-'        superconcat = Mid(x, 1, Len(x) - 1)
+'        superconcatvsto = Mid(x, 1, Len(x) - 1)
 '    End Function
 '#Region " Setup "
-'    'Public Sub New()
+'    Public Sub New()
 
-'    'End Sub
+'    End Sub
 
-'    <ComRegisterFunctionAttribute()> _
+'    <ComRegisterFunctionAttribute()>
 '    Public Shared Sub RegisterFunction(ByVal type As Type)
 
 '        WIN32.Registry.ClassesRoot.CreateSubKey(GetSubKeyName(type, "Programmable"))
 
-'        Dim key As WIN32.RegistryKey = _
+'        Dim key As WIN32.RegistryKey =
 '    WIN32.Registry.ClassesRoot.OpenSubKey(GetSubKeyName(type, "InprocServer32"), True)
 
-'        key.SetValue("", System.Environment.SystemDirectory & "\mscoree.dll", _
+'        key.SetValue("", System.Environment.SystemDirectory & "\mscoree.dll",
 '            WIN32.RegistryValueKind.[String])
 '    End Sub
 
-'    <ComUnregisterFunctionAttribute()> _
+'    <ComUnregisterFunctionAttribute()>
 '    Public Shared Sub UnregisterFunction(ByVal type As Type)
 
 '        WIN32.Registry.ClassesRoot.DeleteSubKey(GetSubKeyName(type, "Programmable"), False)
 
 '    End Sub
 
-'    Private Shared Function GetSubKeyName(ByVal type As Type, _
+'    Private Shared Function GetSubKeyName(ByVal type As Type,
 '        ByVal subKeyName As String) As String
 
 '        Dim s As New System.Text.StringBuilder()

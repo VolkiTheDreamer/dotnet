@@ -45,15 +45,25 @@
             this.group2 = this.Factory.CreateRibbonGroup();
             this.editBox3 = this.Factory.CreateRibbonEditBox();
             this.editBox4 = this.Factory.CreateRibbonEditBox();
+            this.group3 = this.Factory.CreateRibbonGroup();
+            this.button3 = this.Factory.CreateRibbonButton();
+            this.button4 = this.Factory.CreateRibbonButton();
+            this.button5 = this.Factory.CreateRibbonButton();
+            this.group4 = this.Factory.CreateRibbonGroup();
+            this.button6 = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.group2.SuspendLayout();
+            this.group3.SuspendLayout();
+            this.group4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
             // 
             this.tab1.Groups.Add(this.group1);
             this.tab1.Groups.Add(this.group2);
+            this.tab1.Groups.Add(this.group3);
+            this.tab1.Groups.Add(this.group4);
             this.tab1.Label = "Invest";
             this.tab1.Name = "tab1";
             // 
@@ -122,6 +132,44 @@
             this.editBox4.Name = "editBox4";
             this.editBox4.Text = null;
             // 
+            // group3
+            // 
+            this.group3.Items.Add(this.button3);
+            this.group3.Items.Add(this.button4);
+            this.group3.Items.Add(this.button5);
+            this.group3.Label = "Process";
+            this.group3.Name = "group3";
+            // 
+            // button3
+            // 
+            this.button3.Label = "Calculator ve Notepad";
+            this.button3.Name = "button3";
+            this.button3.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Label = "Jupyter Notebook";
+            this.button4.Name = "button4";
+            this.button4.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Label = "Edge";
+            this.button5.Name = "button5";
+            this.button5.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button5_Click);
+            // 
+            // group4
+            // 
+            this.group4.Items.Add(this.button6);
+            this.group4.Label = "Fuzzy";
+            this.group4.Name = "group4";
+            // 
+            // button6
+            // 
+            this.button6.Label = "Fuzzy aç";
+            this.button6.Name = "button6";
+            this.button6.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button6_Click);
+            // 
             // Ribbon1
             // 
             this.Name = "Ribbon1";
@@ -134,6 +182,10 @@
             this.group1.PerformLayout();
             this.group2.ResumeLayout(false);
             this.group2.PerformLayout();
+            this.group3.ResumeLayout(false);
+            this.group3.PerformLayout();
+            this.group4.ResumeLayout(false);
+            this.group4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -150,6 +202,12 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox4;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button2;
         internal Microsoft.Office.Tools.Ribbon.RibbonSeparator separator1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group3;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button3;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button4;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button5;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group4;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button6;
     }
 
     partial class ThisRibbonCollection

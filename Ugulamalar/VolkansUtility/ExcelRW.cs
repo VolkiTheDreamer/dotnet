@@ -15,9 +15,15 @@ using System.Data.OleDb;
 namespace VolkansUtility
 {
     public static class ExcelRW
-    {
-        public static void WriteDataTableContentToActiveWBWithInterop(DataTable dt, TargetLocation whereTo, bool printTitle = true, bool formatting=true)
-            //used if the workbook is open
+    {        
+        /// <summary>
+        /// Used when the workbook is already open.
+        /// </summary>
+        /// <param name="dt">Datatable</param>
+        /// <param name="whereTo">wheteher you want to insert the data into activecell or a new sheet</param>
+        /// <param name="printTitle">..</param>
+        /// <param name="formatting">..</param>
+        public static void WriteDataTableContentToActiveWBWithInterop(DataTable dt, TargetLocation whereTo, bool printTitle = true, bool formatting=true)            
         {
             try
             {
@@ -34,7 +40,7 @@ namespace VolkansUtility
                     }
                 }
 
-                Excel.Workbook wb = GetActiveWorkbook();
+                Excel.Workbook wb = Statics.GetActiveWorkbook();
 
                 if (whereTo ==TargetLocation.NewSheet)
                 {
@@ -49,13 +55,13 @@ namespace VolkansUtility
                     foreach (DataColumn col in dt.Columns)
                     {
                         wb.Application.Cells[1, k].Value = col.ColumnName;
-                        k = k + 1;
+                        k++;
                     }
                 }
 
                 //data
-                Excel.Range start = wb.Application.ActiveCell;
-                Excel.Range rng = ((Excel.Worksheet)wb.ActiveSheet).Range[start, wb.Application.Cells[height + start.Row - 1, start.Column + width - 1]];
+                Excel.Range start = wb.Application.Cells[2,1];
+                Excel.Range rng =wb.ActiveSheet.Range[start, wb.Application.Cells[height + 1, width]];
                 rng.Value = retList;
 
                 //formatting
@@ -63,8 +69,8 @@ namespace VolkansUtility
                 {
                     Random rd = new Random();
                     string s = rd.Next(10000).ToString();//to give a random table name
-                    ((Excel.Worksheet)wb.ActiveSheet).ListObjects.AddEx(Excel.XlListObjectSourceType.xlSrcRange, wb.Application.ActiveCell.CurrentRegion, Excel.XlYesNoGuess.xlYes).Name = "VSTO_Table" + s;  
-                    ((Excel.Worksheet)wb.ActiveSheet).ListObjects["VSTO_Table" + s].TableStyle = "TableStyleMedium2";
+                    ((Excel.Worksheet)wb.ActiveSheet).ListObjects.AddEx(Excel.XlListObjectSourceType.xlSrcRange, wb.Application.ActiveCell.CurrentRegion, Excel.XlYesNoGuess.xlYes).Name = "Static_Table" + s;  
+                    ((Excel.Worksheet)wb.ActiveSheet).ListObjects["Static_Table" + s].TableStyle = "TableStyleMedium2";
                 }
 
                 wb.Activate();
@@ -77,61 +83,70 @@ namespace VolkansUtility
             }
         }
 
-        public static void WriteDataTableContentToActiveWBWithClosedXML(DataTable dt,string sheetname= "New Sheet For Pasting DT")
-        {
-            Excel.Workbook wb = GetActiveWorkbook();
-            string ext = "";
-            if (!wb.FullName.Contains(".xlsx"))
-                ext = ".xlsx";
-            string filepath = wb.FullName+ext;            
-            wb.Save();wb.Close();
+        /// <summary>
+        /// Used when the workbook is closed.
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <param name="filenamepath">Full pathname. If you want a nerw file to be created, skip this</param>
+        /// <param name="openAfter">Whether you want to open the file after the write operation</param>  
+        public static void WriteDataTableContentWithClosedXML(DataTable dt, string filenamepath = "", string sheet = "Sheet1", bool openAfter = false)
+        {            
+            XLWorkbook wb;
+            IXLWorksheet ws;            
 
-            var cxwb = new XLWorkbook(filepath);
-            var ws = cxwb.Worksheets.Add(sheetname);            
-            ws.Cell(1,1).InsertTable(dt); 
-            cxwb.Save();
-            Excel.Application app = (Excel.Application)Marshal.GetActiveObject("Excel.Application");
-            app.Workbooks.Open(filepath);//reopening
-            //MessageBox.Show("Done");
-        }
-
-        public static void WriteDataTableContentWithClosedXML(DataTable dt, string filenamepath = "", bool openAfter = false)
-        {
             if (string.IsNullOrEmpty(filenamepath))
             {
-                var wb = new XLWorkbook();
-                var ws = wb.Worksheets.Add("New Sheet For Pasting DT");
+                wb = new XLWorkbook();
+                ws = wb.Worksheets.Add("New Sheet For Pasting DT");
                 ws.Cell(1, 1).InsertTable(dt);
                 wb.SaveAs("Tempfile.xlsx");
             }
             else
             {
-                var wb = new XLWorkbook(filenamepath);
+                wb = new XLWorkbook(filenamepath);
+                ws = wb.Worksheet(sheet);
+                ws.Cell(1, 1).InsertTable(dt);
                 wb.Save();
             }
 
             MessageBox.Show("Done");
             if (openAfter)
             {
-                Excel.Application app = (Excel.Application)System.Runtime.InteropServices.Marshal.GetActiveObject("Excel.Application");
+                Excel.Application app = Statics.GetExcel();
                 app.Workbooks.Open(string.IsNullOrEmpty(filenamepath) ? "Tempfile.xlsx" : filenamepath);
             }
         }
 
-        public static DataTable ReadFromExcelIntoDTWithOledDB(string filename,string sheet,string crt="",string sql="Select * From ")
-        {
-            var constr = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties='Excel 12.0;IMEX=1; HDR = YES'", filename); //carefull with the single quotes for Extended Properties
-            var criteria = (crt.Length == 0) ? "" : " where " + crt;
-            var adapter = new OleDbDataAdapter(sql + "[" + sheet + "$]" + criteria, constr);
+        /// <summary>
+        /// Reads the data from Excel workbook while it is closed. There is 255-character-limit problem with this. Try ExcelReader in that case
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="sheet"></param>
+        /// <param name="crt"></param>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public static DataTable ReadFromExcelIntoDTWithOledDB(string filename,string sql)
+        {            
+            var constr = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties='Excel 12.0;IMEX=1; HDR = YES'", filename); //carefull with the single quotes for Extended Properties            
+            var adapter = new OleDbDataAdapter(sql, constr);
             var ds = new DataSet();
             adapter.Fill(ds);
             DataTable dt = ds.Tables[0];
             return dt;
         }
 
-        public static DataTable ReadFromExcelIntoDTWithExcelReader(string filename, int sheetno,string criteria,string[] cols=null)
-        {
-            using (var stream = File.Open(filename, FileMode.Open, FileAccess.Read))            
+        
+        /// <summary>
+        /// Makes use of ExcelDataReader package
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="sheet">You can provide this either 1-based index or sheet name</param>
+        /// <param name="criteria"></param>
+        /// <param name="cols"></param>
+        /// <returns></returns>
+        public static DataTable ReadFromExcelIntoDTWithExcelReader(string filename, dynamic sheet, string criteria=null, string[] cols = null)
+        { 
+            using (var stream = File.Open(filename, FileMode.Open, FileAccess.Read))
             using (var reader = ExcelReaderFactory.CreateReader(stream))
             {
                 var result = reader.AsDataSet(new ExcelDataSetConfiguration()
@@ -141,7 +156,13 @@ namespace VolkansUtility
                         UseHeaderRow = true //if not always the case, use this as a parameter 
                     }
                 });
-                DataTable dt = result.Tables[sheetno - 1];
+                dynamic sh;
+                if (sheet.GetType() == typeof(string))
+                    sh = sheet;
+                else
+                    sh = sheet - 1;
+                DataTable dt = result.Tables[sh];
+
                 DataView dv = new DataView(dt);
                 dv.RowFilter = criteria;
                 if (cols != null)
@@ -149,7 +170,6 @@ namespace VolkansUtility
                 else
                     return dv.ToTable();
             }
-            
         }
         public static DataTable ReadFromCSVtoDataTable(string filepath, char sep=',')
         {
@@ -189,12 +209,7 @@ namespace VolkansUtility
             }
         }
 
-        public static Excel.Workbook GetActiveWorkbook()
-        {
-            Excel.Application app = (Excel.Application)Marshal.GetActiveObject("Excel.Application");            
-            app.Visible = true;
-            return app.ActiveWorkbook;
-        }
+        
         public enum ExcelTarget
         {
             DataTable,

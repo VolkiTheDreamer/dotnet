@@ -165,29 +165,3 @@ E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Excelent\Excelen
 E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Excelent\Excelent\obj\Debug\Excelent.vbproj.GenerateResource.cache
 E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Excelent\Excelent\obj\Debug\Excelent.vbproj.CoreCompileInputs.cache
 E:\OneDrive\Uygulama Geliştirme\Visual Studio\Gerçek Projeler\Excelent\Excelent\obj\Debug\Excelent.vbproj.CopyComplete
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Excelent.dll.config
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Excelent.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Excelent.pdb
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Excelent.xml
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Excelent.dll.manifest
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Excelent.vsto
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Microsoft.Office.Tools.Common.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Microsoft.Office.Tools.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Microsoft.Office.Tools.Excel.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.vbproj.ResolveComReference.cache
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.frmAbout.resources
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.frmBatchMail.resources
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.frmBatchMailFirstForm.resources
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.frmBolme.resources
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.frmFrequentFile.resources
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.frmSubelerPersonel.resources
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.rbExcelent.resources
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.Resources.resources
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.vbproj.GenerateResource.cache
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.vbproj.CopyComplete
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.xml
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.pdb
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\Excelent\Excelent\obj\Debug\Excelent.vbprojAssemblyReference.cache

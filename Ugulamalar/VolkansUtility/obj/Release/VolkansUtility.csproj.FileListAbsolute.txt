@@ -17,3 +17,4 @@ E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\bin\Release\Exc
 E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\obj\Release\VolkansUtility.csproj.CopyComplete
 E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\obj\Release\VolkansUtility.dll
 E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\obj\Release\VolkansUtility.pdb
+E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\VolkansUtility\bin\Release\VolkansUtility.xml

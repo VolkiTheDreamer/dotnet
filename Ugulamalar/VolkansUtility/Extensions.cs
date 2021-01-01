@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.Data.OleDb;
 
 namespace VolkansUtility
 {
@@ -28,6 +29,11 @@ namespace VolkansUtility
         public static void Dump(this string str) //Imitating LinqPad's Dump
         {
             Console.WriteLine(str);
+        }
+
+        public static void DumpToOutput(this string s)
+        {
+            System.Diagnostics.Trace.WriteLine(s);
         }
 
         public static string SuperTrim(this string str)
@@ -63,6 +69,14 @@ namespace VolkansUtility
             return sw.ElapsedMilliseconds;
         }
 
+        public static void OpenWithControl(this OleDbConnection conn)
+        {
+            if (conn.State!=System.Data.ConnectionState.Open)
+            {
+                conn.Open();
+            }
+        }
+
         #region LINQ Replace implementation
         public static IEnumerable<T> Replace<T>(this IEnumerable<T> sequence, T find, T replaceWith, IEqualityComparer<T> comparer)
         {
@@ -83,6 +97,13 @@ namespace VolkansUtility
                 T x = match ? replaceWith : item;
                 yield return x;
             }
+        }
+        #endregion
+
+        #region conversions
+        public static int ConvertIoInt(this string s) 
+        {
+            return Convert.ToInt32(s);       
         }
         #endregion
     }

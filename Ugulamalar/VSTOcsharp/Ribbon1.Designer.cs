@@ -106,6 +106,8 @@
             this.button12 = this.Factory.CreateRibbonButton();
             this.tab3 = this.Factory.CreateRibbonTab();
             this.button3 = this.Factory.CreateRibbonButton();
+            this.group9 = this.Factory.CreateRibbonGroup();
+            this.label1 = this.Factory.CreateRibbonLabel();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.group5.SuspendLayout();
@@ -121,6 +123,7 @@
             this.box2.SuspendLayout();
             this.box1.SuspendLayout();
             this.tab3.SuspendLayout();
+            this.group9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -132,6 +135,7 @@
             this.tab1.Groups.Add(this.group4);
             this.tab1.Groups.Add(this.group7);
             this.tab1.Groups.Add(this.group8);
+            this.tab1.Groups.Add(this.group9);
             this.tab1.Label = "TabAddIns";
             this.tab1.Name = "tab1";
             // 
@@ -570,6 +574,17 @@
             this.button3.Name = "button3";
             this.button3.ShowImage = true;
             // 
+            // group9
+            // 
+            this.group9.Items.Add(this.label1);
+            this.group9.Label = "Hakkında";
+            this.group9.Name = "group9";
+            // 
+            // label1
+            // 
+            this.label1.Label = "label1";
+            this.label1.Name = "label1";
+            // 
             // Ribbon1
             // 
             this.Name = "Ribbon1";
@@ -612,6 +627,8 @@
             this.box1.PerformLayout();
             this.tab3.ResumeLayout(false);
             this.tab3.PerformLayout();
+            this.group9.ResumeLayout(false);
+            this.group9.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -678,6 +695,8 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group8;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button30;
         private Microsoft.Office.Tools.Ribbon.RibbonTab tab3;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group9;
+        internal Microsoft.Office.Tools.Ribbon.RibbonLabel label1;
     }
 
     partial class ThisRibbonCollection
