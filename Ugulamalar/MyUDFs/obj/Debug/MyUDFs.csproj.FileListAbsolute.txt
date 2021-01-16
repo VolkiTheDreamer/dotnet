@@ -1,5 +1,0 @@
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\MyUDFs\bin\Debug\MyUDFs.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\MyUDFs\bin\Debug\MyUDFs.pdb
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\MyUDFs\bin\Debug\MyUDFs.tlb
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\MyUDFs\obj\Debug\MyUDFs.dll
-E:\OneDrive\Dökümanlar\GitHub\dotnet\Ugulamalar\MyUDFs\obj\Debug\MyUDFs.pdb
